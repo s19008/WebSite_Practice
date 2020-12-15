@@ -5,9 +5,25 @@
     width: 1170px;
     margin: 0 auto;
 }
+header {
+    padding:60px 0 0 30px;
+}
 .header-left {
     float:left;
 }
 .header-right {
     float:right;
+}
+.header-right a {
+    margin-right:25px;
+}
+.top-wrapper {
+    margin:600px 650px 200px 600px;
+}
+.top-wrapper h1 {
+    padding-left:50px;
+}
+.top-text {
+    text-align: left;
+    font-size: 20px;
 }
