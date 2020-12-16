@@ -2,11 +2,16 @@
     box-sizing: border-box;
 }
 .container {
-    width: 1170px;
+    max-width: 1170px;
+    width: 900px;
     margin: 0 auto;
 }
 header {
+    position:absolute;
     padding:60px 0 0 30px;
+}
+.header-logo img{
+    width: 250px;
 }
 .header-left {
     float:left;
@@ -16,6 +21,15 @@ header {
 }
 .header-right a {
     margin-right:25px;
+    color:white;
+}
+.top-image {
+    height: 300px;
+    margin:0 0;
+}
+.top-image img {
+    width:100%;
+    
 }
 .top-wrapper {
     margin:600px 650px 200px 600px;
@@ -26,4 +40,8 @@ header {
 .top-text {
     text-align: left;
     font-size: 20px;
+}
+.top-text img {
+    width:200px;
+    margin-left: 50px;
 }
