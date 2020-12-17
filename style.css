@@ -8,7 +8,7 @@
 }
 header {
     position:absolute;
-    padding:60px 0 0 30px;
+    width:100%;
 }
 .header-logo img{
     width: 250px;
@@ -16,11 +16,11 @@ header {
 .header-left {
     float:left;
 }
-.header-right {
+.header-right li{
     float:right;
 }
 .header-right a {
-    margin-right:25px;
+    margin-right: 25px;
     color:white;
 }
 .top-image {
@@ -29,7 +29,6 @@ header {
 }
 .top-image img {
     width:100%;
-    
 }
 .top-wrapper {
     margin:600px 650px 200px 600px;
@@ -40,6 +39,9 @@ header {
 .top-text {
     text-align: left;
     font-size: 20px;
+}
+.top-text h1 {
+    font-weight: normal;
 }
 .top-text img {
     width:200px;
