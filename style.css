@@ -3,11 +3,12 @@
 }
 .container {
     max-width: 1170px;
-    width: 900px;
+    width: 1000px;
     margin: 0 auto;
 }
 header {
     position:absolute;
+    
     width:100%;
 }
 .header-logo img{
@@ -24,11 +25,13 @@ header {
     color:white;
 }
 .top-image {
-    height: 300px;
-    margin:0 0;
+    height: 724px;
 }
 .top-image img {
     width:100%;
+    height: 100%;
+    position:relative;
+    z-index: -10;
 }
 .top-wrapper {
     margin:600px 650px 200px 600px;
