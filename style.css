@@ -162,3 +162,17 @@ a:hover .list-txt::after {
     color:white;
     background-color:black;
 }
+.content {
+    margin: 35px 0;
+}
+.content a {
+    width: 100%;
+    text-decoration: none;
+}
+.content img {
+    float: left;
+    width: 40%;
+}
+.content h2 {
+    width: 100%;
+}
