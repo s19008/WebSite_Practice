@@ -33,10 +33,26 @@ header {
     float:left;
 }
 .header-right a {
+    text-decoration: none;
+}
+.list-txt {
+    position: relative;
     font-size:14px;
     margin-right: 35px;
-    text-decoration: none;
     color:white;
+}
+.list-txt::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    width: 0%;
+    height: 2px;
+    background: white;
+    transition: all 0.4s;
+}
+a:hover .list-txt::after {
+    width: 100%;
 }
 .top-image {
     height: 724px;
@@ -74,6 +90,7 @@ header {
     margin-bottom: 50px;
 }
 .product-title h1 {
+    font-size: 30px;
     float:left;
     font-weight:normal;
 }
@@ -109,6 +126,10 @@ header {
     padding:0 10px;
     margin-bottom: 50px;
     width:32%;
+    transition:opacity 0.5s;
+}
+.contents:hover {
+    opacity: 0.6;
 }
 .contents img {
     width: 100%;
@@ -120,4 +141,24 @@ header {
     font-size: 18px;
     font-weight: bolder;
     width: 80%;
+}
+.news-title h1 {
+    float: left;
+    font-size: 30px;
+    font-weight: normal;
+}
+.news-title a {
+    float:right;
+    font-size: 15px;
+    padding:10px 60px;
+    margin-top: 20px;
+    border:1px solid black;
+    text-decoration: none;
+    position: relative;
+    transition: color 0.5s;
+    transition: background-color 0.5s;
+}
+.news-title a:hover {
+    color:white;
+    background-color:black;
 }
