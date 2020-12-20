@@ -163,6 +163,7 @@ a:hover .list-txt::after {
     background-color:black;
 }
 .content {
+    display: inline-block;
     margin: 35px 0;
 }
 .content a {
@@ -172,7 +173,17 @@ a:hover .list-txt::after {
 .content img {
     float: left;
     width: 40%;
+    margin: 0 25px 25px 0;
 }
-.content h2 {
-    width: 100%;
+.news-txt {
+    color: black;
+}
+.news-txt h2 {
+    margin: 0 0;
+    font-size: 19px;
+    font-weight: 550;
+}
+.news-txt p {
+    font-size: 12px;
+    padding: 0 0;
 }
