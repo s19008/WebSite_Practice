@@ -2,6 +2,7 @@
     box-sizing: border-box;
 }
 body {
+    font-family:"游ゴシック", "ヒラギノ角ゴ ProN";
     margin:0;
     padding:0;
 }
@@ -65,9 +66,10 @@ a:hover .list-txt::after {
     background-color:azure;
 }
 .top-wrapper h1 {
-    margin:0 0 50px 70px;
+    text-align: center;
     color:black;
-    font-weight:normal;
+    font-weight: normal;
+    font-size: 45px;
 }
 .top-text {
     letter-spacing: 1px;
@@ -109,6 +111,10 @@ a:hover .list-txt::after {
     background-color:black;
     color:white;
 }
+.under-line {
+    background:url("images/wave-silver.png") bottom repeat-x;
+    background-size: 20px;
+}
 .arrow {
     position: absolute;
     top: 13px;
@@ -138,9 +144,13 @@ a:hover .list-txt::after {
     text-decoration: none;
 }
 .contents p {
-    font-size: 18px;
+    font-size: 20px;
     font-weight: bolder;
-    width: 80%;
+    letter-spacing: 1px;
+    display: table;
+    margin:5px auto;
+    width: 85%;
+    color: black;
 }
 .news-title h1 {
     float: left;
@@ -185,5 +195,6 @@ a:hover .list-txt::after {
 }
 .news-txt p {
     font-size: 12px;
+    color: gray;
     padding: 0 0;
 }
