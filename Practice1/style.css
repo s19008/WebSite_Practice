@@ -152,6 +152,10 @@ a:hover .list-txt::after {
     width: 85%;
     color: black;
 }
+.news-wrapper {
+    padding: 100px 0;
+    background-color:azure;
+}
 .news-title h1 {
     float: left;
     font-size: 30px;
@@ -174,16 +178,21 @@ a:hover .list-txt::after {
 }
 .content {
     display: inline-block;
-    margin: 35px 0;
+    margin-top:35px;
+    transition: opacity 0.5s;
 }
 .content a {
     width: 100%;
     text-decoration: none;
+    transition:opacity 0.5s;
+}
+.content:hover {
+    opacity: 0.6;
 }
 .content img {
     float: left;
     width: 40%;
-    margin: 0 25px 25px 0;
+    margin: 0 25px 110px 0;
 }
 .news-txt {
     color: black;
@@ -191,10 +200,14 @@ a:hover .list-txt::after {
 .news-txt h2 {
     margin: 0 0;
     font-size: 19px;
-    font-weight: 550;
+    letter-spacing: 1px;
 }
 .news-txt p {
-    font-size: 12px;
     color: gray;
-    padding: 0 0;
+}
+.date {
+    font-size: 11px;
+}
+.content-txt {
+    font-size: 13px;
 }
