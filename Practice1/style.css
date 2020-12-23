@@ -2,7 +2,7 @@
     box-sizing: border-box;
 }
 body {
-    font-family:"游ゴシック", "ヒラギノ角ゴ ProN";
+    font-family:"游ゴシック", "ヒラギノ角ゴ ProN", sans-serif;
     margin:0;
     padding:0;
 }
@@ -250,4 +250,42 @@ a:hover .list-txt::after {
 .Bookmark:hover {
     color: white;
     background-color: cornflowerblue;
+}
+.footer-list {
+    background-color:darkgrey;
+    height: 90px;
+}
+.footer-list ul {
+    list-style: none;
+    font-size: 0;
+    text-align: center;
+}
+.footer-list a {
+    display: inline-block;
+    font-family: sans-serif;
+    font-size: 14px;
+    text-decoration: none;
+    color: white;
+    margin: 0 20px;
+    line-height: 90px;
+    transition: all 0.3s;
+}
+.footer-list a:hover {
+    opacity: 0.7;
+}
+.footer-bottom {
+    height: 160px;
+    background-color: gray;
+}
+.footer-logo {
+    width: 100px;
+    margin: 20px 0 0 350px;
+}
+.footer-txt {
+    color: white;
+    float: right;
+    font-size: 10px;
+    width: 50%;
+    letter-spacing: 1px;
+    padding-top: 55px;
 }
