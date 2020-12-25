@@ -1,3 +1,17 @@
-@media(max-width: 1000px) {
-    
+@media(max-width: 1024px) {
+    header {
+        display: none;
+    }
+    .header-menu {
+        display: block;
+    }
+    .top-logo {
+        display: block;
+    }
+    .menu {
+        display: block;
+    }
+}
+@media(max-width: 540px) {
+
 }
