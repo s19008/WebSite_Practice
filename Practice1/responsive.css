@@ -2,13 +2,7 @@
     header {
         display: none;
     }
-    .header-menu {
-        display: block;
-    }
-    .top-logo {
-        display: block;
-    }
-    .menu {
+    .header-menu, .top-logo, .menu{
         display: block;
     }
 }

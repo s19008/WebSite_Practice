@@ -22,11 +22,7 @@ header {
     padding:50px 100px;
     width:100%
 }
-.top-logo {
-    position: absolute;
-    margin: 200px;
-    display: none;
-}
+
 .top-logo img {
     width: 250px;
 }
@@ -86,6 +82,11 @@ a:hover .list-txt::after {
     width: 100%;
     background-image:url("images/main_visual_111-0x0.jpg");
     background-size: cover;
+}
+.top-logo {
+    position: absolute;
+    top: 60px;
+    display: none;
 }
 .top-wrapper {
     height: 800px;
