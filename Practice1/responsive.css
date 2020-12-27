@@ -6,6 +6,17 @@
         display: block;
     }
 }
-@media(max-width: 540px) {
-
+@media(max-width: 700px) {
+    .top-text {
+        margin: 0 50px;
+    }
+    .top-text h1 {
+        text-align: left;
+    }
+    .top-wrapper {
+        padding-top: 30px;
+    }
+    .contents {
+        width: 100%;
+    }
 }

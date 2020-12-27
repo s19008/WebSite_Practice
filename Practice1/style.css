@@ -78,14 +78,16 @@ a:hover .list-txt::after {
     width: 100%;
 }
 .top-image {
-    height: 724px;
+    position: relative;
     width: 100%;
     background-image:url("images/main_visual_111-0x0.jpg");
     background-size: cover;
 }
 .top-logo {
     position: absolute;
-    top: 60px;
+    top:40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     display: none;
 }
 .top-wrapper {
@@ -93,7 +95,7 @@ a:hover .list-txt::after {
     padding:100px 0;
     background-color:azure;
 }
-.top-wrapper h1 {
+.top-text h1 {
     text-align: center;
     color:black;
     font-weight: normal;
