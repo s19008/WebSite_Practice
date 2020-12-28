@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        /*
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com
+Twitter: @rich_clark
+*/
+
+        html,
+        body,
+        div,
+        span,
+        object,
+        iframe,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        p,
+        blockquote,
+        pre,
+        abbr,
+        address,
+        cite,
+        code,
+        del,
+        dfn,
+        em,
+        img,
+        ins,
+        kbd,
+        q,
+        samp,
+        small,
+        strong,
+        sub,
+        sup,
+        var,
+        b,
+        i,
+        dl,
+        dt,
+        dd,
+        ol,
+        ul,
+        li,
+        fieldset,
+        form,
+        label,
+        legend,
+        table,
+        caption,
+        tbody,
+        tfoot,
+        thead,
+        tr,
+        th,
+        td,
+        article,
+        aside,
+        canvas,
+        details,
+        figcaption,
+        figure,
+        footer,
+        header,
+        hgroup,
+        menu,
+        nav,
+        section,
+        summary,
+        time,
+        mark,
+        audio,
+        video {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            outline: 0;
+            font-size: 100%;
+            vertical-align: baseline;
+            background: transparent;
+        }
+
+        body {
+            line-height: 1;
+        }
+
+        article,
+        aside,
+        details,
+        figcaption,
+        figure,
+        footer,
+        header,
+        hgroup,
+        menu,
+        nav,
+        section {
+            display: block;
+        }
+
+        nav ul {
+            list-style: none;
+        }
+
+        blockquote,
+        q {
+            quotes: none;
+        }
+
+        blockquote:before,
+        blockquote:after,
+        q:before,
+        q:after {
+            content: '';
+            content: none;
+        }
+
+        a {
+            margin: 0;
+            padding: 0;
+            font-size: 100%;
+            vertical-align: baseline;
+            background: transparent;
+        }
+
+        /* change colours to suit your needs */
+        ins {
+            background-color: #ff9;
+            color: #000;
+            text-decoration: none;
+        }
+
+        /* change colours to suit your needs */
+        mark {
+            background-color: #ff9;
+            color: #000;
+            font-style: italic;
+            font-weight: bold;
+        }
+
+        del {
+            text-decoration: line-through;
+        }
+
+        abbr[title],
+        dfn[title] {
+            border-bottom: 1px dotted;
+            cursor: help;
+        }
+
+        table {
+            border-collapse: collapse;
+            border-spacing: 0;
+        }
+
+        /* change border colour to suit your needs */
+        hr {
+            display: block;
+            height: 1px;
+            border: 0;
+            border-top: 1px solid #cccccc;
+            margin: 1em 0;
+            padding: 0;
+        }
+
+        input,
+        select {
+            vertical-align: middle;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+        }
+
+        .h1,
+        .h2,
+        .h3,
+        .h4,
+        .h5,
+        .h6,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: inherit;
+        }
+
+        .inner {
+            position: relative;
+            width: 1110px;
+            margin: 0 auto;
+        }
+        .inner h1 {
+            position: absolute;
+            top: 7px;
+        }
+        nav {
+            background: #343A40;
+            text-align: center;
+        }
+
+        nav ul {
+            width: 1110px;
+            margin: 0 auto;
+        }
+
+        nav ul li {
+            display: inline-block;
+        }
+
+        nav ul li a {
+            display: inline-block;
+            height: 55px;
+            line-height: 55px;
+            color: rgba(255, 255, 255, .5);
+            text-decoration: none;
+            padding: 0 35px;
+        }
+
+        .key_visual_content {
+            width: 560px;
+            height: 300px;
+            background: #fff;
+        }
+
+        header h1 img {
+            width: 280px;
+        }
+
+        header {
+            height: 100px;
+            text-align: right;    
+        }
+
+        header ul {
+            display: inline-block;
+            list-style: none;
+        }
+
+        header ul li {
+            display: inline-block;
+            text-align: left;
+        }
+
+        header ul li a {
+            display: inline-block;
+            font-size: 22px;
+            color: #fff;
+            text-decoration: none;
+            background-color: #6c757d;
+            height: 48px;
+            line-height: 48px;
+            padding: 0 15px;
+            border-radius: 5px;
+        }
+
+        header ul li h2 {
+            font-size: 13px;
+            font-weight: normal;
+            color: #6c757d;
+        }
+        
+        header ul li p {
+            font-size: 28px;
+            color: #6c757d;
+            font-weight: bold;
+        }
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="inner">
+            <h1><a href="/"><img src="images/template-logo01.png" alt="ロゴ画像"></a></h1>
+            <ul>
+                <li>
+                    <h2>お電話でのご予約はこちら</h2>
+                    <p>03-1234-5678</p>
+                </li>
+                <li>
+                    <a href="#">WEB予約</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#">MENU</a></li>
+            <li><a href="#">MENU</a></li>
+            <li><a href="#">MENU</a></li>
+            <li><a href="#">MENU</a></li>
+            <li><a href="#">MENU</a></li>
+            <li><a href="#">MENU</a></li>
+            <li><a href="#">MENU</a></li>
+            <li><a href="#">MENU</a></li>
+            <li><a href="#">MENU</a></li>
+        </ul>
+    </nav>
+
+    <div class="key_visual" style="height: 600px;">
+        <div class="inner">
+            <div class="key_visual_content">
+                <h2>Hello, world!</h2>
+
+                <p>This is a simple hero unit, a simple jumbotron-style component for calling extra attention to
+                    featured
+                    content or
+                    information.</p>
+                <hr>
+                <p>It uses utility classes for typography and spacing to space content out within the larger container.
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
