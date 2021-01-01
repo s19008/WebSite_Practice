@@ -20,6 +20,8 @@ time, mark, audio, video {
 }
 
 body {
+    padding: 0;
+    margin: 0;
     font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
     line-height:1;
 }
@@ -92,4 +94,79 @@ hr {
 
 input, select {
     vertical-align:middle;
+}
+
+/* ここまでリセットCSS */
+
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1100px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+#main {
+    width: 73%;
+    float: right;
+}
+
+#main h2{
+    position: relative;
+    font-size: 15px;
+    letter-spacing: 1px;
+    color: white;
+    background-color: #000;
+    padding: 12px 0 12px 35px;
+    margin: 25px 0 15px 0;
+}
+
+#main h3 {
+    padding: 10px 20px;
+    font-size: 15px;
+    letter-spacing: 1px;
+    border: 1px solid #ccc;
+    margin: 10px 0;
+    background: linear-gradient(to bottom, #fff 0%, #ebebeb 100%);
+}
+
+#main h4 {
+    font-size: 15px;
+    padding: 20px 0 5px 15px;
+}
+
+#main p {
+    font-size: 14px;
+    padding: 7px 15px;
+}
+
+#main a {
+    color: black;
+    font-weight: lighter;
+}
+
+.logo {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+#side-bar {
+    width: 22%;
+    float: left;
+    margin-top: 22px;
+}
+
+.box1 {
+    margin-top: 8px;
+}
+
+footer {
+    color: white;
+    text-align: center;
+    background-color: black;
+    overflow: hidden;
+    clear: both;
 }
