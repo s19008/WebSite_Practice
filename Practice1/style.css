@@ -199,8 +199,7 @@ a:hover .list-txt::after {
     border:1px solid black;
     text-decoration: none;
     position: relative;
-    transition: color 0.5s;
-    transition: background-color 0.5s;
+    transition: all 0.5s;
 }
 .news-title a:hover {
     color:white;

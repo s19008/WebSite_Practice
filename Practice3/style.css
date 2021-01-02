@@ -154,20 +154,98 @@ input, select {
 }
 
 #side-bar {
-    width: 22%;
+    width: 23%;
     float: left;
-    margin-top: 22px;
-    background-color: #ccc;
+    margin-top: 20px;
+}
+
+#side-bar h2 {
+    font-size: 14px;
+    padding: 4px 10px;
+    border-left: 3px solid #000;
+    margin-bottom: 15px;
+}
+
+#side-bar ul {
+    list-style: none;
+}
+
+#side-bar a {
+    display: inline-block;
+    width: 100%;
+    font-size: 14px;
+    text-decoration: none;
+    color: #333;
+    background-color: #fff;
+    padding: 9px 10px;
+    margin-bottom: 1px;
+    transition: all 0.4s;
+}
+
+#side-bar a:hover {
+    background-color: #000;
+    color: #fff;
 }
 
 .box1 {
-    margin-top: 8px;
+    margin-top: 15px;
+    padding: 18px 17px;
+    background-color: #E4E4E4;
+    border: 1px solid #ccc;
+}
+
+.box1 p {
+    line-height: 2;
+    font-size: 14px;
+    font-weight: normal;
+}
+.box2 {
+    margin-top: 15px;
+}
+
+.box2 p {
+    font-size: 14px;
+    padding-top: 5px;
+}
+.news {
+    margin-bottom: 90px;
+}
+dl {
+    height: 150px;
+    overflow: scroll;
+}
+.list {
+    padding: 6px 0;
+    margin-left: 15px;
+    border-bottom: 1px solid #E5E5E5;
+}
+.news dt {
+    display: inline-block;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.news dd {
+    display: inline-block;
+    font-size: 14px;
+    padding-left: 10px;
+}
+
+.mark {
+    font-size: 10px;
+    color: #fff;
+    padding: 1px 4px;
+    background-color: #FF0000;
+    border-radius: 2px;
 }
 
 footer {
+    height: 50px;
     color: white;
     text-align: center;
+    font-size: 12px;
     background-color: black;
     overflow: hidden;
     clear: both;
+    line-height: 2.2;
 }
