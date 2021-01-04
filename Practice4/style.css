@@ -114,17 +114,26 @@ body {
 }
 
 header {
+    position: fixed;
+    top: 0;
+    background-color: #fff;
     height: 80px;
+    width: 100%;
+    z-index: 10;
 }
 .logo img{
     width: 250px;
 }
 header h1 {
+    position: fixed;
+    left:0;
     float: left;
     line-height: 102px;
     margin-left: 25px;
 }
 header nav {
+    position: fixed;
+    right: 0;
     float: right;
     list-style: none;
     line-height: 80px;
@@ -154,7 +163,119 @@ nav a:hover {
 }
 h2 {
     color: #fff;
-    padding: 13px 21px;
+    padding: 10px 21px;
+    font-weight: normal;
+    font-size: 19px;
     background-color: #b99566;
+    margin-top: 30px;
+}
+#Information {
+    margin-bottom: 50px;
+}
+.info {
+    padding: 10px;
+    font-size: 14px;
+    color: #54514c;
+}
+.info time{
+    display: inline-block;
+    margin-right: 15px;
+}
+.info p {
+    position: relative;
+    display: inline-block;
+    padding-left: 20px;
+}
+.info p::before {
+    content: "";
+    width: 0;
+    height: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: auto;
+    border: 6px solid transparent;
+    border-left: 8px solid #54514c;
+}
+.even {
+    background-color: #f5f3f0;
+}
+#Gourmet article {
+    float: left;
+    width: 50%;
+    padding: 10px 10px 10px 0;
+}
+.food-visual img {
+    width: 100%;
+}
+.food-visual {
+    display: inline-block;
+}
+.food-name {
+    width: 100%;
+    float: left;
+    border-left: 4px solid #000; 
+    margin: 10px 0;
+    padding: 5px 0;
+}
+.food-name h3 {
+    margin-left: 10px;
+    color:#54514c;
+    font-size: 20px;
+}
+.food-name ul{
+    list-style: none;
+    margin-left: 5px;
+}
 
+.food-name li {
+    float: left;
+    font-size: 12px;
+    color: #fff;
+    background-color: #B99566;
+    border-radius: 4px;
+    padding: 5px 10px;
+    margin: 5px;
+}
+
+article p {
+    clear: both;
+    color:#54514c;
+}
+
+article p::before {
+    content: "-";
+    padding: 0 7px;
+    color:#54514c;
+}
+
+.footer-list {
+    clear: both;
+    height: 75px;
+    width: 100%;
+    text-align: center;
+    background-color: #54514c;
+    line-height: 75px;
+    margin-top: 60px;
+}
+
+.footer-list ul{
+    list-style: none;
+}
+
+.footer-list li {
+    display: inline-block;
+}
+
+.footer-list a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 30px;
+    margin: 0 10px;
+    border: 1px solid #fff;
+    border-radius: 2px;
+}
+
+footer {
+    clear: both;
 }
