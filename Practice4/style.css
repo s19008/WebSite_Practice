@@ -274,8 +274,25 @@ article p::before {
     margin: 0 10px;
     border: 1px solid #fff;
     border-radius: 2px;
+    transition: all 0.4s;
+}
+
+.footer-list a:hover {
+    background-color: #fff;
+    color: #54514c;
+    border: 1px solid #54514c;
 }
 
 footer {
     clear: both;
+    text-align: center;
+}
+.footer-logo img{
+    width: 200px;
+    padding: 18px 0;
+}
+footer p {
+    font-size: 12px;
+    color: #54514c;
+    padding-bottom: 12px;
 }
