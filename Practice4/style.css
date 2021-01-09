@@ -300,7 +300,6 @@ article p::before {
 .footer-list a:hover {
     background-color: #fff;
     color: #54514c;
-    border: 1px solid #54514c;
 }
 
 footer {
