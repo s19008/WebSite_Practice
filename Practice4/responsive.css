@@ -1,9 +1,23 @@
 @media (max-width: 766px) {
+    header {
+        height: 60px;
+    }
+    header h1 {
+        line-height: 77px;
+        margin-left: 15px;
+    }
+    .logo img {
+        width: 200px;
+    }
     header nav {
         display: none;
     }
+    menu {
+        display: block;
+    }
     .main-visual {
         padding: 0;
+        margin-top: 60px;
     }
     h2 {
         font-size: 16px;
@@ -33,8 +47,7 @@
     }
     .footer-list li {
         display: block;
-    }
-    .footer-list a {
-        width: 120px;
+        width: 280px;
+        margin: 10px auto;
     }
 }
