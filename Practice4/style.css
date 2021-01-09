@@ -157,11 +157,13 @@ nav a:hover {
 }
 
 .main-visual {
-    margin: 80px 9px 0 9px;
+    margin-top: 80px;
+    padding: 0 9px;
     width: 100%;
 }
 .main-visual img {
     width: 100%;
+    vertical-align: top;
 }
 h2 {
     color: #fff;
@@ -202,16 +204,25 @@ h2 {
 .even {
     background-color: #f5f3f0;
 }
+main {
+    padding-bottom: 50px;
+}
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
 #Gourmet article {
     float: left;
     width: 50%;
-    padding: 10px 10px 10px 0;
+    padding: 0 10px 30px 10px;
 }
 .food-visual img {
     width: 100%;
 }
 .food-visual {
     display: inline-block;
+    width: 100%;
 }
 .food-name {
     width: 100%;
@@ -258,7 +269,6 @@ article p::before {
     text-align: center;
     background-color: #54514c;
     line-height: 75px;
-    margin-top: 60px;
 }
 
 .footer-list ul{

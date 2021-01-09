@@ -2,5 +2,39 @@
     header nav {
         display: none;
     }
-    
+    .main-visual {
+        padding: 0;
+    }
+    h2 {
+        font-size: 16px;
+        margin: 0;
+    }
+    #Information {
+        margin: 0;
+    }
+    .info time{
+        display: block;
+        font-size: 12px;
+        padding-bottom: 10px;
+    }
+    .info p {
+        font-size: 15px;
+    }
+    #Gourmet article {
+        width: 100%;
+        padding: 10px;
+    }
+    .food-name h3 {
+        font-size: 17px;
+    }
+    .footer-list {
+        height: 260px;
+        line-height: normal;
+    }
+    .footer-list li {
+        display: block;
+    }
+    .footer-list a {
+        width: 120px;
+    }
 }
