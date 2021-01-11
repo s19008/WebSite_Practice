@@ -104,10 +104,38 @@ input, select {
 body {
     padding: 0;
     margin: 0;
+    font-family: "Hiragino Kaku Gothic Pro", Meiryo, Osaka, "MS PGothic", sans-serif;
 }
 
-.container {
-    max-width: 1100px;
-    width: 100%;
-    margin: 0 auto;
+
+}
+header {
+    position: fixed;
+    height: 75px;
+}
+header h1 {
+    position: fixed;
+    padding: 15px 10px;
+    top: 0;
+    float: left;
+}
+header h1 img {
+    width: 130px;
+}
+header p {
+    position: fixed;
+    top: 40px;
+    left: 145px;
+    float: left;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.form {
+    position: fixed;
+    top: 30px;
+    right: 50px;
+}
+.top {
+    margin-top: 75px;
 }
