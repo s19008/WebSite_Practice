@@ -106,9 +106,7 @@ body {
     font-family: "Hiragino Kaku Gothic Pro", Meiryo, Osaka, "MS PGothic", sans-serif;
 }
 header {
-    position: fixed;
-    top: 0;
-    width: 100%;
+    text-align: right;
     height: 75px;
 }
 .clearfix::after {
@@ -117,26 +115,33 @@ header {
     clear: both;
 }
 .inner {
-    position: fixed;
-    top: 20px;
-    max-width: 1170px;
+    position: relative;
+    width: 1170px;
+    height: 100%;
+    margin: 0 auto;
 }
 .inner img{
+    position: relative;
+    top: 8px;
     width: 125px;
 }
 .inner h1 {
-    float: left;
-}
-.form {
-    float: right;
+    position: absolute;
+    top: 8px;
+    left: 0;
+    letter-spacing: 2px;
+    color: #333;
+    font-size: 14px;
 }
 .form a {
     display: inline-block;
     text-decoration: none;
-    font-size: 12px;
+    font-size: 15px;
+    letter-spacing: 1px;
     color: #fff;
     padding: 15px 40px;
-    border-radius: 20px;
+    margin-top: 15px;
+    border-radius: 22px;
     background-color: #da6b64;
 }
 .form a:hover {
@@ -145,17 +150,53 @@ header {
 
 .main-visual {
     position: relative;
-    margin-top: 75px;
     height: 500px;
+    background: url("images/main.jpg") no-repeat  center center / cover;
     width: 100%;
-    background-image: url("images/mainsp.jpg");
-    background-size: cover;
+}
+.main-visual-ttl {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    transform: translateY(-50%);
+    text-align: center;
+    line-height: 2;
+    color: #333;
 }
 .main-visual-ttl h2 {
-    position: absolute;
-    text-align: center;
+    font-size: 28px;
+    font-weight: 600;
 }
-.top img {
-    position: absolute;
-    width: 200px;
+.main-visual-ttl img {
+    width: 300px;
+    padding: 10px 0 20px 0;
+}
+.main-visual-ttl p {
+    line-height: 1;
+    font-weight: 600;
+    font-size: 20px;
+}
+footer {
+    height: 180px;
+    background-color: #ECECEC;
+    text-align: center;
+    color: #333;
+}
+.footer-text {
+    padding: 40px 0;
+    line-height: 1.5;
+}
+.footer-last {
+    padding-top: 30px;
+}
+footer p {
+    font-weight: 300;
+    font-size: 11px;
+    letter-spacing: 1px;
+}
+footer a{
+    text-decoration: none;
+}
+footer a:hover {
+    text-decoration: underline;
 }
