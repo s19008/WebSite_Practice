@@ -200,3 +200,12 @@ footer a{
 footer a:hover {
     text-decoration: underline;
 }
+.top-text {
+    height: 610px;
+    background-color: #EBB94D;
+    color: #fff;
+}
+.top-text p {
+    font-weight: 600;
+    font-size: 20px;
+}
