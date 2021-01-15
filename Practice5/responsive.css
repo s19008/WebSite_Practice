@@ -1,0 +1,30 @@
+@media (max-width: 1190px) {
+    .inner h1 {
+        font-size: 12px;
+        letter-spacing: 0;
+    }
+    .inner a {
+        font-size: 12px;
+        letter-spacing: 0;
+    }
+    .main-visual-ttl h2 {
+        font-size: 24px;
+    }
+    .main-visual-ttl p {
+        font-size: 16px;
+    }
+    .top-text {
+        height: 470px;
+    }
+    .top-text p {
+        font-size: 16px;
+    }
+    .top-button a {
+        font-size: 18px;
+        padding: 30px 350px;
+        margin: 0;
+    }
+    .top-text h3 {
+        font-size: 18px;
+    }
+}
