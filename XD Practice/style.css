@@ -1,4 +1,5 @@
 @charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap");
 html, body, div, span, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 abbr, address, cite, code,
@@ -105,6 +106,7 @@ input, select {
 body {
   padding: 0;
   margin: 0;
+  font-family: 'Noto Sans JP', sans-serif;
 }
 
 .container {
@@ -115,10 +117,60 @@ body {
 #header {
   position: fixed;
   top: 0;
+  width: 100%;
   height: 94px;
+  background-color: #FFF;
+  z-index: 9999;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
 }
 
 #header .inner {
-  width: 100%;
   display: flex;
+  line-height: 94px;
+}
+
+#header .inner h1 {
+  font-size: 24px;
+  padding-left: 20px;
+  color: #000;
+}
+
+#header .inner h1 img {
+  position: relative;
+  top: 13px;
+  padding-right: 8px;
+}
+
+#header .inner a {
+  text-decoration: none;
+}
+
+#header .inner .header-nav {
+  margin-left: 160px;
+  color: #000;
+}
+
+#header .inner .header-nav ul {
+  display: flex;
+  font-weight: bold;
+}
+
+#header .inner .header-nav ul li {
+  margin-right: 46px;
+  font-size: 16px;
+}
+
+.btn a {
+  display: inline-block;
+  text-decoration: none;
+  padding: 19px 30px;
+  line-height: 0;
+  background: transparent linear-gradient(90deg, #FA41CC 0%, #6020B0 100%) 0% 0% no-repeat padding-box;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.29);
+  color: #fff;
+  border-radius: 10px;
+}
+
+.main-visual {
+  margin-top: 94px;
 }
