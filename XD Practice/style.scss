@@ -115,4 +115,8 @@ body {
     position: fixed;
     top: 0;
     height: 94px;
+    .inner {
+        width: 100%;
+        display: flex;
+    }
 }
