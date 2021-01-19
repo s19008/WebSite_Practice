@@ -121,10 +121,11 @@ body {
   height: 94px;
   background-color: #FFF;
   z-index: 9999;
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.29);
 }
 
 #header .inner {
+  position: relative;
   display: flex;
   line-height: 94px;
 }
@@ -132,7 +133,6 @@ body {
 #header .inner h1 {
   font-size: 24px;
   padding-left: 20px;
-  color: #000;
 }
 
 #header .inner h1 img {
@@ -143,11 +143,20 @@ body {
 
 #header .inner a {
   text-decoration: none;
+  color: #000;
+}
+
+#header .inner .btn {
+  position: absolute;
+  right: 21px;
+}
+
+#header .inner .btn a {
+  color: #FFF;
 }
 
 #header .inner .header-nav {
   margin-left: 160px;
-  color: #000;
 }
 
 #header .inner .header-nav ul {
@@ -163,7 +172,8 @@ body {
 .btn a {
   display: inline-block;
   text-decoration: none;
-  padding: 19px 30px;
+  font-size: 14px;
+  padding: 18px 35px;
   line-height: 0;
   background: transparent linear-gradient(90deg, #FA41CC 0%, #6020B0 100%) 0% 0% no-repeat padding-box;
   box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.29);
@@ -172,5 +182,37 @@ body {
 }
 
 .main-visual {
+  position: relative;
+  height: 674px;
   margin-top: 94px;
+}
+
+.main-visual .manager {
+  position: relative;
+  top: 131px;
+  left: 676px;
+  max-width: 518px;
+  width: 50%;
+}
+
+.main-visual .top-text {
+  position: absolute;
+  top: 159px;
+  width: 352px;
+  text-align: left;
+}
+
+.main-visual .top-text h2 {
+  font-size: 32px;
+  font-weight: bold;
+  line-height: 46px;
+  margin-bottom: 44px;
+}
+
+.main-visual .top-text p {
+  width: 254px;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 24px;
+  margin-bottom: 45px;
 }
