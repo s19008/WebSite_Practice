@@ -104,6 +104,7 @@ input, select {
 }
 
 body {
+    position: relative;
     padding: 0;
     margin: 0;
     font-family: 'Noto Sans JP', sans-serif;
@@ -172,33 +173,41 @@ body {
     border-radius: 10px;
 }
 .main-visual {
-    position: relative;
-    height: 674px;
-    margin-top: 94px;
-    .manager {
+    .container {
         position: relative;
-        top: 131px;
-        left: 676px;
-        max-width: 518px;
-        width: 50%;
-    }
-    .top-text {
-        position: absolute;
-        top: 159px;
-        width: 352px;
-        text-align: left;
-        h2 {
-            font-size: 32px;
-            font-weight: bold;
-            line-height: 46px;
-            margin-bottom: 44px;
+        height: 674px;
+        margin-top: 94px;
+        .manager {
+            position: absolute;
+            top: 131px;
+            right: 0;
+            max-width: 518px;
+            width: 100%;
         }
-        p {
-            width: 254px;
-            font-size: 16px;
-            font-weight: bold;
-            line-height: 24px;
-            margin-bottom: 45px;
+        .circle {
+            position: absolute;
+            top: -94px;
+            right: -172px;
+            z-index: -1;
+        }
+        .top-text {
+            position: absolute;
+            top: 159px;
+            width: 352px;
+            text-align: left;
+            h2 {
+                font-size: 32px;
+                font-weight: bold;
+                line-height: 46px;
+                margin-bottom: 44px;
+            }
+            p {
+                width: 254px;
+                font-size: 16px;
+                font-weight: bold;
+                line-height: 24px;
+                margin-bottom: 45px;
+            }
         }
     }
 }
