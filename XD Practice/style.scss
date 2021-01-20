@@ -106,7 +106,7 @@ input, select {
 body {
     position: relative;
     padding: 0;
-    margin: 0;
+    margin: 0; 
     font-family: 'Noto Sans JP', sans-serif;
 }
 
@@ -174,25 +174,30 @@ body {
 }
 .main-visual {
     .container {
+        max-width: 1366px;
         position: relative;
         height: 674px;
         margin-top: 94px;
+        overflow: hidden;
         .manager {
             position: absolute;
             top: 131px;
-            right: 0;
+            right: 172px;
             max-width: 518px;
             width: 100%;
         }
         .circle {
             position: absolute;
-            top: -94px;
-            right: -172px;
+            top: -125px;
+            left: 743px;
+            max-width: 708px;
+            width: 100%;
             z-index: -1;
         }
         .top-text {
             position: absolute;
             top: 159px;
+            left: 192px;
             width: 352px;
             text-align: left;
             h2 {
