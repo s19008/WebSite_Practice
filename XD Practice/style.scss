@@ -172,47 +172,64 @@ body {
     color: #fff;
     border-radius: 10px;
 }
-.main-visual {
-    .container {
-        max-width: 1366px;
-        position: relative;
-        height: 674px;
-        margin-top: 94px;
-        overflow: hidden;
-        .manager {
-            position: absolute;
-            top: 131px;
-            right: 172px;
-            max-width: 518px;
-            width: 100%;
-        }
-        .circle {
-            position: absolute;
-            top: -125px;
-            left: 743px;
-            max-width: 708px;
-            width: 100%;
-            z-index: -1;
-        }
-        .top-text {
-            position: absolute;
-            top: 159px;
-            left: 192px;
-            width: 352px;
-            text-align: left;
-            h2 {
-                font-size: 32px;
-                font-weight: bold;
-                line-height: 46px;
-                margin-bottom: 44px;
+#main {
+    height: 6647px;
+    .main-visual {
+        margin-bottom: 71px;
+        .container {
+            max-width: 1366px;
+            position: relative;
+            height: 674px;
+            margin-top: 94px;
+            overflow: hidden;
+            .manager {
+                position: absolute;
+                top: 131px;
+                right: 172px;
+                max-width: 518px;
+                width: 100%;
             }
-            p {
-                width: 254px;
-                font-size: 16px;
-                font-weight: bold;
-                line-height: 24px;
-                margin-bottom: 45px;
+            .circle {
+                position: absolute;
+                top: -125px;
+                right: -85px;
+                max-width: 708px;
+                z-index: -1;
+            }
+            .top-text {
+                position: absolute;
+                top: 159px;
+                left: 192px;
+                width: 352px;
+                text-align: left;
+                h2 {
+                    font-size: 32px;
+                    font-weight: bold;
+                    line-height: 46px;
+                    margin-bottom: 44px;
+                }
+                p {
+                    width: 254px;
+                    font-size: 16px;
+                    font-weight: bold;
+                    line-height: 24px;
+                    margin-bottom: 45px;
+                }
+            }
+        }
+    }
+    .fetures {
+        color: #333;
+        .container {
+            .title {
+                h2 {
+                    font-size: 32px;
+                }
+                p {
+                    
+                }
             }
         }
     }
 }
+
