@@ -112,7 +112,8 @@ body {
 
 .container {
   max-width: 1022px;
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 #header {
@@ -183,7 +184,30 @@ body {
 }
 
 #main {
+  background-image: url("images/楕円形 1.png");
+  background-position: top -150px right -120px;
+  background-size: auto;
+  background-repeat: no-repeat;
+  position: relative;
+  max-width: 1366px;
   height: 6647px;
+}
+
+#main .title {
+  text-align: center;
+  padding-top: 55px;
+}
+
+#main .title h2 {
+  font-size: 32px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+#main .title p {
+  font-size: 16px;
+  font-weight: bold;
+  color: #3BA6C9;
 }
 
 #main .main-visual {
@@ -195,7 +219,6 @@ body {
   position: relative;
   height: 674px;
   margin-top: 94px;
-  overflow: hidden;
 }
 
 #main .main-visual .container .manager {
@@ -204,14 +227,6 @@ body {
   right: 172px;
   max-width: 518px;
   width: 100%;
-}
-
-#main .main-visual .container .circle {
-  position: absolute;
-  top: -125px;
-  right: -85px;
-  max-width: 708px;
-  z-index: -1;
 }
 
 #main .main-visual .container .top-text {
@@ -237,10 +252,7 @@ body {
   margin-bottom: 45px;
 }
 
-#main .fetures {
-  color: #333;
-}
-
-#main .fetures .container .title h2 {
-  font-size: 32px;
+#main .price {
+  height: 744px;
+  background-color: #EEFBFB;
 }
