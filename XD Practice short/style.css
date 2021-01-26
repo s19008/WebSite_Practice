@@ -183,8 +183,9 @@ body {
 }
 
 .main .challenge {
-  height: 669px;
+  height: auto;
   width: 100%;
+  margin-bottom: 88px;
 }
 
 .main .challenge .challenge-inner {
@@ -253,4 +254,60 @@ body {
 
 .main .challenge .challenge-inner .more:hover {
   opacity: 0.7;
+}
+
+.footer {
+  height: auto;
+  width: 100%;
+}
+
+.footer .footer-visual {
+  height: 455px;
+  width: 100%;
+  background-image: url("images/tim-bogdanov-4uojMEdcwI8-unsplash.png");
+  background-size: cover;
+  color: #FFF;
+  text-align: center;
+}
+
+.footer .footer-visual h2 {
+  font-size: 36px;
+  padding: 59px 0 47px 0;
+}
+
+.footer .footer-visual p {
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 28px;
+  margin-bottom: 50px;
+}
+
+.footer .footer-visual a {
+  text-decoration: none;
+  padding: 19px 25px;
+  color: #FFF;
+  font-size: 16px;
+  background-color: #83032A;
+  border-radius: 5px;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.29);
+  margin-bottom: 44px;
+  opacity: 0.8;
+  transition: all 0.3s;
+}
+
+.footer .footer-visual a:hover {
+  opacity: 1;
+}
+
+.footer .footer-text {
+  height: 80px;
+  background-color: #333;
+}
+
+.footer .footer-text p {
+  color: #FFF;
+  line-height: 80px;
+  text-align: center;
+  font-size: 14px;
+  font-weight: bold;
 }
