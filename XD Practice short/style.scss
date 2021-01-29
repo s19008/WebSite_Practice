@@ -122,7 +122,7 @@ $shadow: 0px 3px 6px rgba(0, 0, 0, 0.29);
 .header {
     position: fixed;
     top: 0;
-    width: 100%;
+    width: 100vw;
     height: 80px;
     background-color: #FFF;
     z-index: 9999;
@@ -148,7 +148,6 @@ $shadow: 0px 3px 6px rgba(0, 0, 0, 0.29);
                 a {
                     color: #333;
                     text-decoration: none;
-                    font-size: 16px;
                     font-weight: bold;
                     transition: all 0.4s;
                     &:hover {
@@ -198,13 +197,20 @@ $shadow: 0px 3px 6px rgba(0, 0, 0, 0.29);
             }
             .contents {
                 display: flex;
+                flex-direction: row;
                 .content {
                     position: relative;
+                    display: flex;
+                    flex-direction: column;
                     margin-right: 25px;
                     height: 336px;
-                    width: 310px;
+                    width: 33%;
                     box-shadow: $shadow;
                     text-align: left;
+                    img {
+                        width: 100%;
+                        max-width: 480px;
+                    }
                     a {
                         display: inline-block;
                         text-decoration: none;
@@ -218,7 +224,7 @@ $shadow: 0px 3px 6px rgba(0, 0, 0, 0.29);
                             font-size: 18px;
                             font-weight: bold;
                             line-height: 27px;
-                            padding: 20px;
+                            padding: 18px 18px 36px 18px;
                         }
                     }
                     .datetime {

@@ -1,0 +1,61 @@
+@media screen and (max-width: 767px) {
+    header {
+        .header-inner {
+            nav {
+                ul {
+                    li {
+                        a {
+                            font-size: 12px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .main {
+        .challenge {
+            .challenge-inner {
+                .contents {
+                    flex-direction: column;
+                    .content {
+                        width: 100%;
+                        margin-bottom: 20px;
+                        text-align: center;
+                        height: 400px;
+                        img {
+                            margin: auto;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 480px) {
+    .main {
+        .main-visual {
+            .main-text {
+                h2 {
+                    width: 200px;
+                    margin: auto;
+                }
+            }
+        }
+        .challenge {
+            .challenge-inner {
+                .contents {
+                    .content {
+                        text-align: left;
+                        height: 400px;
+                        img {
+                            margin: 0;
+                        }
+                    }
+                }
+                .more {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
