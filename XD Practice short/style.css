@@ -167,6 +167,7 @@ body {
   margin-top: 80px;
   background-image: url("images/austin-distel-wawEfYdpkag-unsplash.png");
   background-size: cover;
+  background-position: center;
   border: 1px solid #707070;
   color: #FFF;
   display: table;
@@ -258,6 +259,7 @@ body {
 .main .challenge .challenge-inner .more {
   display: inline-block;
   text-decoration: none;
+  color: #333;
   font-size: 18px;
   font-weight: bold;
   padding: 17px 110px;
@@ -280,6 +282,7 @@ body {
   width: 100%;
   background-image: url("images/tim-bogdanov-4uojMEdcwI8-unsplash.png");
   background-size: cover;
+  background-position: center;
   color: #FFF;
   text-align: center;
 }
