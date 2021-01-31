@@ -1,1 +1,128 @@
-null
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap");
+body {
+  font-family: 'Noto Sans JP', sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 130px;
+  background-color: #FFF;
+  z-index: 9999;
+}
+
+.header-inner {
+  max-width: 1180px;
+  width: 100%;
+  height: 100%;
+  margin-right: 0;
+  margin-left: 0;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-inner-logo {
+  display: inline-block;
+}
+
+.header-inner-copy {
+  text-align: right;
+  line-height: 2;
+}
+
+.header-inner-copy-txt {
+  font-size: 14px;
+  color: #444;
+}
+
+.header-inner-copy .tel {
+  font-size: 24px;
+  font-weight: bold;
+  color: #21A937;
+}
+
+.header-inner-copy .tel img {
+  position: relative;
+  top: 3px;
+  right: 3px;
+  width: 22px;
+}
+
+.mv {
+  height: 947px;
+  margin-top: 130px;
+  background-color: darkgrey;
+}
+
+.mv-inner {
+  position: relative;
+  top: 133px;
+  left: 15%;
+  background-color: #444;
+  width: 284px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.mv-inner-copy {
+  writing-mode: vertical-rl;
+  height: 565px;
+  font-size: 28px;
+  font-weight: bold;
+  padding: 18px 37px;
+  color: #444;
+  background-color: #FFF;
+}
+
+.mv-inner-copy .green {
+  color: #21A937;
+}
+
+.intoro {
+  height: 664px;
+}
+
+.intoro-inner {
+  max-width: 1180px;
+  width: 100%;
+  height: 100%;
+  margin-right: 0;
+  margin-left: 0;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+
+.intoro-inner-copy {
+  color: #444;
+  margin-left: 31px;
+}
+
+.intoro-inner-copy-title {
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 2.5;
+}
+
+.intoro-inner-copy-title .marker-green {
+  background: linear-gradient(transparent 70%, #21A937 0%);
+}
+
+.intoro-inner-copy-txt {
+  font-size: 16px;
+  line-height: 38px;
+}
+
+.intoro-inner-visual {
+  background-color: #444;
+  width: 55%;
+}
