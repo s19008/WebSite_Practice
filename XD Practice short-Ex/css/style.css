@@ -74,6 +74,12 @@ a {
   color: #444;
 }
 
+@media (max-width: 900px) {
+  .header-inner-copy-txt {
+    font-size: 13px;
+  }
+}
+
 .mv {
   height: 947px;
   margin-top: 130px;
@@ -109,6 +115,12 @@ a {
   height: 664px;
 }
 
+@media (max-width: 900px) {
+  .intoro {
+    height: 700px;
+  }
+}
+
 .intoro-inner {
   max-width: 1180px;
   width: 100%;
@@ -122,9 +134,21 @@ a {
   flex-direction: row;
 }
 
+@media (max-width: 900px) {
+  .intoro-inner {
+    flex-direction: column;
+  }
+}
+
 .intoro-inner-copy {
   color: #444;
   margin-left: 31px;
+}
+
+@media (max-width: 900px) {
+  .intoro-inner-copy {
+    margin: 50px 0 0 0;
+  }
 }
 
 .intoro-inner-copy-title {
@@ -132,6 +156,12 @@ a {
   font-weight: bold;
   line-height: 2.5;
   padding-bottom: 20px;
+}
+
+@media (max-width: 900px) {
+  .intoro-inner-copy-title {
+    text-align: center;
+  }
 }
 
 .intoro-inner-copy-title .marker-green {
@@ -146,6 +176,13 @@ a {
 .intoro-inner-visual {
   width: 55%;
   border-radius: 10px;
+}
+
+@media (max-width: 900px) {
+  .intoro-inner-visual {
+    width: 70%;
+    margin-bottom: 50px;
+  }
 }
 
 .intoro-inner-visual img {
@@ -226,6 +263,12 @@ a {
   }
 }
 
+@media (max-width: 540px) {
+  .contents-inner-card-box .card-copy-work {
+    font-size: 16px;
+  }
+}
+
 .notice {
   width: 100%;
   background-color: #f5fcf8;
@@ -254,7 +297,13 @@ a {
 
 @media (max-width: 900px) {
   .notice-inner .wrapper {
-    height: 700px;
+    height: 800px;
+  }
+}
+
+@media (max-width: 540px) {
+  .notice-inner .wrapper {
+    height: 1000px;
   }
 }
 
@@ -307,6 +356,18 @@ a {
   font-size: 16px;
   font-weight: bold;
   color: #444;
+}
+
+@media (max-width: 900px) {
+  .notice-inner .wrapper .info-copy {
+    line-height: 2;
+  }
+}
+
+@media (max-width: 540px) {
+  .notice-inner .wrapper .info-copy {
+    font-size: 18px;
+  }
 }
 
 .notice-inner .wrapper .more-btn {
@@ -396,6 +457,12 @@ a {
   border-bottom: 2px solid #e7e7e7;
 }
 
+@media (max-width: 540px) {
+  .footer-inner .footer-copy .footer-info {
+    font-size: 13px;
+  }
+}
+
 .footer-inner .footer-copy .footer-info-table {
   margin: 15px 0;
 }
@@ -413,6 +480,12 @@ a {
   padding: 6px 15px;
   display: block;
   border-left: 2px solid #e7e7e7;
+}
+
+@media (max-width: 540px) {
+  .footer-inner .footer-copy .footer-info-table tr td {
+    padding: 6px 5px;
+  }
 }
 
 .footer-inner .footer-copy .footer-info-table tr .last-td {

@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap");
 
 $tab: 900px;
-$sp: 490px;
+$sp: 540px;
 
 @mixin tab  {
     @media (max-width: ($tab)) {
@@ -73,6 +73,9 @@ a {
             &-txt {
                 font-size: 14px;
                 color: #444;
+                @include tab {
+                    font-size: 13px;
+                }
             }
         }
     }
@@ -106,6 +109,9 @@ a {
 }
 .intoro {
     height: 664px;
+    @include tab {
+        height:  700px;
+    }
     &-inner {
         max-width: 1180px;
         width: 100%;
@@ -117,14 +123,23 @@ a {
         justify-content: space-between;
         align-items: center;
         flex-direction: row;
+        @include tab {
+            flex-direction: column;
+        }
         &-copy {
             color: #444;
             margin-left: 31px;
+            @include tab {
+                margin: 50px 0 0 0;
+            }
             &-title {
                 font-size: 24px;
                 font-weight: bold;
                 line-height: 2.5;
                 padding-bottom: 20px;
+                @include tab {
+                    text-align: center;
+                }
                 .marker-green {
                     background: linear-gradient(transparent 60%, #99e5a5 0%);
                 }
@@ -137,6 +152,10 @@ a {
         &-visual {
             width: 55%;
             border-radius: 10px;
+            @include tab {
+                width: 70%;
+                margin-bottom: 50px;
+            }
             img {
                 width: 100%;
             }
@@ -198,6 +217,9 @@ a {
                         @include tab {
                             font-size: 20px;
                         };
+                        @include sp {
+                            font-size: 16px;
+                        }
                     }
                 }
             }
@@ -225,8 +247,11 @@ a {
             border-radius: 30px;
             position: relative;
             @include tab {
-                height: 700px;
+                height: 800px;
             };
+            @include sp {
+                height: 1000px;
+            }
             .info {
                 display: flex;
                 flex-direction: row;
@@ -263,6 +288,12 @@ a {
                     font-size: 16px;
                     font-weight: bold;
                     color: #444;
+                    @include tab {
+                        line-height: 2;
+                    }
+                    @include sp {
+                        font-size: 18px;
+                    }
                 }
             }
             .more-btn {
@@ -298,12 +329,12 @@ a {
         align-items: center;
         @include tab {
             flex-direction: column;
-        }
+        };
         .map {
             width: 50%;
             @include tab {
                 width: 85%;
-            }
+            };
         }
         .footer-copy {
             margin-left: 40px;
@@ -316,7 +347,7 @@ a {
             @include tab {
                 width: 85%;
                 margin: 0;
-            }
+            };
             &-logo {
                 max-width: 263px;
                 width: 100%;
@@ -332,6 +363,9 @@ a {
                 font-size: 14px;
                 border-top: 2px solid #e7e7e7;
                 border-bottom: 2px solid #e7e7e7;
+                @include sp {
+                    font-size: 13px;
+                }
                 &-table {
                     margin: 15px 0;
                     tr {
@@ -344,6 +378,9 @@ a {
                             padding: 6px 15px;
                             display: block;
                             border-left: 2px solid #e7e7e7;
+                            @include sp {
+                                padding: 6px 5px;
+                            };
                         }
                         .last-td {
                             margin-bottom: 15px;
@@ -365,7 +402,7 @@ a {
                     text-align: center;
                     margin-top: 40px;
                     font-size: 15px;
-                }
+                };
                 &-txt {
                     color: #444;
                 }
