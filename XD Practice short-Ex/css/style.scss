@@ -1,10 +1,27 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap");
 
+$tab: 900px;
+$sp: 490px;
+
+@mixin tab  {
+    @media (max-width: ($tab)) {
+        @content;
+    }
+}
+@mixin sp {
+    @media (max-width: ($sp)) {
+        @content;
+    }
+}
+
 body {
     font-family: "Noto Sans JP", sans-serif;
 }
 a {
     text-decoration: none;
+}
+* {
+    box-sizing: border-box;
 }
 
 .tel {
@@ -40,11 +57,15 @@ a {
         margin-right: 0;
         margin-left: 0;
         margin: auto;
+        padding: 0 15px;
         display: flex;
         justify-content: space-between;
         align-items: center;
         &-logo {
             display: inline-block;
+            img {
+                width: 100%;
+            }
         }
         &-copy {
             text-align: right;
@@ -59,7 +80,9 @@ a {
 .mv {
     height: 947px;
     margin-top: 130px;
-    background-color: darkgrey;
+    background-image: url("../images/1474084_m.png");
+    background-size: cover;
+    background-position: center;
     &-inner {
         position: relative;
         top: 133px;
@@ -137,18 +160,28 @@ a {
         }
         &-card-box {
             display: flex;
+            flex-direction: row;
             justify-content: space-between;
             margin-top: 33px;
+            @include tab {
+                flex-direction: column;
+
+            };
             .card {
                 width: calc(33.3% - 10px);
                 height: 591px;
-                padding: 40px 30px 0 30px;
+                padding: 40px 25px 0 25px;
                 background-color: #fff;
                 border: 2px solid #c9c9c9;
                 border-radius: 10px;
                 display: flex;
                 flex-direction: column;
                 justify-content: space-between;
+                @include tab {
+                    width: calc(80% - 5px);
+                    margin: 20px auto;
+                    padding: 40px 40px 0 40px;
+                };
                 &-copy {
                     &-title {
                         font-size: 24px;
@@ -157,11 +190,14 @@ a {
                         margin-bottom: 40px;
                     }
                     &-work {
-                        font-size: 16px;
+                        font-size: 15px;
                         font-weight: bold;
                         color: #444;
                         line-height: 38px;
                         text-align: left;
+                        @include tab {
+                            font-size: 20px;
+                        };
                     }
                 }
             }
@@ -183,19 +219,31 @@ a {
         .wrapper {
             padding: 40px 70px;
             height: 390px;
+            width: 100%;
             background-color: #fff;
             box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.29);
             border-radius: 30px;
             position: relative;
+            @include tab {
+                height: 700px;
+            };
             .info {
                 display: flex;
+                flex-direction: row;
                 align-items: center;
                 padding: 17px 0;
                 border-bottom: 2px solid #e7e7e7;
+                @include tab {
+                    flex-direction: column;
+                };
                 dt {
                     font-size: 16px;
                     font-weight: bold;
                     color: #21a937;
+                    @include tab {
+                        font-size: 20px;
+                        padding-bottom: 15px;
+                    };
                 }
                 &-logo {
                     margin: 0 28px;
@@ -205,6 +253,11 @@ a {
                     font-weight: bold;
                     background-color: #444;
                     color: #fff;
+                    @include tab {
+                        font-size: 15px;
+                        width: 100px;
+                        margin-bottom: 15px;
+                    };
                 }
                 &-copy {
                     font-size: 16px;
@@ -241,14 +294,33 @@ a {
         margin-right: 0;
         margin: auto;
         display: flex;
+        flex-direction: row;
         align-items: center;
+        @include tab {
+            flex-direction: column;
+        }
+        .map {
+            width: 50%;
+            @include tab {
+                width: 85%;
+            }
+        }
         .footer-copy {
             margin-left: 40px;
-            padding: 20px 0;
-            height: 440px;
+            padding: 30px 0;
+            height: 480px;
+            width: 50%;
             display: flex;
             flex-direction: column;
             justify-content: space-between;
+            @include tab {
+                width: 85%;
+                margin: 0;
+            }
+            &-logo {
+                max-width: 263px;
+                width: 100%;
+            }
             &-txt {
                 line-height: 40px;
                 .address {
@@ -261,17 +333,41 @@ a {
                 border-top: 2px solid #e7e7e7;
                 border-bottom: 2px solid #e7e7e7;
                 &-table {
+                    margin: 15px 0;
                     tr {
                         color: #444;
                         th {
                             width: 80px;
+                            font-weight: 400;
                         }
                         td {
-                            padding: 6px 10px;
+                            padding: 6px 15px;
                             display: block;
                             border-left: 2px solid #e7e7e7;
                         }
+                        .last-td {
+                            margin-bottom: 15px;
+                        }
+                        .info-date {
+                            margin-right: 15px;
+                            background: linear-gradient(transparent 80%, #99e5a5 0%)
+                        }
+                        .time {
+                            padding: 0 8px;
+                        }
                     }
+                }
+            }
+            .copyright {
+                text-align: right;
+                font-size: 11px;
+                @include tab {
+                    text-align: center;
+                    margin-top: 40px;
+                    font-size: 15px;
+                }
+                &-txt {
+                    color: #444;
                 }
             }
         }
