@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap');
+
+$pc: 1920px;
+$pc2: 1280px;
+$tab: 768px;
+$sp: 375px;
+$shadow: 0px 3px 6px rgba(0, 0, 0, 0.29);
+
+@mixin pc2 {
+    @media (max-width: ($pc2)) {
+        @content;
+    }
+}
+@mixin tab {
+    @media (max-width: ($tab)) {
+        @content;
+    }
+}
+@mixin sp {
+    @media (max-width: ($sp)) {
+        @content;
+    }
+}
+
+body {
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+.btn {
+    padding: 9px 35px;
+    color: #FFF;
+    background: transparent linear-gradient(90deg, #FA41CC 0%, #6020B0 100%) 0% 0% no-repeat;
+    border-radius: 10px;
+    box-shadow: $shadow;
+}
+.header {
+    position: fixed;
+    top: 0;
+    height: 94px;
+    width: 100%;
+    background-color: #FFF;
+    box-shadow: $shadow;
+    z-index: 9999;
+    &-inner {
+        max-width: 1022px;
+        width: 100%;
+        height: 100%;
+        margin-left: 0;
+        margin-right: 0;
+        margin: auto;
+        padding: 0 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        &-logo {
+            img {
+                margin-right: 16px;
+            }
+            a {
+                color: #333;
+                font-size: 24px;
+                display: flex;
+                align-items: center;
+            }
+        }
+        &-nav {
+            &-list {
+                display: flex;
+                &-item {
+                    margin-right: 46px;
+                    a {
+                        color: #333;
+                        font-size: 16px;
+                        font-weight: bold;
+                    }
+                }
+            }
+         
+        }
+
+    }
+}
