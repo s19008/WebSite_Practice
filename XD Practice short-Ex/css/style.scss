@@ -63,6 +63,12 @@ a {
         align-items: center;
         &-logo {
             display: inline-block;
+            @include tab {
+                width: 220px;
+            }
+            @include sp {
+                width: 160px;
+            }
             img {
                 width: 100%;
             }
@@ -73,8 +79,21 @@ a {
             &-txt {
                 font-size: 14px;
                 color: #444;
-                @include tab {
-                    font-size: 13px;
+                @include sp {
+                    display: none;
+                }
+            }
+            &-sptxt {
+                display: none;
+                font-size: 14px;
+                color: #444;
+                @include sp {
+                    display: block;
+                }
+            }
+            .tel {
+                @include sp {
+                    font-size: 21px;
                 }
             }
         }
@@ -147,14 +166,21 @@ a {
             &-txt {
                 font-size: 16px;
                 line-height: 38px;
+                @include sp {
+                    text-align: center;
+                    font-size: 14px;
+                }
             }
         }
         &-visual {
             width: 55%;
             border-radius: 10px;
             @include tab {
-                width: 70%;
+                width: 80%;
                 margin-bottom: 50px;
+            }
+            @include sp {
+                margin-bottom: 100px;
             }
             img {
                 width: 100%;
@@ -176,6 +202,19 @@ a {
         &-recommend {
             font-size: 16px;
             color: #444;
+            @include sp {
+                display: none;
+            }
+        }
+        &-sprecommend {
+            display: none;
+            font-size: 16px;
+            color: #444;
+            text-align: center;
+            line-height: 2;
+            @include sp {
+                display: block;
+            }
         }
         &-card-box {
             display: flex;
@@ -197,10 +236,15 @@ a {
                 flex-direction: column;
                 justify-content: space-between;
                 @include tab {
+                    height: 550px;
                     width: calc(80% - 5px);
                     margin: 20px auto;
-                    padding: 40px 40px 0 40px;
+                    padding: 40px 35px 0 35px;
                 };
+                @include sp {
+                    height: 570px;
+                    padding: 30px 15px 0 15px;
+                }
                 &-copy {
                     &-title {
                         font-size: 24px;
@@ -261,6 +305,9 @@ a {
                 @include tab {
                     flex-direction: column;
                 };
+                @include sp {
+                    padding: 13px 0;
+                }
                 dt {
                     font-size: 16px;
                     font-weight: bold;
@@ -269,6 +316,9 @@ a {
                         font-size: 20px;
                         padding-bottom: 15px;
                     };
+                    @include sp {
+                        font-size: 25px;
+                    }
                 }
                 &-logo {
                     margin: 0 28px;
@@ -304,6 +354,9 @@ a {
                 font-size: 16px;
                 font-weight: bold;
                 margin-top: 40px;
+                @include sp {
+                    margin-top: 20px;
+                }
                 &::after {
                     content: "▶";
                     position: relative;
@@ -348,6 +401,9 @@ a {
                 width: 85%;
                 margin: 0;
             };
+            @include sp {
+                width: 95%;
+            }
             &-logo {
                 max-width: 263px;
                 width: 100%;
@@ -373,13 +429,16 @@ a {
                         th {
                             width: 80px;
                             font-weight: 400;
+                            @include sp {
+                                width: 60px;
+                            }
                         }
                         td {
                             padding: 6px 15px;
                             display: block;
                             border-left: 2px solid #e7e7e7;
                             @include sp {
-                                padding: 6px 5px;
+                                padding: 6px 3px;
                             };
                         }
                         .last-td {
@@ -387,7 +446,10 @@ a {
                         }
                         .info-date {
                             margin-right: 15px;
-                            background: linear-gradient(transparent 80%, #99e5a5 0%)
+                            background: linear-gradient(transparent 80%, #99e5a5 0%);
+                            @include sp {
+                                margin-right: 5px;
+                            }
                         }
                         .time {
                             padding: 0 8px;
