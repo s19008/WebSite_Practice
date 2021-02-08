@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap");
 body {
   font-family: 'Noto Sans JP', sans-serif;
@@ -8,8 +9,11 @@ a {
 }
 
 .btn {
+  width: 155px;
   padding: 9px 35px;
   color: #FFF;
+  font-size: 14px;
+  font-weight: bold;
   background: transparent linear-gradient(90deg, #FA41CC 0%, #6020B0 100%) 0% 0% no-repeat;
   border-radius: 10px;
   box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.29);
@@ -51,6 +55,7 @@ a {
 
 .header-inner-nav-list {
   display: flex;
+  justify-content: space-between;
 }
 
 .header-inner-nav-list-item {
@@ -61,4 +66,53 @@ a {
   color: #333;
   font-size: 16px;
   font-weight: bold;
+}
+
+.mv {
+  height: 768px;
+  width: 100%;
+  background-image: url("../images/楕円形 1.png");
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: 681px;
+}
+
+.mv-inner {
+  max-width: 1022px;
+  width: 100%;
+  height: 100%;
+  margin-left: 0;
+  margin-right: 0;
+  margin: auto;
+  padding-top: 94px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.mv-inner-copy {
+  height: 361px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: left;
+  margin-left: 25px;
+}
+
+.mv-inner-copy-title {
+  font-size: 32px;
+  font-weight: bold;
+  color: #333;
+  line-height: 46px;
+}
+
+.mv-inner-copy-txt {
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+  line-height: 24px;
+}
+
+.mv-inner-copy .btn {
+  padding: 9px 35px;
 }
