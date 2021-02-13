@@ -68,9 +68,9 @@
                 <div class="features-inner-content-copy">
                     <div class="features-inner-content-copy-txt">
                         <h3>正しいマークアップで、<br>内部SEOに強いコーディングを<br>デフォルトで行います。</h3>
-                            <p>ユアコーディングでは、「予測しやすい」「再利用しやすい」<br>
-                                「保守しやすい」「拡張しやすい」と言った設計をもとに<br>
-                                きちんとコーディングを行うため、納品後も安心です。</p>
+                        <p>ユアコーディングでは、「予測しやすい」「再利用しやすい」<br>
+                            「保守しやすい」「拡張しやすい」と言った設計をもとに<br>
+                            きちんとコーディングを行うため、納品後も安心です。</p>
                     </div><!-- /.features-inner-content-copy-txt -->
                     <figure class="features-inner-content-copy-visual"><img src="images/building_website.png"
                             alt="web画像"></figure>
@@ -79,7 +79,8 @@
             <section class="features-inner-content">
                 <h2 class="features-inner-content-title">迅速なレスポンス</h2><!-- /.section-title -->
                 <div class="features-inner-content-copy">
-                    <figure class="features-inner-content-copy-visual"><img src="images/new_message.png" alt="message画像">
+                    <figure class="features-inner-content-copy-visual"><img src="images/new_message.png"
+                            alt="message画像">
                     </figure>
                     <div class="features-inner-content-copy-txt">
                         <h3>原則いただいたメッセージは、<br>業務時間内であれば6時間以内に<br>お返しいたします。</h3>
@@ -183,11 +184,11 @@
             <h2 class="title-copy">制作実績</h2><!-- /.title-copy -->
             <p class="title-name">WORKS</p>
         </div><!-- /.title -->
-        <div class="works-inner">
+        <div class="swiper-container">
             <div class="swiper-wrapper">
-                <a class="swiper-slide">
-                    <figure class="swiper-slide-visual"><img
-                            src="images/arnel-hasanovic-MNd-Rka1o0Q-unsplash.png" alt="Swiper01">
+                <div class="swiper-slide">
+                    <figure class="swiper-slide-visual"><img src="images/arnel-hasanovic-MNd-Rka1o0Q-unsplash.png"
+                            alt="Swiper01">
                     </figure>
                     <div class="swiper-slide-copy">
                         <h3 class="swiper-slide-copy-txt">コーディングカンファレンスのイベント LPの制作を行いました！</h3>
@@ -198,10 +199,10 @@
                             担当コーダー：石井
                         </p><!-- /.swiper-slide-copy-info -->
                     </div><!-- /.swiper-slide-copy -->
-                </a>
-                <a class="swiper-slide">
-                    <figure class="swiper-slide-visual"><img
-                            src="images/digital-marketing-1433427_1280-1.png" alt="Swiper02">
+                </div>
+                <div class="swiper-slide">
+                    <figure class="swiper-slide-visual"><img src="images/digital-marketing-1433427_1280-1.png"
+                            alt="Swiper02">
                     </figure><!-- /.swiper-slide-visual -->
                     <div class="swiper-slide-copy">
                         <h3 class="swiper-slide-copy-txt">株式会社サンプル様採用サイトのコーデ ィングを行いました！</h3>
@@ -212,10 +213,10 @@
                             担当コーダー：石井
                         </p><!-- /.swiper-slide-copy-info -->
                     </div><!-- /.swiper-slide-copy -->
-                </a>
-                <a class="swiper-slide">
-                    <figure class="swiper-slide-visual"><img
-                            src="images/hal-gatewood-tZc3vjPCk-Q-unsplash.png" alt="Swiper03">
+                </div>
+                <div class="swiper-slide">
+                    <figure class="swiper-slide-visual"><img src="images/hal-gatewood-tZc3vjPCk-Q-unsplash.png"
+                            alt="Swiper03">
                     </figure><!-- /.swiper-slide-visual -->
                     <div class="swiper-slide-copy">
                         <h3 class="swiper-slide-copy-txt">株式会社サンプル様通販サイトのコーデ ィングを行いました！</h3>
@@ -226,7 +227,7 @@
                             担当コーダー：石井
                         </p><!-- /.swiper-slide-copy-info -->
                     </div><!-- /.swiper-slide-copy -->
-                </a>
+                </div>
             </div>
         </div>
     </section><!-- /.works -->
@@ -237,21 +238,24 @@
             <p class="contact-title-copy">コーディングの人出が足りないとき、<br>あなたの力になります</p><!-- /.contact-title-copy -->
         </div><!-- /.contact-title -->
         <div class="contact-inner">
-            <div class="contact-inner-form">
+            <div class="contact-inner-form" id="form">
                 <div class="contact-inner-form-item">
                     <p class="label">お名前<span class="label-required">必須</span></p><!-- /.label -->
-                    <input type="text" class="input">
+                    <input type="text" class="input" id="name">
                 </div><!-- /.contact-inner-form-item -->
                 <div class="contact-inner-form-item">
                     <p class="label">メールアドレス<span class="label-required">必須</span></p><!-- /.label -->
-                    <input type="text" class="input">
+                    <input type="text" class="input" id="mail">
                 </div><!-- /.contact-inner-form-item -->
                 <div class="contact-inner-form-item">
                     <p class="label">お問い合わせ内容<span class="label-required">必須</span></p><!-- /.label -->
-                    <textarea class="textarea"></textarea>
+                    <textarea class="textarea" id=""></textarea>
                 </div><!-- /.contact-inner-form-item -->
-                <p><input type="checkbox" name="accept">プライバシーポリシーに同意する</p>
-                <p><input type="submit" class="btn" value="送信する"></p>
+                <div class="check">
+                    <input type="checkbox" class="box" name="accept" id="privacyCheck" required>
+                    <label for="privacyCheck" class="privacyLabel">プライバシーポリシーに同意する</label>
+                    <input type="submit" class="btn" value="送信する" id="js-submit" disabled>
+                </div><!-- /.check -->
             </div><!-- /.contact-inner-form -->
         </div><!-- /.contact-inner -->
     </section><!-- /.contact -->
@@ -264,8 +268,8 @@
         </div><!-- /.footer-copy -->
     </footer><!-- /.footer -->
     <script type="text/javascript">
-        var mySwiper = new Swiper ('.works-inner', {
-            slidesPerView:4.5,
+        var mySwiper = new Swiper('.swiper-container', {
+            slidesPerView: 4.6,
             spaceBetween: 10,
             centeredSlides: true,
             autoplay: {
@@ -274,6 +278,8 @@
             loop: true,
         });
     </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="javascript/script.js"></script>
 </body>
 
 </html>
