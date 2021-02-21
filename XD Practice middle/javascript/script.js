@@ -3,8 +3,8 @@ $(function () {
     $question.on('click',function(){
         $(this).next().slideToggle(100);
     });
-    $(document).ready(function () {
-
+    $(document).ready(function (){
+        
         const $submitBtn = $('#js-submit')
 
         $('#form input,#form textarea').on('change', function () {
@@ -21,5 +21,14 @@ $(function () {
                 $submitBtn.prop('disabled', true);
             }
         });
+    });
+    $('a[href^=#]').click(function(){
+        var adjust = -80;
+        var speed = 700;
+        var href= $(this).attr("href");
+        var target = $(href == "#" || href == "" ? 'html' : href);
+        var position = target.offset().top + adjust;
+        $('body,html').animate({scrollTop:position}, speed, 'swing');
+        return false;
     });
 });

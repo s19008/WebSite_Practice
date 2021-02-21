@@ -6,6 +6,11 @@ $tab: 768px;
 $sp: 375px;
 $shadow: 0px 3px 6px rgba(0, 0, 0, 0.29);
 
+@mixin pc {
+    @media (max-width: ($pc)) {
+        @content;
+    }
+}
 @mixin pc2 {
     @media (max-width: ($pc2)) {
         @content;
@@ -43,15 +48,14 @@ ul {
     background: transparent linear-gradient(90deg, #fa41cc 0%, #6020b0 100%) 0% 0% no-repeat;
     border-radius: 10px;
     box-shadow: $shadow;
-    
+    &:hover {
+        box-shadow: none;
+    }
 }
 #js-submit {
     margin-top: 30px;
     border: #FFF;
     opacity: 0.6;
-}
-.open {
-    display: block;
 }
 .close {
     display: none;
@@ -122,13 +126,18 @@ ul {
 .mv {
     height: 768px;
     width: 100%;
-    margin-bottom: 71px;
     position: relative;
     &-circle {
         position: absolute;
         top: 0;
-        right: 0;
+        right: 150px;
         z-index: -1;
+        @include pc2 {
+            right: 0;
+        };
+        @include tab {
+            
+        }
     }
     &-inner {
         max-width: 1022px;
@@ -141,6 +150,9 @@ ul {
         display: flex;
         justify-content: space-between;
         align-items: center;
+        @include tab {
+            flex-direction: column-reverse;
+        }
         &-copy {
             height: 361px;
             display: flex;
@@ -148,17 +160,37 @@ ul {
             justify-content: space-between;
             text-align: left;
             margin-left: 25px;
+            color: #333;
+            z-index: 1;
+            @include pc2 {
+                margin-left: 10px;
+            }
+            @include tab {
+                text-align: center;
+                align-items: center;
+            }
             &-title {
                 font-size: 32px;
                 font-weight: bold;
-                color: #333;
                 line-height: 46px;
             }
             &-txt {
                 font-size: 16px;
                 font-weight: bold;
-                color: #333;
                 line-height: 24px;
+            }
+            .btn {
+            }
+        }
+        &-visual {
+            @include pc2 {
+                position: absolute;
+                right: 100px;
+            }
+            @include tab {
+                position: absolute;
+                top:0;
+
             }
         }
     }
@@ -166,6 +198,7 @@ ul {
 .features {
     width: 100%;
     margin-bottom: 154px;
+    padding-top: 100px;
     &-inner {
         max-width: 1022px;
         width: 100%;
@@ -221,7 +254,8 @@ ul {
         margin-right: 0;
         margin: auto;
         &-table {
-            width: 926px;
+            max-width: 926px;
+            width: 100%;
             height: 410px;
             margin: auto;
             background-color: #fff;
@@ -267,7 +301,7 @@ ul {
         margin-right: 0;
         margin: auto;
         &-copy {
-            width: 907px;
+            max-width: 907px;
             margin: auto;
             font-size: 14px;
             font-weight: bold;
@@ -318,6 +352,11 @@ ul {
                     line-height: 26px;
                     padding: 14px 30px 0 18px;
                 }
+                &-visual {
+                    img {
+                        width: 100%;
+                    }
+                }
                 time {
                     position: absolute;
                     bottom: 10px;
@@ -344,21 +383,11 @@ ul {
         overflow: hidden;
         z-index: 1;
         .swiper-wrapper {
-            width: 100%;
-            height: 100%;
             .swiper-slide {
-                width: 100%;
-                height: 100%;
+                max-width: 322px;
+                height: 407px;
                 border: 1px solid #ddd;
                 border-radius: 8px;
-                margin: 0 28px;
-                &-visual {
-                    width: 322px;
-                    height: 210px;
-                    img {
-                        width: 100%;
-                    }
-                }
                 &-copy {
                     padding: 19px 16px 40px 18px;
                     color: #333;
@@ -371,6 +400,11 @@ ul {
                     &-info {
                         font-size: 14px;
                         line-height: 20px;
+                    }
+                }
+                &-visual {
+                    img {
+                        width: 100%;
                     }
                 }
             }
@@ -428,7 +462,8 @@ ul {
                     border-radius: 10px;
                 }
                 .input {
-                    width: 499px;
+                    max-width: 499px;
+                    width: 100%;
                     height: 43px;
                     background-color: #EEFBFB;
                     border-radius: 3px;
@@ -436,7 +471,8 @@ ul {
                     margin-bottom: 27px;
                 }
                 .textarea {
-                    width: 783px;
+                    max-width: 783px;
+                    width: 100%;
                     height: 179px;
                     background-color: #EEFBFB;
                     border-radius: 3px;

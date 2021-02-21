@@ -24,14 +24,14 @@ ul {
   box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.29);
 }
 
+.btn:hover {
+  box-shadow: none;
+}
+
 #js-submit {
   margin-top: 30px;
   border: #FFF;
   opacity: 0.6;
-}
-
-.open {
-  display: block;
 }
 
 .close {
@@ -111,15 +111,20 @@ ul {
 .mv {
   height: 768px;
   width: 100%;
-  margin-bottom: 71px;
   position: relative;
 }
 
 .mv-circle {
   position: absolute;
   top: 0;
-  right: 0;
+  right: 150px;
   z-index: -1;
+}
+
+@media (max-width: 1280px) {
+  .mv-circle {
+    right: 0;
+  }
 }
 
 .mv-inner {
@@ -135,6 +140,12 @@ ul {
   align-items: center;
 }
 
+@media (max-width: 768px) {
+  .mv-inner {
+    flex-direction: column-reverse;
+  }
+}
+
 .mv-inner-copy {
   height: 361px;
   display: flex;
@@ -142,25 +153,53 @@ ul {
   justify-content: space-between;
   text-align: left;
   margin-left: 25px;
+  color: #333;
+  z-index: 1;
+}
+
+@media (max-width: 1280px) {
+  .mv-inner-copy {
+    margin-left: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .mv-inner-copy {
+    text-align: center;
+    align-items: center;
+  }
 }
 
 .mv-inner-copy-title {
   font-size: 32px;
   font-weight: bold;
-  color: #333;
   line-height: 46px;
 }
 
 .mv-inner-copy-txt {
   font-size: 16px;
   font-weight: bold;
-  color: #333;
   line-height: 24px;
+}
+
+@media (max-width: 1280px) {
+  .mv-inner-visual {
+    position: absolute;
+    right: 100px;
+  }
+}
+
+@media (max-width: 768px) {
+  .mv-inner-visual {
+    position: absolute;
+    top: 0;
+  }
 }
 
 .features {
   width: 100%;
   margin-bottom: 154px;
+  padding-top: 100px;
 }
 
 .features-inner {
@@ -227,7 +266,8 @@ ul {
 }
 
 .price-inner-table {
-  width: 926px;
+  max-width: 926px;
+  width: 100%;
   height: 410px;
   margin: auto;
   background-color: #fff;
@@ -281,7 +321,7 @@ ul {
 }
 
 .faq-inner-copy {
-  width: 907px;
+  max-width: 907px;
   margin: auto;
   font-size: 14px;
   font-weight: bold;
@@ -343,6 +383,10 @@ ul {
   padding: 14px 30px 0 18px;
 }
 
+.blog-inner-cardbox .card-visual img {
+  width: 100%;
+}
+
 .blog-inner-cardbox .card time {
   position: absolute;
   bottom: 10px;
@@ -370,26 +414,11 @@ ul {
   z-index: 1;
 }
 
-.works .swiper-container .swiper-wrapper {
-  width: 100%;
-  height: 100%;
-}
-
 .works .swiper-container .swiper-wrapper .swiper-slide {
-  width: 100%;
-  height: 100%;
+  max-width: 322px;
+  height: 407px;
   border: 1px solid #ddd;
   border-radius: 8px;
-  margin: 0 28px;
-}
-
-.works .swiper-container .swiper-wrapper .swiper-slide-visual {
-  width: 322px;
-  height: 210px;
-}
-
-.works .swiper-container .swiper-wrapper .swiper-slide-visual img {
-  width: 100%;
 }
 
 .works .swiper-container .swiper-wrapper .swiper-slide-copy {
@@ -407,6 +436,10 @@ ul {
 .works .swiper-container .swiper-wrapper .swiper-slide-copy-info {
   font-size: 14px;
   line-height: 20px;
+}
+
+.works .swiper-container .swiper-wrapper .swiper-slide-visual img {
+  width: 100%;
 }
 
 .contact {
@@ -468,7 +501,8 @@ ul {
 }
 
 .contact-inner-form-item .input {
-  width: 499px;
+  max-width: 499px;
+  width: 100%;
   height: 43px;
   background-color: #EEFBFB;
   border-radius: 3px;
@@ -477,7 +511,8 @@ ul {
 }
 
 .contact-inner-form-item .textarea {
-  width: 783px;
+  max-width: 783px;
+  width: 100%;
   height: 179px;
   background-color: #EEFBFB;
   border-radius: 3px;
