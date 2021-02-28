@@ -3,6 +3,7 @@ $(function () {
     $question.on('click',function(){
         $(this).next().slideToggle(100);
     });
+
     $(document).ready(function (){
         
         const $submitBtn = $('#js-submit')
@@ -22,6 +23,7 @@ $(function () {
             }
         });
     });
+
     $('a[href^=#]').click(function(){
         var adjust = -80;
         var speed = 700;
@@ -31,4 +33,10 @@ $(function () {
         $('body,html').animate({scrollTop:position}, speed, 'swing');
         return false;
     });
+
+    $('.header-inner-burger').on('click', function(){
+        $('.header-inner-burger').toggleClass('close');
+        $('.header-nav').fadeToggle(500);
+    });
+    
 });

@@ -9,6 +9,7 @@
     <link rel="icon" type="images/x-icon" href="images/favicon.ico">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.4.11/swiper-bundle.css">
     <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/reset.css">
@@ -28,6 +29,11 @@
                 </ul><!-- /.header-list -->
             </nav><!-- /.header-nav -->
             <div class="header-inner-btn"><a class="btn" href="#contact">お問い合わせ</a></div><!-- /.header-btn -->
+            <div class="header-inner-burger">
+                <span class="bar bar_top"></span>
+                <span class="bar bar_mid"></span>
+                <span class="bar bar_bottom"></span>
+              </div>
         </div><!-- /.header-inner -->
     </header><!-- /.header -->
     <div class="mv">
@@ -273,7 +279,7 @@
     <script>
         var mySwiper = new Swiper('.swiper-container', {
             loop: true,
-            slidesPerView:4.15,
+            slidesPerView:4.2,
             spaceBetween: 56,
             centeredSlides:true,
             autoplay: {
@@ -292,8 +298,7 @@
             anchorPlacement: 'top-center',
         });
     </script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <script src="javascript/script.js"></script>
+    <script src="./javascript/script.js"></script>
 </body>
 
 </html>
