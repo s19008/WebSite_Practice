@@ -7,13 +7,12 @@
     <meta name="robots" content="noindex">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="images/x-icon" href="images/favicon.ico">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.4.11/swiper-bundle.css">
-    <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.4.15/swiper-bundle.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/reset.css">
-    <title>Document</title>
+    <title>Your Coding</title>
 </head>
 
 <body>
@@ -28,6 +27,13 @@
                     <li class="header-inner-nav-list-item"><a href="#contact">お問い合わせ</a></li><!-- /.header-list-item -->
                 </ul><!-- /.header-list -->
             </nav><!-- /.header-nav -->
+            <nav class="header-inner-sp-nav">
+                <ul class="header-inner-sp-nav-list">
+                    <li class="header-inner-sp-nav-list-item"><a href="#feature">特徴</a></li><!-- /.header-list-item -->
+                    <li class="header-inner-sp-nav-list-item"><a href="#price">価格</a></li><!-- /.header-list-item -->
+                    <li class="header-inner-sp-nav-list-item"><a href="#contact">お問い合わせ</a></li><!-- /.header-list-item -->
+                </ul><!-- /.header-list -->
+            </nav><!-- /.header-inner-sp-nav -->
             <div class="header-inner-btn"><a class="btn" href="#contact">お問い合わせ</a></div><!-- /.header-btn -->
             <div class="header-inner-burger">
                 <span class="bar bar_top"></span>
@@ -79,16 +85,13 @@
                             「保守しやすい」「拡張しやすい」と言った設計をもとに<br>
                             きちんとコーディングを行うため、納品後も安心です。</p>
                     </div><!-- /.features-inner-content-copy-txt -->
-                    <figure class="features-inner-content-copy-visual"><img src="images/building_website.png"
-                            alt="web画像"></figure>
+                    <figure class="features-inner-content-copy-visual"><img src="images/building_website.png" alt="web画像"></figure>
                 </div><!-- /.features-inner-content-copy -->
             </section><!-- /.features-inner-copy -->
             <section class="features-inner-content" data-aos="fade-up">
                 <h2 class="features-inner-content-title">迅速なレスポンス</h2><!-- /.section-title -->
                 <div class="features-inner-content-copy">
-                    <figure class="features-inner-content-copy-visual"><img src="images/new_message.png"
-                            alt="message画像">
-                    </figure>
+                    <figure class="features-inner-content-copy-visual"><img src="images/new_message.png" alt="message画像"></figure>
                     <div class="features-inner-content-copy-txt">
                         <h3>原則いただいたメッセージは、<br>業務時間内であれば6時間以内に<br>お返しいたします。</h3>
                         <p>連絡を返さないフリーランスが多い中、<br>
@@ -138,7 +141,7 @@
             <div class="faq-inner-copy">
                 <a class="question">デザインから一貫してお願いすることは可能でしょうか</a>
                 <p class="answer open">
-                    ユアコーディングはコーディングに特化したサービスですので、デザインからお受けすることは基本的にありません。ただデザインを行う際は提携しているデザイナーと連携して対応させていただきますので、別途ご連絡ください。
+                    ユアコーディングはコーディングに特化したサービスですので、デザインからお受けすることは基本的にありません。<br>ただデザインを行う際は提携しているデザイナーと連携して対応させていただきますので、別途ご連絡ください。
                 </p><!-- /.answer -->
             </div><!-- /.faq-inner-copy -->
             <div class="faq-inner-copy">
@@ -275,16 +278,31 @@
             <p class="footer-copy-copyright">©ユアコーディング, All Rights Reserved.</p><!-- /.footer-copy-copyright -->
         </div><!-- /.footer-copy -->
     </footer><!-- /.footer -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.4.11/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.4.15/swiper-bundle.min.js"></script>
     <script>
         var mySwiper = new Swiper('.swiper-container', {
             loop: true,
-            slidesPerView:4.2,
-            spaceBetween: 56,
-            centeredSlides:true,
+            centerdSlides: true,
+            breakpoints: {
+                768: {
+                    slidesPerView: 3,
+                    centerdSlides: true,
+                },
+
+                980: {
+                    slidesPerView: 3.3,
+                    centerdSlides: true,
+                },
+
+                1280: {
+                    slidesPerView: 4.2,
+                    centerdSlides: true,
+                },
+            },
+            spaceBetween: 62,
             autoplay: {
                 delay: 5000,
-            }
+            },
         });
     </script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>

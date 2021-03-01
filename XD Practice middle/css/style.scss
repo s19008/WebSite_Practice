@@ -4,6 +4,7 @@ $pc: 1920px;
 $pc2: 1280px;
 $tab2: 900px;
 $tab: 768px;
+$sp2: 530px;
 $sp: 375px;
 $shadow: 0px 3px 6px rgba(0, 0, 0, 0.29);
 
@@ -24,6 +25,11 @@ $shadow: 0px 3px 6px rgba(0, 0, 0, 0.29);
 }
 @mixin tab {
     @media (max-width: ($tab)) {
+        @content;
+    }
+}
+@mixin sp2 {
+    @media (max-width: ($sp2)) {
         @content;
     }
 }
@@ -73,6 +79,9 @@ ul {
         font-weight: bold;
         color: #333;
         padding-bottom: 15px;
+        @include sp2 {
+            font-size: 25px;
+        }
     }
     &-name {
         font-size: 16px;
@@ -99,9 +108,15 @@ ul {
         display: flex;
         justify-content: space-between;
         align-items: center;
+        @include sp2 {
+            padding: 0 10px;
+        }
         &-logo {
             @include tab {
                 margin-left: 50px;
+            }
+            @include sp2 {
+                margin-left: 5px;
             }
             img {
                 margin-right: 16px;
@@ -114,6 +129,27 @@ ul {
             }
         }
         &-nav {
+            @include tab {
+                display: none;
+            }
+            &-list {
+                display: flex;
+                justify-content: space-between;
+                &-item {
+                    margin-right: 46px;
+                    a {
+                        color: #333;
+                        font-size: 16px;
+                        font-weight: bold;
+                        &:hover {
+                            color: #000;
+                        }
+                    }
+                }
+            }
+        }
+        &-sp-nav {
+            display: none;
             @include tab {
                 display: none;
                 width: 100vw;
@@ -159,8 +195,8 @@ ul {
         }
         &-burger {
             display: none;
-            width: 50px;
-            height: 45px;
+            width: 39px;
+            height: 39px;
             position: relative;
             z-index: 3;
             border: none;
@@ -168,21 +204,8 @@ ul {
             @include tab {
                 display: block;
             }
-            .close {
-                @include tab {
-                    .bar_top {
-                        transform: translate(-50%, 10px) rotate(45deg);
-                        transition: transform 0.3s;
-                    }
-                    .bar_mid {
-                        opacity: 0;
-                        transition: opacity 0.3s;
-                    }
-                    .bar_bottom {
-                        transform: translate(-50%, -8px) rotate(-45deg);
-                        transition: transform 0.3s;
-                    }
-                }
+            @include sp2 {
+                margin-right: 20px;
             }
             .bar {
                 width: 30px;
@@ -202,6 +225,22 @@ ul {
             }
             .bar_bottom {
                 bottom: 10px;
+            }
+        }
+        &-burger.close {
+            @include tab {
+                .bar_top {
+                    transform: translate(-50%, 10px) rotate(45deg);
+                    transition: transform 0.3s;
+                }
+                .bar_mid {
+                    opacity: 0;
+                    transition: opacity 0.3s;
+                }
+                .bar_bottom {
+                    transform: translate(-50%, -8px) rotate(-45deg);
+                    transition: transform 0.3s;
+                }
             }
         }
     }
@@ -273,13 +312,29 @@ ul {
                 font-weight: bold;
                 line-height: 24px;
             }
+            .btn {
+                @include tab {
+                    width: 80%;
+                    height: 50px;
+                    line-height: 30px;
+                    font-size: 20px;
+                }
+            }
+        }
+        &-visual {
+            img {
+                width: 100%;
+            }
         }
     }
 }
 .features {
     width: 100%;
     margin-bottom: 154px;
-    padding-top: 100px;
+    padding: 100px 25px 0 25px;
+    @include sp2 {
+        padding: 100px 10px 0 10px;
+    }
     &-inner {
         max-width: 1022px;
         width: 100%;
@@ -295,26 +350,73 @@ ul {
                 color: #333;
                 text-align: center;
                 margin-bottom: 50px;
+                @include tab {
+                    font-size: 30px;
+                }
+                @include sp2 {
+                    font-size: 25px;
+                    margin-bottom: 25px;
+                }
             }
             &-copy {
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
+                @include tab {
+                    justify-content: center;
+                }
                 &-txt {
                     font-weight: bold;
                     color: #333;
                     text-align: left;
+                    @include tab {
+                        position: absolute;
+                        top: 70px;
+                        text-align: center;
+                        color: #000;
+                    }
                     h3 {
                         font-size: 24px;
                         line-height: 48px;
                         margin-bottom: 45px;
+                        @include tab2 {
+                            font-size: 20px;
+                        }
+                        @include tab {
+                            font-size: 23px;
+                        }
+                        @include sp2 {
+                            font-size: 17px;
+                            line-height: 30px;
+                        }
                     }
                     p {
                         font-size: 16px;
                         line-height: 26px;
+                        @include tab2 {
+                            font-size: 14px;
+                        }
+                        @include tab {
+                            font-size: 17px;
+                        }
+                        @include sp2 {
+                            font-size: 12px;
+                            text-align: left;
+                        }
                     }
                 }
                 &-visual {
+                    z-index: -1;
+                    img {
+                        width: 100%;
+                        @include tab2 {
+                            width: 90%;
+                        }
+                        @include tab {
+                            width: 100%;
+                            opacity: 0.6;
+                        }
+                    }
                 }
             }
         }
@@ -341,14 +443,20 @@ ul {
             margin: auto;
             background-color: #fff;
             box-shadow: $shadow;
+            @include sp2 {
+                width: 90%;
+            }
             tr {
                 text-align: left;
                 border-bottom: 1px solid #e5e5e5;
                 font-size: 16px;
                 font-weight: bold;
                 color: #333;
+                @include sp2 {
+                    font-size: 14px;
+                }
                 th {
-                    width: 291px;
+                    max-width: 291px;
                     border-right: 1px solid #e5e5e5;
                     vertical-align: middle;
                     text-align: center;
@@ -356,6 +464,9 @@ ul {
                 td {
                     padding-left: 30px;
                     vertical-align: middle;
+                    @include sp2 {
+                        padding-left: 15px;
+                    }
                 }
             }
         }
@@ -365,6 +476,9 @@ ul {
             font-weight: bold;
             color: #333;
             margin-top: 36px;
+            @include sp2 {
+                font-size: 14px;
+            }
         }
     }
 }
@@ -381,11 +495,17 @@ ul {
         margin-left: 0;
         margin-right: 0;
         margin: auto;
+        @include sp2 {
+            width: 90%;
+        }
         &-copy {
             max-width: 907px;
             margin: auto;
             font-size: 14px;
             font-weight: bold;
+            @include sp2 {
+                font-size: 13px;
+            }
             .question {
                 display: block;
                 text-align: center;
@@ -395,16 +515,18 @@ ul {
             }
             .answer {
                 color: #444;
-                padding: 22px 0 25px 35px;
+                padding: 22px 75px 25px 35px;
                 line-height: 26px;
                 background-color: #f2f2f2;
                 border: 1px solid #e5e5e5;
+                @include tab {
+                    padding: 22px 30px 25px 30px;
+                }
             }
         }
     }
 }
 .blog {
-    height: 668px;
     width: 100%;
     background-color: #eefbfb;
     .title {
@@ -419,19 +541,31 @@ ul {
         margin: auto;
         &-cardbox {
             display: flex;
+            align-items: center;
+            @include tab {
+                flex-direction: column;
+            }
             .card {
                 width: 33.3%;
-                height: 387px;
-                margin: 0 15px;
+                min-height: 387px;
+                margin: 0 15px 90px 15px;
                 background-color: #fff;
                 box-shadow: $shadow;
                 color: #333;
                 font-weight: bold;
                 position: relative;
+                @include tab {
+                    width: 70%;
+                    padding-bottom: 70px;
+                }
+                @include sp2 {
+                    width: 85%;
+                    margin: 0 10px 50px 10px;
+                }
                 &-copy {
                     font-size: 18px;
                     line-height: 26px;
-                    padding: 14px 30px 0 18px;
+                    padding: 14px 30px 20px 18px;
                 }
                 &-visual {
                     img {
@@ -458,14 +592,13 @@ ul {
         padding: 55px 0 68px 0;
     }
     .swiper-container {
+        max-width: 1920px;
         width: 100%;
         margin: 0 auto;
-        padding: 0;
-        overflow: hidden;
         z-index: 1;
         .swiper-wrapper {
+            width: 100%;
             .swiper-slide {
-                max-width: 322px;
                 height: 407px;
                 border: 1px solid #ddd;
                 border-radius: 8px;

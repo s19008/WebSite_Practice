@@ -24,7 +24,7 @@ $(function () {
         });
     });
 
-    $('a[href^=#]').click(function(){
+    $('a[href^="#"]').click(function(){
         var adjust = -80;
         var speed = 700;
         var href= $(this).attr("href");
@@ -36,7 +36,7 @@ $(function () {
 
     $('.header-inner-burger').on('click', function(){
         $('.header-inner-burger').toggleClass('close');
-        $('.header-nav').fadeToggle(500);
+        $('.header-inner-sp-nav').fadeToggle(500);
     });
     
 });
