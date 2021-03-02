@@ -734,16 +734,12 @@ ul {
 .works .swiper-container {
   max-width: 1920px;
   width: 100%;
-  margin: 0 auto;
   z-index: 1;
 }
 
-.works .swiper-container .swiper-wrapper {
-  width: 100%;
-}
-
 .works .swiper-container .swiper-wrapper .swiper-slide {
-  height: 407px;
+  max-height: 407px;
+  height: 100%;
   border: 1px solid #ddd;
   border-radius: 8px;
 }
@@ -752,6 +748,12 @@ ul {
   padding: 19px 16px 40px 18px;
   color: #333;
   font-weight: bold;
+}
+
+@media (max-width: 530px) {
+  .works .swiper-container .swiper-wrapper .swiper-slide-copy {
+    padding: 10px 10px 30px 10px;
+  }
 }
 
 .works .swiper-container .swiper-wrapper .swiper-slide-copy-txt {
@@ -771,7 +773,7 @@ ul {
 
 .contact {
   width: 100%;
-  height: 1027px;
+  min-height: 1027px;
   background: transparent linear-gradient(90deg, #05a5fa 0%, #63fbd7 100%, #67ffd6 100%);
 }
 
@@ -859,6 +861,13 @@ ul {
 .contact-inner .check .privacyLabel {
   position: relative;
   padding: 0 0 0 30px;
+  font-size: 16px;
+}
+
+@media (max-width: 530px) {
+  .contact-inner .check .privacyLabel {
+    font-size: 14px;
+  }
 }
 
 .contact-inner .check .privacyLabel::after {
@@ -896,7 +905,7 @@ ul {
 
 .footer {
   width: 100%;
-  height: 244px;
+  min-height: 244px;
   background-color: #f8f8f8;
 }
 
@@ -916,6 +925,12 @@ ul {
   font-size: 16px;
   font-weight: bold;
   margin: 21px 15px 52px 15px;
+}
+
+@media (max-width: 530px) {
+  .footer-copy-txt {
+    margin: 20px;
+  }
 }
 
 .footer-copy-copyright {

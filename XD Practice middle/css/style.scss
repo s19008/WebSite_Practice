@@ -594,18 +594,20 @@ ul {
     .swiper-container {
         max-width: 1920px;
         width: 100%;
-        margin: 0 auto;
         z-index: 1;
         .swiper-wrapper {
-            width: 100%;
             .swiper-slide {
-                height: 407px;
+                max-height: 407px;
+                height: 100%;
                 border: 1px solid #ddd;
                 border-radius: 8px;
                 &-copy {
                     padding: 19px 16px 40px 18px;
                     color: #333;
                     font-weight: bold;
+                    @include sp2 {
+                        padding: 10px 10px 30px 10px;
+                    }
                     &-txt {
                         font-size: 16px;
                         line-height: 24px;
@@ -627,7 +629,7 @@ ul {
 }
 .contact {
     width: 100%;
-    height: 1027px;
+    min-height: 1027px;
     background: transparent linear-gradient(90deg, #05a5fa 0%, #63fbd7 100%, #67ffd6 100%);
     &-title {
         color: #fff;
@@ -704,6 +706,10 @@ ul {
             .privacyLabel {
                 position: relative;
                 padding: 0 0 0 30px;
+                font-size: 16px;
+                @include sp2 {
+                    font-size: 14px;
+                }
                 &::after {
                     position: absolute;
                     content: "";
@@ -739,7 +745,7 @@ ul {
 }
 .footer {
     width: 100%;
-    height: 244px;
+    min-height: 244px;
     background-color: #f8f8f8;
     &-copy {
         color: #333;
@@ -754,6 +760,9 @@ ul {
             font-size: 16px;
             font-weight: bold;
             margin: 21px 15px 52px 15px;
+            @include sp2 {
+                margin: 20px;
+            }
         }
         &-copyright {
             font-size: 14px;

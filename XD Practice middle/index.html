@@ -6,13 +6,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="robots" content="noindex">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta >
     <link rel="icon" type="images/x-icon" href="images/favicon.ico">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.4.15/swiper-bundle.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/reset.css">
-    <title>Your Coding</title>
+    <title>コーディングに特化したフリーランス | ユアコーディング</title>
 </head>
 
 <body>
@@ -282,24 +283,41 @@
     <script>
         var mySwiper = new Swiper('.swiper-container', {
             loop: true,
-            centerdSlides: true,
+            slidesPerView: 1.5,
+            centeredSlides: true,
             breakpoints: {
+
+                580: {
+                    slidesPerView: 2.2,
+                    centeredSlides: true,
+                    spaceBetween: 40,
+                },
+
                 768: {
                     slidesPerView: 3,
-                    centerdSlides: true,
+                    centeredSlides: true,
+                    spaceBetween: 40,
                 },
 
                 980: {
-                    slidesPerView: 3.3,
-                    centerdSlides: true,
+                    slidesPerView: 3.2,
+                    centeredSlides: true,
+                    spaceBetween: 50,
                 },
 
                 1280: {
-                    slidesPerView: 4.2,
-                    centerdSlides: true,
+                    slidesPerView: 3.5,
+                    centeredSlides: true,
+                    spaceBetween: 62,
+                },
+
+                1367: {
+                    slidesPerView: 4.5,
+                    centeredSlides: true,
+                    spaceBetween: 65,
                 },
             },
-            spaceBetween: 62,
+            spaceBetween: 30,
             autoplay: {
                 delay: 5000,
             },
