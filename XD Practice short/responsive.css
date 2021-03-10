@@ -3,7 +3,11 @@
     font-size: 12px;
   }
   .main .challenge .challenge-inner .contents {
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   .main .challenge .challenge-inner .contents .content {
     width: 100%;
@@ -32,3 +36,4 @@
     width: 100%;
   }
 }
+/*# sourceMappingURL=responsive.css.map */
