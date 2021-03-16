@@ -8,6 +8,7 @@
       name="description"
       content="日本古来の素材と現代的表現を合わせ持つ温泉旅館、石井花壇。伝統的「和」の息づく空間で、至極のひとときをお過ごしください。"
     />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/style.css" />
     <title>石井花壇 | 温海温泉旅館 【公式サイト】</title>
@@ -40,7 +41,7 @@
               src="./images/Ex-sozai/Ex-sozai/calender.png"
               alt="カレンダー画像"
             />
-            宿泊予約
+            <p>宿泊予約</p>
           </a>
         </h2>
         <!-- /.header-inner-reserve -->
@@ -83,12 +84,8 @@
       <!-- /.header-inner -->
     </header>
     <div class="mv">
-      <div class="mv-visual">
-        <img src="images/Ex-sozai/Ex-sozai/mainbg01.jpg" alt="メイン画像" />
-      </div>
-      <!-- /.mv-visual -->
       <div class="mv-inner">
-        <h2 class="mv-inner-copy">頑張る人の<br />頑張らない時間</h2>
+        <h2 class="mv-inner-copy">頑 張 る 人の<br />頑 張 ら な い 時 間</h2>
       </div>
       <!-- /.mv-inner -->
     </div>
@@ -377,5 +374,17 @@
         <p>Copyright © 石井花壇 All Rights Reserved.</p>
       </div><!-- /.footer-copy-right -->
     </footer><!-- /.footer -->
+    <script src="javascript/jquery.bgswitcher.js"></script>
+    <script>
+      jQuery(function($) {
+        $('.mv').bgSwitcher({
+          images: ['./images/Ex-sozai/Ex-sozai/mainbg01.jpg','./images/Ex-sozai/Ex-sozai/mainbg02.jpg','./images/Ex-sozai/Ex-sozai/mainbg03.jpg'],
+          effect: "fade",
+          interval: 6000,
+          duration: 2000,
+          easing: "linear"
+        });
+      });
+    </script>
   </body>
 </html>
