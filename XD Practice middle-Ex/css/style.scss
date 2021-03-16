@@ -1,0 +1,72 @@
+a {
+    text-decoration: none;
+}
+
+img {
+    width: 100%;
+}
+
+body {
+    font-family: “Times New Roman”, “游明朝”, “Yu Mincho”, “游明朝体”, “YuMincho”, “ヒラギノ明朝 Pro W3”,
+        “Hiragino Mincho Pro”, “HiraMinProN-W3”, “HGS明朝E”, “ＭＳ Ｐ明朝”, “MS PMincho”, serif;
+}
+.header {
+    position: absolute;
+    top: 0;
+    max-width: 1920px;
+    width: 100%;
+    height: 80px;
+    padding: 0 20px;
+    &-inner {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        &-logo {
+            position: relative;
+            max-width: 200px;
+            width: 100%;
+            height: 40px;
+            margin-right: 120px;
+            a {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                color: #fff;
+                font-size: 34px;
+                letter-spacing: 2px;
+                img {
+                    max-width: 40px;
+                }
+            }
+        }
+        &-nav {
+            max-width: 200px;
+            width: 100%;
+            &-list {
+                display: flex;
+                justify-content: space-between;
+                &-item {
+                    a {
+                        color: #fff;
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+        &-reserve {
+
+            a {
+                color: #FFF;
+                font-size: 16px;
+                img {
+                    max-width: 22px;
+                }
+            }
+        }
+    }
+}
+
+.fix-header {
+    display: none;
+}
