@@ -22,9 +22,10 @@
   border-radius: 4px;
 }
 
-.btn-trigger, .btn-trigger span {
-  -webkit-transition: all .5s;
-  transition: all .5s;
+.btn-trigger,
+.btn-trigger span {
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
