@@ -234,10 +234,32 @@ body {
   max-width: 1920px;
   width: 100%;
   height: 500px;
+  padding-top: 80px;
   margin-bottom: 36px;
-  background-image: url("../images/Ex-sozai/Ex-sozai/oheya-header.jpg");
   background-size: cover;
   background-position: center;
+}
+
+.mv-inner {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.mv-inner-copy {
+  font-size: 34px;
+  color: #FFF;
 }
 
 .feature-inner {
