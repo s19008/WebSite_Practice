@@ -44,6 +44,7 @@ $sp: 375px;
     height: 44px;
     cursor: pointer;
     display: none;
+    z-index: 2500;
     @include tab {
         display: block;
     }
@@ -59,6 +60,7 @@ $sp: 375px;
     background-color: #fff;
     border-radius: 4px;
 }
+
 .btn-trigger,
 .btn-trigger span {
     transition: all 0.5s;
@@ -85,6 +87,9 @@ $sp: 375px;
     -webkit-transform: translateY(-20px) rotate(45deg);
     transform: translateY(-20px) rotate(45deg);
 }
+.fix-header.show {
+    top: 0;
+}
 
 //-------------CSS-------------//
 
@@ -100,9 +105,8 @@ body {
     font-family: “Times New Roman”, “游明朝”, “Yu Mincho”, “游明朝体”, “YuMincho”, “ヒラギノ明朝 Pro W3”,
         “Hiragino Mincho Pro”, “HiraMinProN-W3”, “HGS明朝E”, “ＭＳ Ｐ明朝”, “MS PMincho”, serif;
 }
+
 .header {
-    position: absolute;
-    top: 0;
     max-width: 1920px;
     width: 100%;
     height: 80px;
@@ -122,7 +126,7 @@ body {
             height: 40px;
             margin-right: 120px;
             @include sp2 {
-                max-width: 150px;
+                max-width: 155px;
             }
             a {
                 display: flex;
@@ -168,7 +172,7 @@ body {
                 top: 0;
                 left: 0;
                 background-color: #f2f2f2;
-                z-index: 2;
+                z-index: 2000;
             }
             &-list {
                 display: flex;
@@ -231,18 +235,23 @@ body {
                 }
             }
         }
+        #btn01.active {
+            span {
+                background-color: #000;
+            }
+        }
     }
 }
 
 .fix-header {
-    display: none;
     position: fixed;
-    top: 0;
+    top: -80px;
+    transition: 0.5s;
     max-width: 1920px;
     width: 100%;
     height: 80px;
     padding: 0 20px;
-    z-index: 1000;
+    z-index: 2000;
     background-color: #fff;
     &-inner {
         width: 100%;
@@ -380,6 +389,8 @@ body {
 }
 
 .mv {
+    position: relative;
+    top: -80px;
     max-width: 1920px;
     width: 100%;
     height: 1079px;
@@ -407,6 +418,8 @@ body {
 }
 
 .feature {
+    position: relative;
+    top: -80px;
     max-width: 1920px;
     width: 100%;
     height: 681px;
@@ -420,7 +433,12 @@ body {
         margin-right: 0;
         margin: auto;
         writing-mode: vertical-rl;
-        padding: 0 101px;
+        padding-right: 101px;
+        overflow: auto;
+        position: relative;
+        @include tab2 {
+            padding-right: 30px;
+        }
         &-title {
             font-size: 28px;
             padding-top: 64px;
@@ -428,7 +446,10 @@ body {
         }
         &-second {
             padding-top: 149px;
-            margin-left: 59px;
+            margin-left: 118px;
+            @include pc2 {
+                margin-left: 80px;
+            }
         }
         h3 {
             font-size: 28px;
@@ -439,12 +460,36 @@ body {
             font-weight: bold;
             line-height: 40px;
             padding-top: 149px;
-            margin: 0 59px;
+            margin-left: 118px;
+            @include pc2 {
+                margin-left: 80px;
+            }
         }
         &-name {
+            position: absolute;
+            bottom: 120px;
             font-size: 22px;
             font-weight: bold;
-            padding: 443px 59px 0 0;
+            padding-left: 20px;
+        }
+    }
+}
+
+.service {
+    max-width: 1920px;
+    width: 100%;
+    height: 100%;
+    &-content {
+        width: 100%;
+        height: 100%;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        &-visual {
+            max-width: 1050px;
+            width: 100%;
+            height: 545px;
         }
     }
 }
