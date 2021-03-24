@@ -476,20 +476,54 @@ body {
 }
 
 .service {
+    position: relative;
+    top: 26px;
     max-width: 1920px;
     width: 100%;
-    height: 100%;
     &-content {
         width: 100%;
-        height: 100%;
-        margin: 0 auto;
+        height: 545px;
         display: flex;
         align-items: center;
         justify-content: space-between;
+        margin-bottom: 122px;
         &-visual {
             max-width: 1050px;
             width: 100%;
             height: 545px;
+            overflow: hidden;
+            position: relative;
+            img {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                -webkit-transform: translate(-50%, -50%);
+                transform: translate(-50%, -50%);
+            }
+        }
+        &-copy {
+            max-width: 870px;
+            width: 100%;
+            height: 70%;
+            padding: 0 174px 0 137px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            &-title {
+                font-size: 36px;
+                line-height: 62px;
+            }
+            &-txt {
+                font-size: 16px;
+                line-height: 32px;
+            }
+            &-btn {
+                max-width: 200px;
+                width: 100%;
+                font-size: 16px;
+                padding: 20px 43px;
+                border: 1px solid #707070;
+            }
         }
     }
 }

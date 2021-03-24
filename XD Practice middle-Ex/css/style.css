@@ -71,6 +71,10 @@ a {
   text-decoration: none;
 }
 
+img {
+  width: 100%;
+}
+
 body {
   font-family: “Times New Roman”, “游明朝”, “Yu Mincho”, “游明朝体”, “YuMincho”, “ヒラギノ明朝 Pro W3”, “Hiragino Mincho Pro”, “HiraMinProN-W3”, “HGS明朝E”, “ＭＳ Ｐ明朝”, “MS PMincho”, serif;
 }
@@ -640,15 +644,15 @@ body {
 }
 
 .service {
+  position: relative;
+  top: 26px;
   max-width: 1920px;
   width: 100%;
-  height: 100%;
 }
 
 .service-content {
   width: 100%;
-  height: 100%;
-  margin: 0 auto;
+  height: 545px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -661,15 +665,60 @@ body {
   -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin-bottom: 122px;
 }
 
 .service-content-visual {
   max-width: 1050px;
   width: 100%;
   height: 545px;
+  overflow: hidden;
+  position: relative;
 }
 
 .service-content-visual img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.service-content-copy {
+  max-width: 870px;
   width: 100%;
+  height: 70%;
+  padding: 0 174px 0 137px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.service-content-copy-title {
+  font-size: 36px;
+  line-height: 62px;
+}
+
+.service-content-copy-txt {
+  font-size: 16px;
+  line-height: 32px;
+}
+
+.service-content-copy-btn {
+  max-width: 200px;
+  width: 100%;
+  font-size: 16px;
+  padding: 20px 43px;
+  border: 1px solid #707070;
 }
 /*# sourceMappingURL=style.css.map */
