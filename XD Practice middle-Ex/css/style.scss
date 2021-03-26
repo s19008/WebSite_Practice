@@ -1,6 +1,6 @@
-$pc: 1920px;
+$pc: 1400px;
 $pc2: 1280px;
-$tab2: 900px;
+$tab2: 1020px;
 $tab: 768px;
 $sp2: 530px;
 $sp: 375px;
@@ -387,6 +387,15 @@ body {
         }
     }
 }
+#mask {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: rgba(0,0,0,0.5);
+    
+}
 
 .mv {
     position: relative;
@@ -487,6 +496,10 @@ body {
         align-items: center;
         justify-content: space-between;
         margin-bottom: 122px;
+        position: relative;
+        @include tab2 {
+            flex-direction: column;
+        }
         &-visual {
             max-width: 1050px;
             width: 100%;
@@ -502,28 +515,45 @@ body {
             }
         }
         &-copy {
+            position: relative;
             max-width: 870px;
             width: 100%;
             height: 70%;
-            padding: 0 174px 0 137px;
+            padding-left: 137px;
             display: flex;
             flex-direction: column;
             justify-content: space-between;
+            @include pc2 {
+                padding-left: 50px;
+            }
             &-title {
                 font-size: 36px;
                 line-height: 62px;
             }
             &-txt {
                 font-size: 16px;
+                font-weight: bold;
                 line-height: 32px;
             }
             &-btn {
                 max-width: 200px;
                 width: 100%;
                 font-size: 16px;
+                font-weight: bold;
                 padding: 20px 43px;
                 border: 1px solid #707070;
             }
+        }
+        .even {
+            left: 271px;
+            @include pc {
+                left: 100px;
+            }
+        }
+    }
+    .eve {
+        @include tab2 {
+            flex-direction: column-reverse;
         }
     }
 }
