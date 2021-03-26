@@ -104,6 +104,7 @@ img {
 body {
     font-family: “Times New Roman”, “游明朝”, “Yu Mincho”, “游明朝体”, “YuMincho”, “ヒラギノ明朝 Pro W3”,
         “Hiragino Mincho Pro”, “HiraMinProN-W3”, “HGS明朝E”, “ＭＳ Ｐ明朝”, “MS PMincho”, serif;
+    position: relative;       
 }
 
 .header {
@@ -394,9 +395,26 @@ body {
     right: 0;
     left: 0;
     background: rgba(0,0,0,0.5);
-    
+    z-index: 5000;
 }
-
+#mask.hidden {
+    display: none;
+}
+#modal {
+    position: absolute;
+    top: 242px;
+    left: 0;
+    right: 0;
+    max-width: 550px;
+    width: 100%;
+    height: 600px;
+    margin-left: 0;
+    margin-right: 0;
+    margin: auto;
+    background-color: #FFF;
+    border: 1px solid #707070;
+    z-index: 6000;
+}
 .mv {
     position: relative;
     top: -80px;
