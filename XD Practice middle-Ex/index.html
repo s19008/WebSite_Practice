@@ -11,6 +11,11 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css"
+    />
+    <link rel="stylesheet" type="text/css" href="https://npmcdn.com/flatpickr/dist/themes/airbnb.css">
     <title>石井花壇 | 温海温泉旅館 【公式サイト】</title>
   </head>
   <body>
@@ -137,7 +142,9 @@
     <!-- /.hidden -->
     <div id="modal" class="hidden">
       <div id="close" class="modal-btn">
-        <a href=""><img src="images/Ex-sozai/Ex-sozai/close.png" alt="×マーク"></a>
+        <a href=""
+          ><img src="images/Ex-sozai/Ex-sozai/close.png" alt="×マーク"
+        /></a>
       </div>
       <!-- /.modal-btn -->
       <div class="modal-inner">
@@ -145,18 +152,26 @@
         <!-- /.modal-inner-title -->
         <form class="modal-inner-form">
           <p>お名前</p>
-          <input type="text" name="" placeholder="例：石井正悟">
+          <input type="text" name="" placeholder="例：石井正悟" />
           <p>メールアドレス</p>
-          <input type="email" name="" placeholder="例：Example@exsample.com">
+          <input type="email" name="" placeholder="例：Example@exsample.com" />
           <p>ご希望プラン（空いているプランのみ表示されます）</p>
-          <select name="" id="" value="adf">
-            <option value="">【期間限定】海辺の四季旬彩、贅沢美味懐石プラン</option>
+          <select id="select" value="" label="プランを選択してください">
+            <option value="">
+              【期間限定】海辺の四季旬彩、贅沢美味懐石プラン
+            </option>
             <option value="">平日に優雅に楽しむ、特別宿泊プラン</option>
-            <option value="">絶景貸切露天と個室会席を満喫できるファミリープラン</option>
+            <option value="">
+              絶景貸切露天と個室会席を満喫できるファミリープラン
+            </option>
           </select><!-- /# -->
           <p>日時選択</p>
-          <input type="text" placeholder="日時を選択してください">
-          <input class="modal-inner-form-btn" type="submit" value="送信する">
+          <input
+            type="text"
+            id="calendar"
+            placeholder="日時を選択してください"
+          />
+          <input class="modal-inner-form-btn" type="submit" value="送信する" style="border: 1px solid #707070;"/>
         </form>
         <!-- /.modal-inner-form -->
       </div>
@@ -554,6 +569,17 @@
           duration: 2000,
           easing: "linear",
         });
+      });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script src="https://cdn.jsdelivr.net/npm.flatpickr/dist/l10n/ja.js"></script>
+    <script>
+      flatpickr.localize(flatpickr.l10ns.ja);
+      flatpickr('#calendar', {
+        minDate: "today",
+        mode: "multiple",
+        dateFormat: "Y-m-d",
+        confunction: " :: "
       });
     </script>
     <script type="text/javascript" src="javascript/script.js"></script>

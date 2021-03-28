@@ -107,12 +107,19 @@ body {
     position: relative;       
 }
 
+input::placeholder, #select {
+    font-family: “Times New Roman”, “游明朝”, “Yu Mincho”, “游明朝体”, “YuMincho”, “ヒラギノ明朝 Pro W3”,
+        “Hiragino Mincho Pro”, “HiraMinProN-W3”, “HGS明朝E”, “ＭＳ Ｐ明朝”, “MS PMincho”, serif;
+    font-weight: bold;
+    color: #797878;
+}
+
 .header {
     max-width: 1920px;
     width: 100%;
     height: 80px;
     padding: 0 20px;
-    z-index: 1000;
+    z-index: 8000;
     &-inner {
         width: 100%;
         height: 100%;
@@ -411,12 +418,14 @@ body {
     margin-left: 0;
     margin-right: 0;
     margin: auto;
-    padding: 20px 22px;
+    padding: 0 22px;
     background-color: #FFF;
     border: 1px solid #707070;
     z-index: 6000;
     .modal-btn {
-        text-align: right;
+        position: absolute;
+        top: 20px;
+        right: 22px;
         a {
             img {
                 max-width: 18px;
@@ -429,11 +438,34 @@ body {
         height: 100%;
         margin: 0 auto;
         &-title {
-
+            font-size: 20px;
+            text-align: center;
+            padding: 29px 0;
+            border-bottom: 1px solid #E7E7E7;
         }
         &-form {
+            margin-top: 30px;
             p {
+                font-size: 16px;
+                font-weight: bold;
                 margin: 14px 0;
+            }
+            input {
+                width: 100%;
+                padding: 9px 10px;
+                border: 1px solid #E7E7E7;
+            }
+            #select {
+                width: 100%;
+                padding: 9px 10px;
+                border: 1px solid #e7e7e7;
+            }
+            &-btn {
+                max-width: 198px;
+                width: 100%;
+                text-align: center;
+                background-color: #FFF;
+                border: 1px solid #707070;
             }
         }
     }
