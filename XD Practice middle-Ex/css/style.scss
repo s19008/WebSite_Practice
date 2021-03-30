@@ -90,7 +90,12 @@ $sp: 375px;
 .fix-header.show {
     top: 0;
 }
-
+body.fixed {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+}
 //-------------CSS-------------//
 
 a {
@@ -104,10 +109,11 @@ img {
 body {
     font-family: “Times New Roman”, “游明朝”, “Yu Mincho”, “游明朝体”, “YuMincho”, “ヒラギノ明朝 Pro W3”,
         “Hiragino Mincho Pro”, “HiraMinProN-W3”, “HGS明朝E”, “ＭＳ Ｐ明朝”, “MS PMincho”, serif;
-    position: relative;       
+    position: relative;
 }
 
-input::placeholder, #select {
+input::placeholder,
+#select {
     font-family: “Times New Roman”, “游明朝”, “Yu Mincho”, “游明朝体”, “YuMincho”, “ヒラギノ明朝 Pro W3”,
         “Hiragino Mincho Pro”, “HiraMinProN-W3”, “HGS明朝E”, “ＭＳ Ｐ明朝”, “MS PMincho”, serif;
     font-weight: bold;
@@ -115,11 +121,12 @@ input::placeholder, #select {
 }
 
 .header {
+    position: absolute;
     max-width: 1920px;
     width: 100%;
     height: 80px;
     padding: 0 20px;
-    z-index: 8000;
+    z-index: 5000;
     &-inner {
         width: 100%;
         height: 100%;
@@ -259,7 +266,7 @@ input::placeholder, #select {
     width: 100%;
     height: 80px;
     padding: 0 20px;
-    z-index: 9999;
+    z-index: 5000;
     background-color: #fff;
     &-inner {
         width: 100%;
@@ -396,18 +403,23 @@ input::placeholder, #select {
     }
 }
 #mask {
+    display: none;
     position: fixed;
     top: 0;
     bottom: 0;
     right: 0;
     left: 0;
-    background: rgba(0,0,0,0.5);
-    z-index: 5000;
+    max-width: 1920px;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 9000;
 }
 #mask.hidden {
-    display: none;
+    display: block;
 }
 #modal {
+    display: none;
     position: absolute;
     top: 242px;
     left: 0;
@@ -419,9 +431,9 @@ input::placeholder, #select {
     margin-right: 0;
     margin: auto;
     padding: 0 22px;
-    background-color: #FFF;
+    background-color: #fff;
     border: 1px solid #707070;
-    z-index: 6000;
+    z-index: 9999;
     .modal-btn {
         position: absolute;
         top: 20px;
@@ -441,19 +453,21 @@ input::placeholder, #select {
             font-size: 20px;
             text-align: center;
             padding: 29px 0;
-            border-bottom: 1px solid #E7E7E7;
+            border-bottom: 1px solid #e7e7e7;
         }
         &-form {
             margin-top: 30px;
+            text-align: center;
             p {
                 font-size: 16px;
                 font-weight: bold;
                 margin: 14px 0;
+                text-align: left;
             }
             input {
                 width: 100%;
                 padding: 9px 10px;
-                border: 1px solid #E7E7E7;
+                border: 1px solid #e7e7e7;
             }
             #select {
                 width: 100%;
@@ -463,21 +477,19 @@ input::placeholder, #select {
             &-btn {
                 max-width: 198px;
                 width: 100%;
-                text-align: center;
-                background-color: #FFF;
-                border: 1px solid #707070;
+                background-color: #fff;
+                margin-top: 64px;
             }
         }
     }
 }
+#modal.hidden {
+    display: block;
+}
 .mv {
-    position: relative;
-    top: -80px;
     max-width: 1920px;
     width: 100%;
     height: 1079px;
-    background-image: url("../images/Ex-sozai/Ex-sozai/mainbg01.jpg");
-    background-size: cover;
     &-inner {
         max-width: 1180px;
         width: 100%;
@@ -621,6 +633,9 @@ input::placeholder, #select {
             left: 271px;
             @include pc {
                 left: 100px;
+            }
+            @include tab2 {
+                left: 0;
             }
         }
     }
