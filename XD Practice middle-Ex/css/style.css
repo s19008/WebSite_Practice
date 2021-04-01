@@ -5,7 +5,7 @@
   height: 44px;
   cursor: pointer;
   display: none;
-  z-index: 2500;
+  z-index: 9000;
 }
 
 @media (max-width: 768px) {
@@ -61,6 +61,10 @@
 #btn01.active span:nth-of-type(3) {
   -webkit-transform: translateY(-20px) rotate(45deg);
   transform: translateY(-20px) rotate(45deg);
+}
+
+#btn01.active span {
+  background-color: #000;
 }
 
 .fix-header.show {
@@ -229,7 +233,7 @@ input::placeholder,
     top: 0;
     left: 0;
     background-color: #f2f2f2;
-    z-index: 2000;
+    z-index: 2;
   }
 }
 
@@ -335,8 +339,8 @@ input::placeholder,
   margin-right: 10px;
 }
 
-.header-inner #btn01.active span {
-  background-color: #000;
+.header-inner .btn-trigger span {
+  background-color: #fff;
 }
 
 .fix-header {
@@ -593,7 +597,7 @@ input::placeholder,
 #modal {
   display: none;
   position: absolute;
-  top: 242px;
+  top: 50%;
   left: 0;
   right: 0;
   max-width: 550px;

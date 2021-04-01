@@ -44,7 +44,7 @@ $sp: 375px;
     height: 44px;
     cursor: pointer;
     display: none;
-    z-index: 2500;
+    z-index: 9000;
     @include tab {
         display: block;
     }
@@ -87,6 +87,10 @@ $sp: 375px;
     -webkit-transform: translateY(-20px) rotate(45deg);
     transform: translateY(-20px) rotate(45deg);
 }
+#btn01.active span{
+    background-color: #000;
+}
+
 .fix-header.show {
     top: 0;
 }
@@ -187,7 +191,7 @@ input::placeholder,
                 top: 0;
                 left: 0;
                 background-color: #f2f2f2;
-                z-index: 2000;
+                z-index: 2;
             }
             &-list {
                 display: flex;
@@ -250,9 +254,9 @@ input::placeholder,
                 }
             }
         }
-        #btn01.active {
+        .btn-trigger {
             span {
-                background-color: #000;
+                background-color: #fff;
             }
         }
     }
@@ -421,7 +425,7 @@ input::placeholder,
 #modal {
     display: none;
     position: absolute;
-    top: 242px;
+    top: 50%;
     left: 0;
     right: 0;
     max-width: 550px;

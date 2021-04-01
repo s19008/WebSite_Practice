@@ -24,9 +24,16 @@ $(function () {
 
 
   var open = $("#open"),
+    fix_open = $("#fix-open"),
     close = $("#close"),
     scrollPosition;
   open.on("click", function () {
+    $("#mask").fadeIn();
+    $("#modal").fadeIn();
+    scrollPosition = $(window).scrollTop();
+    $('body').addClass('fixed').css({'top': -scrollPosition});
+  });
+  fix_open.on("click", function () {
     $("#mask").fadeIn();
     $("#modal").fadeIn();
     scrollPosition = $(window).scrollTop();
