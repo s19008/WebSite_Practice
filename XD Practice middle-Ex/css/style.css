@@ -119,6 +119,20 @@ input::placeholder,
   color: #797878;
 }
 
+.title {
+  text-align: center;
+  margin-top: 60px;
+}
+
+.title img {
+  max-width: 40px;
+}
+
+.title-copy {
+  padding-top: 20px;
+  font-size: 36px;
+}
+
 .header {
   position: absolute;
   max-width: 1920px;
@@ -596,8 +610,8 @@ input::placeholder,
 
 #modal {
   display: none;
-  position: absolute;
-  top: 50%;
+  position: fixed;
+  top: 242px;
   left: 0;
   right: 0;
   max-width: 550px;
@@ -610,6 +624,12 @@ input::placeholder,
   background-color: #fff;
   border: 1px solid #707070;
   z-index: 9999;
+}
+
+@media (max-width: 530px) {
+  #modal {
+    padding: 0 10px;
+  }
 }
 
 #modal .modal-btn {
@@ -646,6 +666,12 @@ input::placeholder,
   font-weight: bold;
   margin: 14px 0;
   text-align: left;
+}
+
+@media (max-width: 530px) {
+  #modal .modal-inner-form p {
+    font-size: 14px;
+  }
 }
 
 #modal .modal-inner-form input {
@@ -780,10 +806,12 @@ input::placeholder,
   top: 26px;
   max-width: 1920px;
   width: 100%;
+  margin-left: 0;
+  margin-right: 0;
+  margin: auto;
 }
 
 .service-content {
-  width: 100%;
   height: 545px;
   display: -webkit-box;
   display: -webkit-flex;
@@ -803,11 +831,19 @@ input::placeholder,
 
 @media (max-width: 1020px) {
   .service-content {
+    height: 700px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -webkit-flex-direction: column;
         -ms-flex-direction: column;
             flex-direction: column;
+    margin: 0 30px 122px 30px;
+  }
+}
+
+@media (max-width: 530px) {
+  .service-content {
+    margin: 0 10px 100px 10px;
   }
 }
 
@@ -817,6 +853,18 @@ input::placeholder,
   height: 545px;
   overflow: hidden;
   position: relative;
+}
+
+@media (max-width: 1020px) {
+  .service-content-visual {
+    height: 700px;
+  }
+}
+
+@media (max-width: 530px) {
+  .service-content-visual {
+    height: 570px;
+  }
 }
 
 .service-content-visual img {
@@ -851,6 +899,14 @@ input::placeholder,
 @media (max-width: 1280px) {
   .service-content-copy {
     padding-left: 50px;
+    padding-top: 30px;
+  }
+}
+
+@media (max-width: 1020px) {
+  .service-content-copy {
+    height: 100%;
+    padding-left: 0;
   }
 }
 
@@ -859,10 +915,22 @@ input::placeholder,
   line-height: 62px;
 }
 
+@media (max-width: 530px) {
+  .service-content-copy-title {
+    font-size: 26px;
+  }
+}
+
 .service-content-copy-txt {
   font-size: 16px;
   font-weight: bold;
   line-height: 32px;
+}
+
+@media (max-width: 530px) {
+  .service-content-copy-txt {
+    font-size: 13px;
+  }
 }
 
 .service-content-copy-btn {
@@ -870,6 +938,7 @@ input::placeholder,
   width: 100%;
   font-size: 16px;
   font-weight: bold;
+  text-align: center;
   padding: 20px 43px;
   border: 1px solid #707070;
 }
@@ -898,5 +967,13 @@ input::placeholder,
         -ms-flex-direction: column-reverse;
             flex-direction: column-reverse;
   }
+}
+
+.plan {
+  max-width: 1920px;
+  width: 100%;
+  height: 775px;
+  background-image: url("../images/Ex-sozai/Ex-sozai/bg02.jpg");
+  background-size: cover;
 }
 /*# sourceMappingURL=style.css.map */
