@@ -1331,6 +1331,7 @@ input::placeholder,
   background-image: url("../images/Ex-sozai/Ex-sozai/bg.jpg");
   background-size: cover;
   background-position: center;
+  padding-bottom: 110px;
   position: relative;
 }
 
@@ -1342,21 +1343,174 @@ input::placeholder,
   margin-right: 0;
   margin: auto;
   padding-top: 80px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media (max-width: 1020px) {
+  .access-inner {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 
 .access-inner-visual {
   max-width: 656px;
   width: 100%;
   height: 370px;
-  overflow: hidden;
-  position: relative;
+  background-image: url("../images/Ex-sozai/Ex-sozai/access.jpg");
+  background-size: cover;
+  background-position: center;
 }
 
-.access-inner-visual img {
+@media (max-width: 1020px) {
+  .access-inner-visual {
+    margin: 0 auto;
+  }
+}
+
+.access-inner-copy {
+  width: 100%;
+  font-size: 16px;
+  font-weight: bold;
+  padding-left: 83px;
+}
+
+@media (max-width: 1280px) {
+  .access-inner-copy {
+    padding-left: 50px;
+  }
+}
+
+@media (max-width: 1020px) {
+  .access-inner-copy {
+    padding: 0 10px;
+    text-align: center;
+  }
+}
+
+.access-inner-copy-txt {
+  padding: 12px 0;
+}
+
+.access-inner-copy-txt-title {
+  padding-bottom: 12px;
+}
+
+@media (max-width: 1020px) {
+  .access-inner-copy-txt-title {
+    font-size: 20px;
+    padding-bottom: 16px;
+  }
+}
+
+.access-inner-copy-txt-details {
+  line-height: 32px;
+}
+
+@media (max-width: 1020px) {
+  .access-inner-copy-txt-details {
+    font-size: 18px;
+  }
+}
+
+.access-inner-copy-recommend {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
+  line-height: 32px;
+}
+
+@media (max-width: 1020px) {
+  .access-inner-copy-recommend {
+    position: relative;
+  }
+}
+
+.access-map {
+  max-width: 792px;
+  width: 100%;
+  height: 592px;
+  padding-top: 69px;
+  margin: 0 auto;
+}
+
+.access-map iframe {
+  width: 100%;
+  height: 100%;
+}
+
+.footer {
+  max-width: 1920px;
+  width: 100%;
+  height: 100%;
+  background-image: url("../images/Ex-sozai/Ex-sozai/bg3.jpg");
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+}
+
+.footer-nav {
+  font-size: 18px;
+  font-weight: bold;
+  -webkit-writing-mode: vertical-rl;
+      -ms-writing-mode: tb-rl;
+          writing-mode: vertical-rl;
+  margin: 0 auto;
+  padding-top: 64px;
+}
+
+.footer-nav-list {
+  text-align: start;
+}
+
+.footer-nav-list-item {
+  padding: 0 17px;
+}
+
+.footer-logo {
+  padding-top: 96px;
+}
+
+.footer-logo img {
+  max-width: 40px;
+}
+
+.footer-logo h2 {
+  font-size: 36px;
+  font-weight: bold;
+  padding-top: 20px;
+}
+
+.footer-txt {
+  padding: 72px 0 61px 0;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 30px;
+}
+
+.footer-txt .address {
+  letter-spacing: 2.88px;
+  padding-left: 21px;
+}
+
+.footer-txt .fax {
+  padding-left: 20px;
+}
+
+.footer-copy-right {
+  background-color: #000;
+  height: 60px;
+  text-align: center;
+  line-height: 60px;
+  font-weight: bold;
+}
+
+.footer-copy-right p {
+  font-size: 12px;
+  color: #FFF;
 }
 /*# sourceMappingURL=style.css.map */
