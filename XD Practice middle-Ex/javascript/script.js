@@ -30,19 +30,13 @@ $(function () {
   open.on("click", function () {
     $("#mask").fadeIn();
     $("#modal").fadeIn();
-    //scrollPosition = $(window).scrollTop();
-    //$('body').addClass('fixed').css({'top': -scrollPosition});
   });
   fix_open.on("click", function () {
     $("#mask").fadeIn();
     $("#modal").fadeIn();
-    //scrollPosition = $(window).scrollTop();
-    //$('body').addClass('fixed').css({'top': -scrollPosition});
   });
-  close.on("click", function () {
+  $(close,"#mask").click(function () {
     $("#mask").fadeOut();
     $("#modal").fadeOut();
-    //$('body').removeClass('fixed').css({'top': 0});
-    //window.scrollTo(0, scrollPosition);
   });
 });
