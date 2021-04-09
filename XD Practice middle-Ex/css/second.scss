@@ -1,6 +1,8 @@
 $pc: 1920px;
 $pc2: 1280px;
 $pc3: 1180px;
+$pc4: 1050px;
+$tab3: 980px;
 $tab2: 900px;
 $tab: 768px;
 $sp2: 530px;
@@ -18,6 +20,16 @@ $sp: 375px;
 }
 @mixin pc3 {
     @media (max-width: ($pc3)) {
+        @content;
+    }
+}
+@mixin pc4 {
+    @media (max-width: ($pc4)) {
+        @content;
+    }
+}
+@mixin tab3 {
+    @media (max-width: ($tab3)) {
         @content;
     }
 }
@@ -414,6 +426,7 @@ input::placeholder,
 .feature {
     max-width: 1920px;
     width: 100%;
+    height: 100%;
     &-inner {
         max-width: 1180px;
         width: 100%;
@@ -426,12 +439,18 @@ input::placeholder,
             line-height: 32px;
             text-align: center;
             padding: 98px 0 78px 0;
+            @include sp2 {
+                font-size: 14px;
+            }
         }
         &-content {
             width: 100%;
-            height: 100%;
+            height: 438px;
+            margin-bottom: 84px;
             position: relative;
-            //padding-bottom: 222px;
+            @include tab3 {
+                height: 100%;
+            }
             &-visual {
                 max-width: 525px;
                 width: 100%;
@@ -439,6 +458,12 @@ input::placeholder,
                 overflow: hidden;
                 z-index: 10;
                 position: relative;
+                @include pc3 {
+                    max-width: 500px;
+                }
+                @include tab {
+                    max-width: 780px;
+                }
                 img {
                     position: absolute;
                     top: 50%;
@@ -459,6 +484,22 @@ input::placeholder,
                 background-size: cover;
                 background-position: center;
                 overflow: hidden;
+                @include pc3 {
+                    padding-left: 270px;
+                }
+                @include pc4 {
+                    padding-left: 350px;
+                }
+                @include tab3 {
+                    top: -50px;
+                    padding-left: 150px;
+                }
+                @include tab {
+                    padding-left: 60px;
+                }
+                @include sp2 {
+                    padding-left: 10px;
+                }
                 &-title {
                     font-size: 24px;
                     font-weight: bold;
@@ -468,6 +509,21 @@ input::placeholder,
                     font-size: 16px;
                     font-weight: bold;
                     line-height: 32px;
+                    @include tab {
+                        font-size: 15px;
+                    }
+                }
+                .sp-hide {
+                    display: block;
+                    @include sp2 {
+                        display: none;
+                    }
+                }
+                .sp {
+                    display: none;
+                    @include sp2 {
+                        display: block;
+                    }
                 }
                 &-notice {
                     font-size: 14px;
@@ -485,7 +541,71 @@ input::placeholder,
                 left: 0;
                 margin-left: 0;
                 padding-left: 60px;
+                @include sp2 {
+                    padding-left: 10px;
+                }
             }
+        }
+    }
+}
+.footer {
+    max-width: 1920px;
+    width: 100%;
+    height: 100%;
+    background-image: url("../images/Ex-sozai/Ex-sozai/bg3.jpg");
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    margin-top: 150px;
+    &-nav {
+        font-size: 18px;
+        font-weight: bold;
+        writing-mode: vertical-rl;
+        margin: 0 auto;
+        padding-top: 64px;
+        &-list {
+            text-align: start;
+            &-item {
+                padding: 0 17px;
+                a {
+                    color: #000;
+                }
+            }
+        }
+    }
+    &-logo {
+        padding-top: 96px;
+        img {
+            max-width: 40px;
+        }
+        h2 {
+            font-size: 36px;
+            font-weight: bold;
+            padding-top: 20px;
+        }
+    }
+    &-txt {
+        padding: 72px 0 61px 0;
+        font-size: 16px;
+        font-weight: bold;
+        line-height: 30px;
+        .address {
+            letter-spacing: 2.88px;
+            padding-left: 21px;
+        }
+        .fax {
+            padding-left: 20px;
+        }
+    }
+    &-copy-right {
+        background-color: #000;
+        height: 60px;
+        text-align: center;
+        line-height: 60px;
+        font-weight: bold;
+        p {
+            font-size: 12px;
+            color: #fff;
         }
     }
 }

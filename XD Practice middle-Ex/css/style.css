@@ -1523,6 +1523,10 @@ input::placeholder,
   padding: 0 17px;
 }
 
+.footer-nav-list-item a {
+  color: #000;
+}
+
 .footer-logo {
   padding-top: 96px;
 }

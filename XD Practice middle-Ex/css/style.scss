@@ -1033,6 +1033,9 @@ input::placeholder,
             text-align: start;
             &-item {
                 padding: 0 17px;
+                 a {
+                     color: #000;
+                 }
             }
         }
     }
