@@ -9,9 +9,11 @@
       content="日本古来の素材と現代的表現を合わせ持つ温泉旅館、石井花壇。伝統的「和」の息づく空間で、至極のひとときをお過ごしください。"
     />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/second.css" />
-    <link rel="icon" href="images/Ex-sozai/Ex-sozai/favicon.ico">
+    <link rel="icon" href="images/Ex-sozai/Ex-sozai/favicon.ico" />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css"
@@ -27,7 +29,7 @@
     <header class="fix-header" style="display: block">
       <div class="fix-header-inner">
         <h1 class="fix-header-inner-logo">
-          <a href="#">
+          <a href="index.html">
             <img src="images/Ex-sozai/Ex-sozai/logo02.png" alt="ロゴ画像" />
             <p>石井花壇</p>
           </a>
@@ -36,14 +38,16 @@
         <nav class="fix-header-inner-nav">
           <ul class="fix-header-inner-nav-list">
             <li class="fix-header-inner-nav-list-item">
-              <a href="#">お部屋</a>
+              <a href="oheya.html">お部屋</a>
             </li>
             <!-- /.header-inner-nav-list-item -->
             <li class="fix-header-inner-nav-list-item">
-              <a href="#">お料理</a>
+              <a href="oryouri.html">お料理</a>
             </li>
             <!-- /.header-inner-nav-list-item -->
-            <li class="fix-header-inner-nav-list-item"><a href="#">温泉</a></li>
+            <li class="fix-header-inner-nav-list-item">
+              <a href="onsen.html">温泉</a>
+            </li>
             <!-- /.header-inner-nav-list-item -->
           </ul>
           <!-- /.header-inner-nav-list -->
@@ -52,15 +56,15 @@
         <nav class="fix-header-inner-sp-nav">
           <ul class="fix-header-inner-sp-nav-list">
             <li class="fix-header-inner-sp-nav-list-item">
-              <a href="#">お部屋</a>
+              <a href="oheya.html">お部屋</a>
             </li>
             <!-- /.header-list-item -->
             <li class="fix-header-inner-sp-nav-list-item">
-              <a href="#">お料理</a>
+              <a href="oryouri.html">お料理</a>
             </li>
             <!-- /.header-list-item -->
             <li class="fix-header-inner-sp-nav-list-item">
-              <a href="#">温泉</a>
+              <a href="onsen.html">温泉</a>
             </li>
             <!-- /.header-list-item -->
           </ul>
@@ -129,7 +133,10 @@
       </div>
       <!-- /.modal-inner -->
     </div>
-    <div class="mv" style="background-image: url(images/Ex-sozai/Ex-sozai/oheya-top.jpg);">
+    <div
+      class="mv"
+      style="background-image: url(images/Ex-sozai/Ex-sozai/oheya-top.jpg)"
+    >
       <div class="mv-inner">
         <h2 class="mv-inner-copy">お部屋</h2>
         <!-- /.mv-inner-copy -->
@@ -166,7 +173,7 @@
             <meta itemprop="position" content="2" />
           </li>
         </ol>
-        <div class="feature-inner-title">
+        <div class="feature-inner-title sp-hide" data-aos="fade-up">
           <p>
             創業より受け継がれてきた石井花壇の和の造り<br />
             温海の雄大な絶景を堪能していただけるように設計された客室<br />
@@ -174,20 +181,28 @@
           </p>
         </div>
         <!-- /.feature-inner-title -->
+        <div class="feature-inner-title sp" data-aos="fade-up">
+          <p>
+            創業より受け継がれてきた石井花壇の和の造り<br />
+            温海の雄大な絶景を堪能していただけるように<br>
+            設計された客室<br>
+            ゆるやかに流れ行く時間に身を委ねて
+          </p>
+        </div>
         <div class="feature-inner-content">
-          <div class="feature-inner-content-visual">
+          <div class="feature-inner-content-visual" data-aos="fade-down">
             <img src="tyukyu-Ex/oheya01.jpg" alt="お部屋画像" />
           </div>
           <!-- /.feature-inner-content-visual -->
-          <div class="feature-inner-content-txt">
+          <div class="feature-inner-content-txt" data-aos="fade-down">
             <h3 class="feature-inner-content-txt-title">温泉付き客室</h3>
             <!-- /.feature-inner-content-txt-title -->
             <p class="feature-inner-content-txt-recommend">
-              温海の源泉かけ流し露天風呂付き客室になります。<br>
+              温海の源泉かけ流し露天風呂付き客室になります。<br />
               あなただけの上質な安らぎのひとときを。
             </p>
             <p class="feature-inner-content-txt-notice">
-              ＊部屋数に限りがございます。<br>
+              ＊部屋数に限りがございます。<br />
               ＊洗い場はないため、お体を先に大浴場でお流しになって頂く必要があります。
             </p>
           </div>
@@ -195,20 +210,20 @@
         </div>
         <!-- /.feature-inner-content -->
         <div class="feature-inner-content even">
-          <div class="feature-inner-content-visual even-visual" >
+          <div class="feature-inner-content-visual even-visual" data-aos="fade-down">
             <img src="tyukyu-Ex/oheya02.jpg" alt="お部屋画像" />
           </div>
           <!-- /.feature-inner-content-visual -->
-          <div class="feature-inner-content-txt even-txt">
+          <div class="feature-inner-content-txt even-txt" data-aos="fade-down">
             <h3 class="feature-inner-content-txt-title">庭園付き客室</h3>
             <!-- /.feature-inner-content-txt-title -->
             <p class="feature-inner-content-txt-recommend">
-              庭園付きの客室になります。<br>
+              庭園付きの客室になります。<br />
               お庭を見ながら、ほっとするひとときをお過ごしください。
             </p>
             <p class="feature-inner-content-txt-notice">
-              ＊お庭は複数のお客様と囲む形になります。<br>
-              ＊部屋数に限りがあります。<br>
+              ＊お庭は複数のお客様と囲む形になります。<br />
+              ＊部屋数に限りがあります。<br />
               ＊ご希望の方は「お抹茶/500円」をルームサービスさせていただきます。
             </p>
           </div>
@@ -216,15 +231,15 @@
         </div>
         <!-- /.feature-inner-content -->
         <div class="feature-inner-content">
-          <div class="feature-inner-content-visual">
+          <div class="feature-inner-content-visual" data-aos="fade-down">
             <img src="tyukyu-Ex/oheya03.jpg" alt="お部屋画像" />
           </div>
           <!-- /.feature-inner-content-visual -->
-          <div class="feature-inner-content-txt">
+          <div class="feature-inner-content-txt" data-aos="fade-down">
             <h3 class="feature-inner-content-txt-title">一般客室</h3>
             <!-- /.feature-inner-content-txt-title -->
             <p class="feature-inner-content-txt-recommend sp-hide">
-              最もベーシックな客室になります。伝統の中にモダンさを取り入れた<br>
+              最もベーシックな客室になります。伝統の中にモダンさを取り入れた<br />
               内装となっており、とても過ごしやすくしていただけます。
             </p>
             <p class="feature-inner-content-txt-recommend sp">
@@ -244,23 +259,37 @@
     <footer class="footer">
       <nav class="footer-nav">
         <ul class="footer-nav-list">
-          <li class="footer-nav-list-item"><a href="#">お部屋</a></li><!-- /.footer-nav-list-item -->
-          <li class="footer-nav-list-item"><a href="#">お料理</a></li><!-- /.footer-nav-list-item -->
-          <li class="footer-nav-list-item"><a href="#">温泉</a></li><!-- /.footer-nav-list-item -->
-        </ul><!-- /.footer-nav-list -->
-      </nav><!-- /.footer-nav -->
+          <li class="footer-nav-list-item"><a href="oheya.html">お　部　屋</a></li>
+          <!-- /.footer-nav-list-item -->
+          <li class="footer-nav-list-item">
+            <a href="oryouri.html">お　料　理</a>
+          </li>
+          <!-- /.footer-nav-list-item -->
+          <li class="footer-nav-list-item"><a href="onsen.html">温　泉</a></li>
+          <!-- /.footer-nav-list-item -->
+        </ul>
+        <!-- /.footer-nav-list -->
+      </nav>
+      <!-- /.footer-nav -->
       <div class="footer-logo">
-        <img src="images/Ex-sozai/Ex-sozai/logo02.png" alt="ロゴ画像">
-        <h2 class="footer-logo-copy">石井花壇</h2><!-- /.footer-logo-copy -->
-      </div><!-- /.footer-logo -->
+        <a href="index.html">
+          <img src="images/Ex-sozai/Ex-sozai/logo02.png" alt="ロゴ画像" />
+          <h2 class="footer-logo-copy">石井花壇</h2>
+          <!-- /.footer-logo-copy -->
+        </a>
+      </div>
+      <!-- /.footer-logo -->
       <div class="footer-txt">
         <p>〒000-0000 山形県鶴岡市xxxxxxxxxxx</p>
         <p>TEL.000-0000-0000 FAX.00-0000-0000</p>
-      </div><!-- /.footer-txt -->
+      </div>
+      <!-- /.footer-txt -->
       <div class="footer-copy-right">
         <p>Copyright © 石井花壇 All Rights Reserved.</p>
-      </div><!-- /.footer-copy-right -->
-    </footer><!-- /.footer -->
+      </div>
+      <!-- /.footer-copy-right -->
+    </footer>
+    <!-- /.footer -->
     <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
     <script>
       flatpickr.localize(flatpickr.l10ns.ja);

@@ -9,6 +9,8 @@
       content="日本古来の素材と現代的表現を合わせ持つ温泉旅館、石井花壇。伝統的「和」の息づく空間で、至極のひとときをお過ごしください。"
     />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/second.css" />
     <link rel="icon" href="images/Ex-sozai/Ex-sozai/favicon.ico" />
@@ -27,7 +29,7 @@
     <header class="fix-header" style="display: block">
       <div class="fix-header-inner">
         <h1 class="fix-header-inner-logo">
-          <a href="#">
+          <a href="index.html">
             <img src="images/Ex-sozai/Ex-sozai/logo02.png" alt="ロゴ画像" />
             <p>石井花壇</p>
           </a>
@@ -36,14 +38,16 @@
         <nav class="fix-header-inner-nav">
           <ul class="fix-header-inner-nav-list">
             <li class="fix-header-inner-nav-list-item">
-              <a href="#">お部屋</a>
+              <a href="oheya.html">お部屋</a>
             </li>
             <!-- /.header-inner-nav-list-item -->
             <li class="fix-header-inner-nav-list-item">
-              <a href="#">お料理</a>
+              <a href="oryouri.html">お料理</a>
             </li>
             <!-- /.header-inner-nav-list-item -->
-            <li class="fix-header-inner-nav-list-item"><a href="#">温泉</a></li>
+            <li class="fix-header-inner-nav-list-item">
+              <a href="onsen.html">温泉</a>
+            </li>
             <!-- /.header-inner-nav-list-item -->
           </ul>
           <!-- /.header-inner-nav-list -->
@@ -52,22 +56,22 @@
         <nav class="fix-header-inner-sp-nav">
           <ul class="fix-header-inner-sp-nav-list">
             <li class="fix-header-inner-sp-nav-list-item">
-              <a href="#">お部屋</a>
+              <a href="oheya.html">お部屋</a>
             </li>
             <!-- /.header-list-item -->
             <li class="fix-header-inner-sp-nav-list-item">
-              <a href="#">お料理</a>
+              <a href="oryouri.html">お料理</a>
             </li>
             <!-- /.header-list-item -->
             <li class="fix-header-inner-sp-nav-list-item">
-              <a href="#">温泉</a>
+              <a href="onsen.html">温泉</a>
             </li>
             <!-- /.header-list-item -->
           </ul>
           <!-- /.header-list -->
         </nav>
         <h2 id="fix-open" class="fix-header-inner-reserve">
-          <a href="#">
+          <a>
             <img
               src="./images/Ex-sozai/Ex-sozai/calender.png"
               alt="カレンダー画像"
@@ -169,7 +173,7 @@
             <meta itemprop="position" content="2" />
           </li>
         </ol>
-        <div class="feature-inner-title">
+        <div class="feature-inner-title sp-hide" data-aos="fade-up">
           <p>
             地元熱海の市場で仕入れた食材のみを使った食材をふんだんに使い、<br />
             大将の技が光る「熱海料理」<br />
@@ -177,19 +181,35 @@
           </p>
         </div>
         <!-- /.feature-inner-title -->
+        <div class="feature-inner-title sp" data-aos="fade-up">
+          <p>
+            地元熱海の市場で仕入れた食材のみを使った食材を<br>
+            ふんだんに使い、<br />
+            大将の技が光る「熱海料理」<br />
+            四季ごと、日ごとに変化する味わいを、<br>
+            どうぞご堪能ください。
+          </p>
+        </div>
         <div class="feature-inner-content">
-          <div class="feature-inner-content-visual">
+          <div class="feature-inner-content-visual" data-aos="fade-down">
             <img src="tyukyu-Ex/menu01.jpg" alt="メニュー画像" />
           </div>
           <!-- /.feature-inner-content-visual -->
-          <div class="feature-inner-content-txt">
+          <div class="feature-inner-content-txt" data-aos="fade-down">
             <h3 class="feature-inner-content-txt-title">
               地元食材にこだわった会席料理
             </h3>
             <!-- /.feature-inner-content-txt-title -->
-            <p class="feature-inner-content-txt-recommend">
+            <p class="feature-inner-content-txt-recommend sp-hide">
               みずみずしくほのかに甘い野菜、新鮮で味に深みがある魚介類、肉類。<br />
               旬の素材をそのままに生かす、経験に裏打ちされた確かな技。<br />
+              四季ごと、日ごとに変化する味わいを、どうぞご堪能ください。
+            </p>
+            <p class="feature-inner-content-txt-recommend sp">
+              みずみずしくほのかに甘い野菜、新鮮で<br>
+              味に深みがある魚介類、肉類。<br />
+              旬の素材をそのままに生かす、<br>
+              経験に裏打ちされた確かな技。<br />
               四季ごと、日ごとに変化する味わいを、どうぞご堪能ください。
             </p>
           </div>
@@ -197,18 +217,24 @@
         </div>
         <!-- /.feature-inner-content -->
         <div class="feature-inner-content even">
-          <div class="feature-inner-content-visual even-visual">
+          <div class="feature-inner-content-visual even-visual" data-aos="fade-down">
             <img src="tyukyu-Ex/menu02.jpg" alt="お部屋画像" />
           </div>
           <!-- /.feature-inner-content-visual -->
-          <div class="feature-inner-content-txt even-txt">
+          <div class="feature-inner-content-txt even-txt" data-aos="fade-down">
             <h3 class="feature-inner-content-txt-title">
               熱海の漁港で目利きの品を
             </h3>
             <!-- /.feature-inner-content-txt-title -->
-            <p class="feature-inner-content-txt-recommend">
+            <p class="feature-inner-content-txt-recommend sp-hide">
               石井花壇でお出しする料理はすべて料理長である大将の目利きで、<br />
               熱海の魚市場でその日のうちに仕入れたものを使用しております。<br />
+              日本海の宝玉を十分にお楽しみください。
+            </p>
+            <p class="feature-inner-content-txt-recommend sp">
+              石井花壇でお出しする料理はすべて料理長である<br>大将の目利きで、
+              熱海の魚市場でその日のうちに<br>
+              仕入れたものを使用しております。<br />
               日本海の宝玉を十分にお楽しみください。
             </p>
           </div>
@@ -216,19 +242,19 @@
         </div>
         <!-- /.feature-inner-content -->
         <div class="feature-inner-content">
-          <div class="feature-inner-content-visual">
+          <div class="feature-inner-content-visual" data-aos="fade-down">
             <img src="tyukyu-Ex/menu03.jpg" alt="お部屋画像" />
           </div>
           <!-- /.feature-inner-content-visual -->
-          <div class="feature-inner-content-txt">
+          <div class="feature-inner-content-txt" data-aos="fade-down">
             <h3 class="feature-inner-content-txt-title">
               食材が一流、職人も一流
             </h3>
             <!-- /.feature-inner-content-txt-title -->
             <p class="feature-inner-content-txt-recommend">
-              石井花壇の料理人は料亭で20年経験を積んだものばかり。<br>
-              その時の最も旬な食材を、最高の調理でお届けします。<br>
-              また、お料理への細かいご要望にもお答えできますので、<br>
+              石井花壇の料理人は料亭で20年経験を積んだものばかり。<br />
+              その時の最も旬な食材を、最高の調理でお届けします。<br />
+              また、お料理への細かいご要望にもお答えできますので、<br />
               お気軽にお申し付けください。
             </p>
           </div>
@@ -241,20 +267,26 @@
     <footer class="footer">
       <nav class="footer-nav">
         <ul class="footer-nav-list">
-          <li class="footer-nav-list-item"><a href="#">お部屋</a></li>
+          <li class="footer-nav-list-item">
+            <a href="oheya.html">お　部　屋</a>
+          </li>
           <!-- /.footer-nav-list-item -->
-          <li class="footer-nav-list-item"><a href="#">お料理</a></li>
+          <li class="footer-nav-list-item">
+            <a href="oryouri.html">お　料　理</a>
+          </li>
           <!-- /.footer-nav-list-item -->
-          <li class="footer-nav-list-item"><a href="#">温泉</a></li>
+          <li class="footer-nav-list-item"><a href="onsen.html">温　泉</a></li>
           <!-- /.footer-nav-list-item -->
         </ul>
         <!-- /.footer-nav-list -->
       </nav>
       <!-- /.footer-nav -->
       <div class="footer-logo">
-        <img src="images/Ex-sozai/Ex-sozai/logo02.png" alt="ロゴ画像" />
-        <h2 class="footer-logo-copy">石井花壇</h2>
-        <!-- /.footer-logo-copy -->
+        <a href="index.html">
+          <img src="images/Ex-sozai/Ex-sozai/logo02.png" alt="ロゴ画像" />
+          <h2 class="footer-logo-copy">石井花壇</h2>
+          <!-- /.footer-logo-copy -->
+        </a>
       </div>
       <!-- /.footer-logo -->
       <div class="footer-txt">

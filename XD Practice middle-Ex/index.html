@@ -10,7 +10,9 @@
     />
     <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/style.css" />
-    <link rel="icon" href="images/Ex-sozai/Ex-sozai/favicon.ico">
+    <link rel="icon" href="images/Ex-sozai/Ex-sozai/favicon.ico" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <link
       rel="stylesheet"
@@ -35,11 +37,17 @@
         <!-- /.header-inner-logo -->
         <nav class="header-inner-nav">
           <ul class="header-inner-nav-list">
-            <li class="header-inner-nav-list-item"><a href="oheya.html">お部屋</a></li>
+            <li class="header-inner-nav-list-item">
+              <a href="oheya.html">お部屋</a>
+            </li>
             <!-- /.header-inner-nav-list-item -->
-            <li class="header-inner-nav-list-item"><a href="oryouri.html">お料理</a></li>
+            <li class="header-inner-nav-list-item">
+              <a href="oryouri.html">お料理</a>
+            </li>
             <!-- /.header-inner-nav-list-item -->
-            <li class="header-inner-nav-list-item"><a href="onsen.html">温泉</a></li>
+            <li class="header-inner-nav-list-item">
+              <a href="onsen.html">温泉</a>
+            </li>
             <!-- /.header-inner-nav-list-item -->
           </ul>
           <!-- /.header-inner-nav-list -->
@@ -64,7 +72,7 @@
         </nav>
         <!-- /.header-inner-sp-nav -->
         <h2 id="open" class="header-inner-reserve">
-          <a href="#">
+          <a>
             <img
               src="./images/Ex-sozai/Ex-sozai/calender.png"
               alt="カレンダー画像"
@@ -73,7 +81,7 @@
           </a>
         </h2>
         <!-- /.header-inner-reserve -->
-        <div class="btn-trigger" id="btn01">
+        <div class="btn-trigger-1" id="btn01">
           <span></span>
           <span></span>
           <span></span>
@@ -101,7 +109,9 @@
               <a href="oryouri.html">お料理</a>
             </li>
             <!-- /.header-inner-nav-list-item -->
-            <li class="fix-header-inner-nav-list-item"><a href="onsen.html">温泉</a></li>
+            <li class="fix-header-inner-nav-list-item">
+              <a href="onsen.html">温泉</a>
+            </li>
             <!-- /.header-inner-nav-list-item -->
           </ul>
           <!-- /.header-inner-nav-list -->
@@ -197,7 +207,7 @@
     </div>
     <!-- /.mv -->
     <section class="feature">
-      <div class="feature-inner">
+      <div class="feature-inner" data-aos="fade-up">
         <h3 class="feature-inner-title">温 海 温 泉 の</h3>
         <h3 class="feature-inner-second">美 し さ に 癒 や さ れ て</h3>
         <!-- /.feature-inner-title -->
@@ -223,7 +233,7 @@
       <!-- /.feature-inner -->
     </section>
     <section class="service">
-      <div class="service-content">
+      <div class="service-content" data-aos="fade-up">
         <div class="service-content-visual">
           <img src="tyukyu-Ex/oheya-top.jpg" alt="お部屋画像" />
         </div>
@@ -240,13 +250,14 @@
             最高級の「何もしない時間」をお過ごしください。
           </p>
           <!-- /.service-content-copy-txt -->
-          <a href="oheya.html" class="service-content-copy-btn">お部屋について</a
+          <a href="oheya.html" class="service-content-copy-btn"
+            >お部屋について</a
           ><!-- /.service-content-copy-btn -->
         </div>
         <!-- /.service-content-copy -->
       </div>
       <!-- /.service-content -->
-      <div class="service-content eve">
+      <div class="service-content eve" data-aos="fade-down">
         <div class="service-content-copy even">
           <h3 class="service-content-copy-title">
             出迎えるのは<br />
@@ -260,7 +271,8 @@
             お約束します。
           </p>
           <!-- /.service-content-copy-txt -->
-          <a href="oryouri.html" class="service-content-copy-btn">料理について</a
+          <a href="oryouri.html" class="service-content-copy-btn"
+            >料理について</a
           ><!-- /.service-content-copy-btn -->
         </div>
         <!-- /.service-content-copy -->
@@ -269,7 +281,7 @@
         </div>
       </div>
       <!-- /.service-content -->
-      <div class="service-content">
+      <div class="service-content" data-aos="fade-up">
         <div class="service-content-visual">
           <img src="tyukyu-Ex/onsen-top.jpg" alt="温泉画像" />
         </div>
@@ -294,19 +306,16 @@
     </section>
     <!-- /.service -->
     <section class="plan">
-      <div class="title">
+      <div class="title" data-aos="fade-down">
         <img src="./images/Ex-sozai/Ex-sozai/logo02.png" alt="ロゴ画像" />
         <h2 class="title-copy">おすすめご宿泊プラン</h2>
         <!-- /.title-copy -->
       </div>
       <!-- /.title -->
       <div class="plan-inner">
-        <div class="plan-inner-card">
+        <div class="plan-inner-card" data-aos="fade-down">
           <div class="plan-inner-card-visual">
-            <img
-              src="tyukyu-Ex/recommended01.jpg"
-              alt="のどぐろ画像"
-            />
+            <img src="tyukyu-Ex/recommended01.jpg" alt="のどぐろ画像" />
           </div>
           <!-- /.plan-inner-card-visual -->
           <div class="plan-inner-card-copy">
@@ -325,12 +334,9 @@
           <!-- /.plan-inner-card-copy -->
         </div>
         <!-- /.plan-inner-card -->
-        <div class="plan-inner-card">
+        <div class="plan-inner-card" data-aos="fade-down">
           <div class="plan-inner-card-visual">
-            <img
-              src="tyukyu-Ex/recommended02.jpg"
-              alt="蟹画像"
-            />
+            <img src="tyukyu-Ex/recommended02.jpg" alt="蟹画像" />
           </div>
           <!-- /.plan-inner-card-visual -->
           <div class="plan-inner-card-copy">
@@ -348,12 +354,9 @@
           <!-- /.plan-inner-card-copy -->
         </div>
         <!-- /.plan-inner-card -->
-        <div class="plan-inner-card">
+        <div class="plan-inner-card" data-aos="fade-down">
           <div class="plan-inner-card-visual">
-            <img
-              src="tyukyu-Ex/recommended03.jpg"
-              alt="懐石画像"
-            />
+            <img src="tyukyu-Ex/recommended03.jpg" alt="懐石画像" />
           </div>
           <!-- /.plan-inner-card-visual -->
           <div class="plan-inner-card-copy">
@@ -375,20 +378,27 @@
     </section>
     <!-- /.plan -->
     <section class="notice">
-      <div class="title">
+      <div class="title" data-aos="fade-down">
         <img src="images/Ex-sozai/Ex-sozai/logo02.png" alt="ロゴ画像" />
         <h2 class="title-copy">お知らせ</h2>
         <!-- /.title-copy -->
       </div>
       <!-- /.title -->
-      <div class="notice-tab">
-        <a href="#">営業情報</a>
-        <a href="#">その他</a>
+      <div class="notice-tab" data-aos="fade-down">
+        <div class="tab active">
+          <a>営業情報</a>
+        </div>
+        <div class="tab">
+          <a>その他</a>
+        </div>
       </div>
       <!-- /.notice-tab -->
-      <div class="notice-inner">
+      <div class="notice-inner show" data-aos="fade-down">
         <div class="notice-inner-info odd">
-          <div class="notice-inner-info-visual" style="background-image: url(tyukyu-Ex/news01.jpg);"></div>
+          <div
+            class="notice-inner-info-visual"
+            style="background-image: url(tyukyu-Ex/news01.jpg)"
+          ></div>
           <!-- /.notice-inner-info-visual -->
           <div class="notice-inner-info-copy">
             <time datetime="2020-12-24">2020.12.24</time>
@@ -401,7 +411,10 @@
         </div>
         <!-- /.notice-inner-content -->
         <div class="notice-inner-info">
-          <div class="notice-inner-info-visual" style="background-image: url(tyukyu-Ex/news02.jpg);"></div>
+          <div
+            class="notice-inner-info-visual"
+            style="background-image: url(tyukyu-Ex/news02.jpg)"
+          ></div>
           <!-- /.notice-inner-info-visual -->
           <div class="notice-inner-info-copy">
             <time datetime="2020-12-24">2020.12.24</time>
@@ -412,12 +425,15 @@
         </div>
         <!-- /.notice-inner-content -->
         <div class="notice-inner-info odd">
-          <div class="notice-inner-info-visual" style="background-image: url(tyukyu-Ex/news02.jpg);"></div>
+          <div
+            class="notice-inner-info-visual"
+            style="background-image: url(tyukyu-Ex/news02.jpg)"
+          ></div>
           <!-- /.notice-inner-info-visual -->
           <div class="notice-inner-info-copy">
             <time datetime="2020-12-11">2020.12.11</time>
             <p class="notice-inner-info-copy-txt pc">
-              12.21は臨時休業とさせていただきますので、よろしく<br>お願いします。
+              12.21は臨時休業とさせていただきますので、よろしく<br />お願いします。
             </p>
             <!-- /.notice-inner-info-copy-txt -->
             <p class="notice-inner-info-copy-txt sp">
@@ -428,7 +444,10 @@
         </div>
         <!-- /.notice-inner-content -->
         <div class="notice-inner-info">
-          <div class="notice-inner-info-visual" style="background-image: url(tyukyu-Ex/news01.jpg);"></div>
+          <div
+            class="notice-inner-info-visual"
+            style="background-image: url(tyukyu-Ex/news01.jpg)"
+          ></div>
           <!-- /.notice-inner-info-visual -->
           <div class="notice-inner-info-copy">
             <time datetime="2020-12-24">2020.12.24</time>
@@ -439,7 +458,10 @@
         </div>
         <!-- /.notice-inner-content -->
         <div class="notice-inner-info odd">
-          <div class="notice-inner-info-visual" style="background-image: url(tyukyu-Ex/news01.jpg);"></div>
+          <div
+            class="notice-inner-info-visual"
+            style="background-image: url(tyukyu-Ex/news01.jpg)"
+          ></div>
           <!-- /.notice-inner-info-visual -->
           <div class="notice-inner-info-copy">
             <time datetime="2020-12-01">2020.12.01</time>
@@ -455,7 +477,10 @@
         </div>
         <!-- /.notice-inner-content -->
         <div class="notice-inner-info">
-          <div class="notice-inner-info-visual" style="background-image: url(tyukyu-Ex/news02.jpg);"></div>
+          <div
+            class="notice-inner-info-visual"
+            style="background-image: url(tyukyu-Ex/news02.jpg)"
+          ></div>
           <!-- /.notice-inner-info-visual -->
           <div class="notice-inner-info-copy">
             <time datetime="2020-12-24">2020.12.24</time>
@@ -467,16 +492,66 @@
         <!-- /.notice-inner-content -->
       </div>
       <!-- /.notice-inner -->
+      <div class="notice-inner" data-aos="fade-down">
+        <div class="notice-inner-info odd">
+          <div
+            class="notice-inner-info-visual"
+            style="background-image: url(tyukyu-Ex/news01.jpg)"
+          ></div>
+          <!-- /.notice-inner-info-visual -->
+          <div class="notice-inner-info-copy">
+            <time datetime="2020-12-24">2020.12.24</time>
+            <p class="notice-inner-info-copy-txt">
+              年末最後の営業日は27日になります。
+            </p>
+            <!-- /.notice-inner-info-copy-txt -->
+          </div>
+          <!-- /.notice-inner-info-copy -->
+        </div>
+        <!-- /.notice-inner-content -->
+        <div class="notice-inner-info odd">
+          <div
+            class="notice-inner-info-visual"
+            style="background-image: url(tyukyu-Ex/news02.jpg)"
+          ></div>
+          <!-- /.notice-inner-info-visual -->
+          <div class="notice-inner-info-copy">
+            <time datetime="2020-12-11">2020.12.11</time>
+            <p class="notice-inner-info-copy-txt pc">
+              12.21は臨時休業とさせていただきますので、よろしく<br />お願いします。
+            </p>
+            <!-- /.notice-inner-info-copy-txt -->
+            <p class="notice-inner-info-copy-txt sp">
+              12.21は臨時休業とさせていただきますので、よろしくお願いします。
+            </p>
+          </div>
+          <!-- /.notice-inner-info-copy -->
+        </div>
+        <div class="notice-inner-info">
+          <div
+            class="notice-inner-info-visual"
+            style="background-image: url(tyukyu-Ex/news02.jpg)"
+          ></div>
+          <!-- /.notice-inner-info-visual -->
+          <div class="notice-inner-info-copy">
+            <time datetime="2020-12-24">2020.12.24</time>
+            <p class="notice-inner-info-copy-txt">年末最後の営業日のお知らせ</p>
+            <!-- /.notice-inner-info-copy-txt -->
+          </div>
+          <!-- /.notice-inner-info-copy -->
+        </div>
+        <!-- /.notice-inner-content -->
+      </div>
     </section>
     <!-- /.notice -->
     <section class="access">
-      <div class="title">
+      <div class="title" data-aos="fade-down">
         <img src="images/Ex-sozai/Ex-sozai/logo02.png" alt="ロゴ画像" />
         <h2 class="title-copy">アクセス</h2>
         <!-- /.title-copy -->
       </div>
       <!-- /.title -->
-      <div class="access-inner">
+      <div class="access-inner" data-aos="fade-down">
         <div class="access-inner-visual"></div>
         <!-- /.access-inner-visual -->
         <div class="access-inner-copy">
@@ -515,7 +590,7 @@
         <!-- /.access-inner-copy -->
       </div>
       <!-- /.access-inner -->
-      <div class="access-map">
+      <div class="access-map" data-aos="fade-down">
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d49867.719557709344!2d139.5635409809523!3d38.63203513063445!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5f8c6dbd6c03ae15%3A0x10bc5da99bc816ef!2z44CSOTk5LTcyMDUg5bGx5b2i55yM6ba05bKh5biC5rip5rW3!5e0!3m2!1sja!2sjp!4v1615792859267!5m2!1sja!2sjp"
           style="border: 0"
@@ -529,25 +604,33 @@
     <footer class="footer">
       <nav class="footer-nav">
         <ul class="footer-nav-list">
-          <li class="footer-nav-list-item"><a href="#">お　部　屋</a></li>
+          <li class="footer-nav-list-item">
+            <a href="oheya.html">お　部　屋</a>
+          </li>
           <!-- /.footer-nav-list-item -->
-          <li class="footer-nav-list-item"><a href="#">お　料　理</a></li>
+          <li class="footer-nav-list-item">
+            <a href="oryouri.html">お　料　理</a>
+          </li>
           <!-- /.footer-nav-list-item -->
-          <li class="footer-nav-list-item"><a href="#">温　泉</a></li>
+          <li class="footer-nav-list-item"><a href="onsen.html">温　泉</a></li>
           <!-- /.footer-nav-list-item -->
         </ul>
         <!-- /.footer-nav-list -->
       </nav>
       <!-- /.footer-nav -->
       <div class="footer-logo">
-        <img src="images/Ex-sozai/Ex-sozai/logo02.png" alt="ロゴ画像" />
-        <h2 class="footer-logo-copy">石井花壇</h2>
+        <a href="#">
+          <img src="images/Ex-sozai/Ex-sozai/logo02.png" alt="ロゴ画像" />
+          <h2 class="footer-logo-copy">石井花壇</h2>
+        </a>
         <!-- /.footer-logo-copy -->
       </div>
       <!-- /.footer-logo -->
       <div class="footer-txt">
-        <p>〒000-0000<span class="address">山形県鶴岡市xxxxxxxxxxx</span>
-        <br>TEL.000-0000-0000<span class="fax">FAX.00-0000-0000</span></p>
+        <p>
+          〒000-0000<span class="address">山形県鶴岡市xxxxxxxxxxx</span>
+          <br />TEL.000-0000-0000<span class="fax">FAX.00-0000-0000</span>
+        </p>
       </div>
       <!-- /.footer-txt -->
       <div class="footer-copy-right">

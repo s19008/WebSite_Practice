@@ -9,6 +9,8 @@
       content="日本古来の素材と現代的表現を合わせ持つ温泉旅館、石井花壇。伝統的「和」の息づく空間で、至極のひとときをお過ごしください。"
     />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/second.css" />
     <link rel="icon" href="images/Ex-sozai/Ex-sozai/favicon.ico" />
@@ -27,7 +29,7 @@
     <header class="fix-header" style="display: block">
       <div class="fix-header-inner">
         <h1 class="fix-header-inner-logo">
-          <a href="#">
+          <a href="index.html">
             <img src="images/Ex-sozai/Ex-sozai/logo02.png" alt="ロゴ画像" />
             <p>石井花壇</p>
           </a>
@@ -36,14 +38,16 @@
         <nav class="fix-header-inner-nav">
           <ul class="fix-header-inner-nav-list">
             <li class="fix-header-inner-nav-list-item">
-              <a href="#">お部屋</a>
+              <a href="oheya.html">お部屋</a>
             </li>
             <!-- /.header-inner-nav-list-item -->
             <li class="fix-header-inner-nav-list-item">
-              <a href="#">お料理</a>
+              <a href="oryouri.html">お料理</a>
             </li>
             <!-- /.header-inner-nav-list-item -->
-            <li class="fix-header-inner-nav-list-item"><a href="#">温泉</a></li>
+            <li class="fix-header-inner-nav-list-item">
+              <a href="onsen.html">温泉</a>
+            </li>
             <!-- /.header-inner-nav-list-item -->
           </ul>
           <!-- /.header-inner-nav-list -->
@@ -52,22 +56,22 @@
         <nav class="fix-header-inner-sp-nav">
           <ul class="fix-header-inner-sp-nav-list">
             <li class="fix-header-inner-sp-nav-list-item">
-              <a href="#">お部屋</a>
+              <a href="oheya.html">お部屋</a>
             </li>
             <!-- /.header-list-item -->
             <li class="fix-header-inner-sp-nav-list-item">
-              <a href="#">お料理</a>
+              <a href="oryouri.html">お料理</a>
             </li>
             <!-- /.header-list-item -->
             <li class="fix-header-inner-sp-nav-list-item">
-              <a href="#">温泉</a>
+              <a href="onsen.html">温泉</a>
             </li>
             <!-- /.header-list-item -->
           </ul>
           <!-- /.header-list -->
         </nav>
         <h2 id="fix-open" class="fix-header-inner-reserve">
-          <a href="#">
+          <a>
             <img
               src="./images/Ex-sozai/Ex-sozai/calender.png"
               alt="カレンダー画像"
@@ -164,25 +168,34 @@
             itemtype="https://schema.org/ListItem"
           >
             <a itemprop="item" href="oheya.html">
-              <span itemprop="name">お料理</span>
+              <span itemprop="name">温泉</span>
             </a>
             <meta itemprop="position" content="2" />
           </li>
         </ol>
-        <div class="feature-inner-title">
+        <div class="feature-inner-title sp-hide" data-aos="fade-up">
           <p>
             心も身体も癒やす汐の温泉。<br />
             湯あたりしにくく、赤ちゃんから年配の方までどなたでもゆっくりと安心して入っていただけます。<br />
             柔らかく優しい湯にじっくりと漬かれば、心身共にリラックスできます。
           </p>
         </div>
+        <div class="feature-inner-title sp" data-aos="fade-up">
+          <p>
+            心も身体も癒やす汐の温泉。<br />
+            湯あたりしにくく、赤ちゃんから年配の方までどなたでも<br />
+            ゆっくりと安心して入っていただけます。<br />
+            柔らかく優しい湯にじっくりと漬かれば、<br />
+            心身共にリラックスできます。
+          </p>
+        </div>
         <!-- /.feature-inner-title -->
         <div class="feature-inner-content">
-          <div class="feature-inner-content-visual">
+          <div class="feature-inner-content-visual" data-aos="fade-down">
             <img src="tyukyu-Ex/onsen01.jpg" alt="お部屋画像" />
           </div>
           <!-- /.feature-inner-content-visual -->
-          <div class="feature-inner-content-txt">
+          <div class="feature-inner-content-txt" data-aos="fade-down">
             <h3 class="feature-inner-content-txt-title">
               貸し切り露天風呂「雲居の湯」
             </h3>
@@ -197,18 +210,18 @@
         </div>
         <!-- /.feature-inner-content -->
         <div class="feature-inner-content even">
-          <div class="feature-inner-content-visual even-visual">
+          <div class="feature-inner-content-visual even-visual" data-aos="fade-down">
             <img src="tyukyu-Ex/onsen02.jpg" alt="お部屋画像" />
           </div>
           <!-- /.feature-inner-content-visual -->
-          <div class="feature-inner-content-txt even-txt">
+          <div class="feature-inner-content-txt even-txt" data-aos="fade-down">
             <h3 class="feature-inner-content-txt-title">
               美肌を促す乳白色の硫黄泉を
             </h3>
             <!-- /.feature-inner-content-txt-title -->
             <p class="feature-inner-content-txt-recommend">
-              まじりっけなしの白いにごり湯。鳥海山から引いた酸性の強い硫酸塩泉を、<br>
-              たっぷりと掛け流しています。<br>
+              まじりっけなしの白いにごり湯。鳥海山から引いた酸性の強い硫酸塩泉を、<br />
+              たっぷりと掛け流しています。<br />
               四季の移り変わりを、天然温泉の湯に浸りながら味わってください。
             </p>
           </div>
@@ -217,22 +230,56 @@
       </div>
       <!-- /.feature-inner -->
     </div>
+    <div class="efficacy">
+      <div class="efficacy-inner">
+        <h2 class="efficacy-inner-title">温泉の効能</h2>
+        <!-- /.efficacy-inner-title -->
+        <table class="efficacy-inner-table">
+          <tr>
+            <th>効能</th>
+            <td>
+              神経痛・慢性関節リューマチ・腰痛・冷え性・慢性婦人病・うちみなど
+            </td>
+          </tr>
+          <tr>
+            <th>泉質</th>
+            <td>ナトリウム・カルシウム-塩化物泉</td>
+          </tr>
+          <tr>
+            <th>飲用効果</th>
+            <td>
+              弱塩化物泉は肌にやわらかなため、高齢者や病後の回復期によく、飲用すれば慢性便秘や慢性消化
+              器病に効果があります。
+            </td>
+          </tr>
+        </table>
+        <!-- /.efficacy-inner-table -->
+      </div>
+      <!-- /.efficacy-inner -->
+    </div>
+    <!-- /.efficacy -->
     <footer class="footer">
       <nav class="footer-nav">
         <ul class="footer-nav-list">
-          <li class="footer-nav-list-item"><a href="#">お部屋</a></li>
+          <li class="footer-nav-list-item">
+            <a href="oheya.html">お　部　屋</a>
+          </li>
           <!-- /.footer-nav-list-item -->
-          <li class="footer-nav-list-item"><a href="#">お料理</a></li>
+          <li class="footer-nav-list-item">
+            <a href="oryouri.html">お　料　理</a>
+          </li>
           <!-- /.footer-nav-list-item -->
-          <li class="footer-nav-list-item"><a href="#">温泉</a></li>
+          <li class="footer-nav-list-item"><a href="onsen.html">温　泉</a></li>
           <!-- /.footer-nav-list-item -->
         </ul>
         <!-- /.footer-nav-list -->
       </nav>
       <!-- /.footer-nav -->
       <div class="footer-logo">
-        <img src="images/Ex-sozai/Ex-sozai/logo02.png" alt="ロゴ画像" />
-        <h2 class="footer-logo-copy">石井花壇</h2>
+        <a href="index.html">
+          <img src="images/Ex-sozai/Ex-sozai/logo02.png" alt="ロゴ画像" />
+          <h2 class="footer-logo-copy">石井花壇</h2>
+        </a>
         <!-- /.footer-logo-copy -->
       </div>
       <!-- /.footer-logo -->
