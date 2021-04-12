@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap');
 $pc: 1550px;
 $pc2: 1280px;
 $tab2: 1020px;
@@ -125,14 +126,14 @@ img {
 
 body {
     font-family: “Times New Roman”, “游明朝”, “Yu Mincho”, “游明朝体”, “YuMincho”, “ヒラギノ明朝 Pro W3”,
-        “Hiragino Mincho Pro”, “HiraMinProN-W3”, “HGS明朝E”, “ＭＳ Ｐ明朝”, “MS PMincho”, serif;
+        “Hiragino Mincho Pro”, “HiraMinProN-W3”, “HGS明朝E”, “ＭＳ Ｐ明朝”, “MS PMincho”, serif, "Noto Sans JP";
     position: relative;
 }
 
 input::placeholder,
 #select {
     font-family: “Times New Roman”, “游明朝”, “Yu Mincho”, “游明朝体”, “YuMincho”, “ヒラギノ明朝 Pro W3”,
-        “Hiragino Mincho Pro”, “HiraMinProN-W3”, “HGS明朝E”, “ＭＳ Ｐ明朝”, “MS PMincho”, serif;
+        “Hiragino Mincho Pro”, “HiraMinProN-W3”, “HGS明朝E”, “ＭＳ Ｐ明朝”, “MS PMincho”, serif, "Noto Sans JP";
     font-weight: bold;
     color: #797878;
 }
