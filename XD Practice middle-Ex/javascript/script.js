@@ -64,4 +64,12 @@ $(function () {
     const index = tabs.index(this);
     contents.removeClass("show").eq(index).addClass("show");
     });
+    
+  new ScrollHint('.js-scrollable', {
+    suggestiveShadow: true,
+    i18n: {
+      scrollable: 'スクロール可能です'
+    }
+  });
+
 });

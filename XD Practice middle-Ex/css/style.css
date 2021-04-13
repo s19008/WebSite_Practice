@@ -158,7 +158,6 @@ input::placeholder,
 .header {
   position: absolute;
   top: -80px;
-  max-width: 1920px;
   width: 100%;
   height: 80px;
   padding: 0 20px;
@@ -280,12 +279,12 @@ input::placeholder,
   .header-inner-sp-nav {
     display: none;
     width: 100vw;
-    height: 30vh;
+    height: 50vh;
     position: fixed;
     top: 0;
     left: 0;
     background-color: #f2f2f2;
-    z-index: 2;
+    z-index: 7000;
   }
 }
 
@@ -323,7 +322,7 @@ input::placeholder,
 @media (max-width: 768px) {
   .header-inner-sp-nav-list-item {
     margin-right: 0;
-    margin-bottom: 50px;
+    margin-bottom: 60px;
   }
 }
 
@@ -403,7 +402,6 @@ input::placeholder,
   top: -80px;
   -webkit-transition: 0.5s;
   transition: 0.5s;
-  max-width: 1920px;
   width: 100%;
   height: 80px;
   padding: 0 20px;
@@ -531,7 +529,7 @@ input::placeholder,
   .fix-header-inner-sp-nav {
     display: none;
     width: 100vw;
-    height: 30vh;
+    height: 50vh;
     position: fixed;
     top: 0;
     left: 0;
@@ -574,7 +572,7 @@ input::placeholder,
 @media (max-width: 768px) {
   .fix-header-inner-sp-nav-list-item {
     margin-right: 0;
-    margin-bottom: 50px;
+    margin-bottom: 60px;
   }
 }
 
@@ -656,7 +654,6 @@ input::placeholder,
   bottom: 0;
   right: 0;
   left: 0;
-  max-width: 1920px;
   width: 100%;
   height: 100%;
   background: rgba(0, 0, 0, 0.5);
@@ -770,7 +767,6 @@ input::placeholder,
 }
 
 .mv {
-  max-width: 1920px;
   width: 100%;
   height: 1079px;
 }
@@ -801,7 +797,6 @@ input::placeholder,
 .feature {
   position: relative;
   top: -80px;
-  max-width: 1920px;
   width: 100%;
   height: 681px;
   background-image: url("../images/Ex-sozai/Ex-sozai/bg.jpg");
@@ -876,7 +871,6 @@ input::placeholder,
 .service {
   position: relative;
   top: 26px;
-  max-width: 1920px;
   width: 100%;
   margin-left: 0;
   margin-right: 0;
@@ -1049,7 +1043,6 @@ input::placeholder,
 }
 
 .plan {
-  max-width: 1920px;
   width: 100%;
   height: 100%;
   background-image: url("../images/Ex-sozai/Ex-sozai/bg02.jpg");
@@ -1202,7 +1195,6 @@ input::placeholder,
 }
 
 .notice {
-  max-width: 1920px;
   width: 100%;
   height: 100%;
 }
@@ -1422,7 +1414,6 @@ input::placeholder,
 }
 
 .access {
-  max-width: 1920px;
   width: 100%;
   height: 100%;
   background-image: url("../images/Ex-sozai/Ex-sozai/bg.jpg");
@@ -1541,7 +1532,6 @@ input::placeholder,
 }
 
 .footer {
-  max-width: 1920px;
   width: 100%;
   height: 100%;
   background-image: url("../images/Ex-sozai/Ex-sozai/bg3.jpg");

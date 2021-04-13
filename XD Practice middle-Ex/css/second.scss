@@ -160,7 +160,6 @@ input::placeholder,
     display: none;
     position: fixed;
     top: 0;
-    max-width: 1920px;
     width: 100%;
     height: 80px;
     padding: 0 20px;
@@ -233,7 +232,7 @@ input::placeholder,
             @include tab {
                 display: none;
                 width: 100vw;
-                height: 30vh;
+                height: 50vh;
                 position: fixed;
                 top: 0;
                 left: 0;
@@ -255,7 +254,7 @@ input::placeholder,
                     margin-right: 46px;
                     @include tab {
                         margin-right: 0;
-                        margin-bottom: 50px;
+                        margin-bottom: 60px;
                     }
                     a {
                         color: #333;
@@ -317,7 +316,6 @@ input::placeholder,
     bottom: 0;
     right: 0;
     left: 0;
-    max-width: 1920px;
     width: 100%;
     height: 100%;
     background: rgba(0, 0, 0, 0.5);
@@ -407,7 +405,6 @@ input::placeholder,
     display: block;
 }
 .mv {
-    max-width: 1920px;
     width: 100%;
     height: 500px;
     padding-top: 80px;
@@ -427,7 +424,6 @@ input::placeholder,
     }
 }
 .feature {
-    max-width: 1920px;
     width: 100%;
     height: 100%;
     &-inner {
@@ -576,7 +572,6 @@ input::placeholder,
 .efficacy {
     position: relative;
     top: 72px;
-    max-width: 1920px;
     width: 100%;
     height: 100%;
     @include tab {
@@ -628,7 +623,6 @@ input::placeholder,
     }
 }
 .footer {
-    max-width: 1920px;
     width: 100%;
     height: 100%;
     background-image: url("../images/Ex-sozai/Ex-sozai/bg3.jpg");
