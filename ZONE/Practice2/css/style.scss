@@ -1,0 +1,121 @@
+$pc: 1920px;
+$pc2: 1280px;
+$pc3: 1180px;
+$pc4: 1050px;
+$tab3: 980px;
+$tab2: 900px;
+$tab: 768px;
+$sp2: 530px;
+$sp: 375px;
+
+@mixin pc {
+    @media (max-width: ($pc)) {
+        @content;
+    }
+}
+@mixin pc2 {
+    @media (max-width: ($pc2)) {
+        @content;
+    }
+}
+@mixin pc3 {
+    @media (max-width: ($pc3)) {
+        @content;
+    }
+}
+@mixin pc4 {
+    @media (max-width: ($pc4)) {
+        @content;
+    }
+}
+@mixin tab3 {
+    @media (max-width: ($tab3)) {
+        @content;
+    }
+}
+@mixin tab2 {
+    @media (max-width: ($tab2)) {
+        @content;
+    }
+}
+@mixin tab {
+    @media (max-width: ($tab)) {
+        @content;
+    }
+}
+@mixin sp2 {
+    @media (max-width: ($sp2)) {
+        @content;
+    }
+}
+@mixin sp {
+    @media (max-width: ($sp)) {
+        @content;
+    }
+}
+
+//-------function-------//
+
+body {
+    font-family: "ヒラギノ明朝 ProN", serif;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 94px;
+    background-color: #4d0000;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.29);
+    z-index: 1000;
+    &-inner {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 8px 0 30px;
+        &-logo {
+            max-width: 188px;
+            img {
+                width: 100%;
+            }
+        }
+        &-nav {
+            &-list {
+                display: flex;
+                &-item {
+                    margin-right: 25px;
+                    transition: all 0.4s;
+                    a {
+                        text-decoration: none;
+                        color: #fff;
+                    }
+                    &:hover {
+                        opacity: 0.7;
+                    }
+                }
+            }
+        }
+    }
+}
+.mv {
+    width: 100%;
+    height: 674px;
+    background-image: url("../image/top-bg.png");
+    background-size: cover;
+    background-position: center;
+    margin-top: 94px;
+    position: relative;
+    &-copy {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translateY(-50%) translateX(-50%);
+        -webkit-transform: translateY(-50%) translateX(-50%);
+        font-size: 50px;
+        color: #fff;
+        text-align: center;
+        line-height: 85px;
+    }
+}
