@@ -58,6 +58,7 @@ $sp: 375px;
 
 body {
     font-family: "ヒラギノ明朝 ProN", serif;
+    background-color: #000;
 }
 
 .header {
@@ -117,5 +118,48 @@ body {
         color: #fff;
         text-align: center;
         line-height: 85px;
+    }
+}
+.feature {
+    width: 100%;
+    &-title {
+        text-align: center;
+        color: #fff;
+        h2 {
+            font-size: 32px;
+            padding-bottom: 40px;
+        }
+        p {
+            font-size: 20px;
+        }
+    }
+    &-inner {
+        &-content {
+            width: 100%;
+            display: flex;
+            &-visual {
+                img {
+                    max-width: 683px;
+                    width: 100%;
+                }
+            }
+            &-copy {
+                height: 345px;
+                padding: 45px 0 65px 55px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                h3 {
+                    color: #FFFFDD;
+                    font-size: 28px;
+                    line-height: 48px;
+                }
+                p {
+                    color: #FFF;
+                    font-size: 18px;
+                    line-height: 26px;
+                }
+            }
+        }
     }
 }
