@@ -288,7 +288,7 @@ body {
             font-size: 20px;
         }
     }
-    &-swiper-container {
+    .swiper-container {
         width: 100%;
         margin-left: auto;
         margin-right: auto;
@@ -298,10 +298,15 @@ body {
         padding: 0;
         z-index: 1;
         .swiper-wrapper {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+            display: flex;
+            transition-property: transform;
+            box-sizing: content-box;
             .swiper-slide {
-                display: inline-block;
                 max-width: 322px;
-                width: 100%;
                 height: 407px;
                 border: 1px solid #ddd;
                 background-color: #fff;
@@ -335,7 +340,7 @@ body {
         max-width: 1366px;
         width: 100%;
         margin: 0 auto;
-        padding: 0 54px;
+        padding: 94px 54px 0 54px;
         .card {
             max-width: 389px;
             width: 100%;
