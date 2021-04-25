@@ -233,15 +233,32 @@ body {
           align-items: center;
 }
 
+@media (max-width: 900px) {
+  .feature-inner-content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 .feature-inner-content-visual img {
   max-width: 683px;
   width: 100%;
 }
 
+@media (max-width: 900px) {
+  .feature-inner-content-visual img {
+    max-width: 750px;
+  }
+}
+
 .feature-inner-content-copy {
+  max-width: 560px;
+  width: 100%;
   height: 345px;
-  padding-left: 55px;
-  margin-bottom: 20px;
+  margin: 0 0 20px 55px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -257,16 +274,52 @@ body {
           justify-content: space-between;
 }
 
+@media (max-width: 1050px) {
+  .feature-inner-content-copy {
+    margin: 0 0 10px 30px;
+  }
+}
+
+@media (max-width: 900px) {
+  .feature-inner-content-copy {
+    margin: 53px 0 73px 0;
+  }
+}
+
 .feature-inner-content-copy h3 {
   color: #ffffdd;
   font-size: 28px;
   line-height: 48px;
 }
 
+@media (max-width: 1050px) {
+  .feature-inner-content-copy h3 {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 900px) {
+  .feature-inner-content-copy h3 {
+    font-size: 28px;
+  }
+}
+
 .feature-inner-content-copy p {
   color: #fff;
   font-size: 18px;
   line-height: 26px;
+}
+
+@media (max-width: 1050px) {
+  .feature-inner-content-copy p {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 900px) {
+  .feature-inner-content-copy p {
+    font-size: 18px;
+  }
 }
 
 .feature-inner-content-copy .btn {
@@ -292,8 +345,24 @@ body {
           flex-direction: row-reverse;
 }
 
+@media (max-width: 900px) {
+  .feature-inner .even {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 .feature-inner .even-copy {
-  padding: 0 56px 0 55px;
+  margin-right: 56px;
+}
+
+@media (max-width: 900px) {
+  .feature-inner .even-copy {
+    margin: 53px 0 73px 0;
+  }
 }
 
 .plan-title {

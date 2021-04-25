@@ -229,28 +229,53 @@ body {
             width: 100%;
             display: flex;
             align-items: center;
+            @include tab2 {
+                flex-direction: column;
+            }
             &-visual {
                 img {
                     max-width: 683px;
                     width: 100%;
+                    @include tab2 {
+                        max-width: 750px;
+                    }
                 }
             }
             &-copy {
+                max-width: 560px;
+                width: 100%;
                 height: 345px;
-                padding-left: 55px;
-                margin-bottom: 20px;
+                margin: 0 0 20px 55px;
                 display: flex;
                 flex-direction: column;
                 justify-content: space-between;
+                @include pc4 {
+                    margin: 0 0 10px 30px;
+                }
+                @include tab2 {
+                    margin: 53px 0 73px 0;
+                }
                 h3 {
                     color: #ffffdd;
                     font-size: 28px;
                     line-height: 48px;
+                    @include pc4 {
+                        font-size: 24px;
+                    }
+                    @include tab2 {
+                        font-size: 28px;
+                    }
                 }
                 p {
                     color: #fff;
                     font-size: 18px;
                     line-height: 26px;
+                    @include pc4 {
+                        font-size: 15px;
+                    }
+                    @include tab2 {
+                        font-size: 18px;
+                    }
                 }
                 .btn {
                     color: #fff;
@@ -269,8 +294,14 @@ body {
         }
         .even {
             flex-direction: row-reverse;
+            @include tab2 {
+                flex-direction: column;
+            }
             &-copy {
-                padding: 0 56px 0 55px;
+                margin-right: 56px;
+                @include tab2 {
+                    margin: 53px 0 73px 0;
+                }
             }
         }
     }
