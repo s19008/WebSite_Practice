@@ -320,14 +320,14 @@ body {
         }
     }
     .swiper-container {
-        width: 100%;
-        margin-left: auto;
-        margin-right: auto;
-        position: relative;
-        overflow: hidden;
-        list-style: none;
-        padding: 0;
-        z-index: 1;
+        //width: 100%;
+        //margin-left: auto;
+        //margin-right: auto;
+        //position: relative;
+        //overflow: hidden;
+        //list-style: none;
+        //padding: 0;
+        //z-index: 1;
         .swiper-wrapper {
             position: relative;
             width: 100%;
@@ -337,27 +337,41 @@ body {
             transition-property: transform;
             box-sizing: content-box;
             .swiper-slide {
-                max-width: 322px;
                 height: 407px;
                 border: 1px solid #ddd;
                 background-color: #fff;
                 border-radius: 8px;
                 img {
+                    max-width: 450px;
                     width: 100%;
+                    @include sp2 {
+                        max-width: 380px;
+                    }
                 }
                 &-txt {
-                    max-width: 322px;
+                    //max-width: 322px;
                     width: 100%;
+                    height: 197px;
                     font-weight: bold;
                     padding: 25px 20px 0 20px;
                     position: relative;
+                    @include sp2 {
+                        padding: 20px 10px 0 10px;
+                    }
                     &-title {
                         font-size: 16px;
                         line-height: 27px;
                     }
                     &-price {
                         position: absolute;
-                        top: 133px;
+                        bottom: 50px;
+                        @include tab2 {
+                            bottom: 40px;
+                        }
+                        @include sp2 {
+                            top: 140px;
+                            bottom: 0;
+                        }
                     }
                     span {
                         color: #ff0000;
@@ -372,6 +386,11 @@ body {
         width: 100%;
         margin: 0 auto;
         padding: 94px 54px 0 54px;
+        @include tab2 {
+            flex-direction: column;
+            align-items: center;
+            padding: 94px 27px 0 26px;
+        }
         .card {
             max-width: 389px;
             width: 100%;
@@ -381,19 +400,51 @@ body {
             text-align: center;
             padding: 0 23px;
             margin: 0 15px;
+            @include tab3 {
+                margin-bottom: 30px;
+            }
+            @include tab2 {
+                padding: 0 17px;
+            }
             &-visual {
                 max-width: 140px;
                 padding-top: 20px;
+                @include tab3 {
+                    padding-top: 10px;
+                }
             }
             &-title {
                 font-size: 28px;
                 font-weight: bold;
                 padding: 25px 0 40px 0;
+                @include tab3 {
+                    font-size: 20px;
+                    padding: 15px 0 20px 0;
+                }
+                @include tab2 {
+                    font-size: 28px;
+                    padding: 25px 0 40px 0;
+                }
             }
             &-copy {
                 font-size: 18px;
                 line-height: 26px;
                 text-align: left;
+                @include tab3 {
+                    font-size: 14px;
+                }
+                @include tab2 {
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+}
+.footer {
+    &-inner {
+        &-logo {
+            img {
+                max-width: 150px;
             }
         }
     }
