@@ -4,11 +4,13 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="祇園の中心に佇む京の極楽浄土">
     <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
     <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
-    <title>Document</title>
+    <title>極楽亭</title>
   </head>
   <body>
     <header class="header">
@@ -78,13 +80,13 @@
     </div>
     <!-- /.mv -->
     <section class="feature">
-      <div class="feature-title">
+      <div class="feature-title" data-aos="fade-up">
         <h2>本館の特徴</h2>
         <p>Feature</p>
       </div>
       <!-- /.feature-title -->
       <div class="feature-inner">
-        <div class="feature-inner-content">
+        <div class="feature-inner-content" data-aos="fade-up">
           <div class="feature-inner-content-visual">
             <img src="image/feature-item01.png" alt="ホテル画像" />
           </div>
@@ -104,7 +106,7 @@
           <!-- /.feature-inner-content-copy -->
         </div>
         <!-- /.feature-inner-content -->
-        <div class="feature-inner-content even">
+        <div class="feature-inner-content even" data-aos="fade-down">
           <div class="feature-inner-content-visual  even-visual">
             <img src="image/feature-item02.png" alt="料理画像" />
           </div>
@@ -127,7 +129,7 @@
           <!-- /.feature-inner-content-copy -->
         </div>
         <!-- /.feature-inner-content -->
-        <div class="feature-inner-content">
+        <div class="feature-inner-content" data-aos="fade-up">
           <div class="feature-inner-content-visual">
             <img src="image/feature-item03.png" alt="温泉画像" />
           </div>
@@ -152,11 +154,11 @@
     </section>
     <!-- /.feature -->
     <section class="plan">
-      <div class="plan-title">
+      <div class="plan-title" data-aos="fade-up">
         <h2>おすすめプラン</h2>
         <p>Recommend Plan</p>
       </div><!-- /.plan-title -->
-      <div class="swiper-container">
+      <div class="swiper-container" data-aos="fade-up">
         <div class="swiper-wrapper">
           <div class="swiper-slide">
             <img src="image/rec-plan01.png" alt="温泉画像">
@@ -196,17 +198,17 @@
         </div><!-- /.swiper-wrapper -->
       </div><!-- /.plan-swiper-container -->
       <div class="plan-card-box">
-        <div class="card">
+        <div class="card" data-aos="fade-up">
           <img src="image/service-item01.png" alt="価格イメージ" class="card-visual"></img><!-- /.card-visual -->
           <h3 class="card-title">最低価格保証</h3><!-- /.card-title -->
           <p class="card-copy">極楽亭の公式ホームページでのご宿泊料金は、どの予約サイトよりも最低価格であることをお約束いたします。</p><!-- /.card-copy -->
         </div><!-- /.card -->
-        <div class="card">
+        <div class="card" data-aos="fade-up">
           <img src="image/service-item02.png" alt="wifi画像" class="card-visual"></img><!-- /.card-visual -->
           <h3 class="card-title">全客室Wi-Fi無料</h3><!-- /.card-title -->
           <p class="card-copy">ロビー・客室フロアに無線LANアクセスポイントを設置し、各客室内でもWi-Fi接続によるインターネットを利用できる環境を構築しています。</p><!-- /.card-copy -->
         </div><!-- /.card -->
-        <div class="card">
+        <div class="card" data-aos="fade-up">
           <img src="image/service-item03.png" alt="会員画像" class="card-visual"></img><!-- /.card-visual -->
           <h3 class="card-title">会員限定料金</h3><!-- /.card-title -->
           <p class="card-copy">会員の方は、会員料金でご宿泊いただけるほか、オンラインクーポンなどの限定メニューもご利用いただけます。</p><!-- /.card-copy -->
@@ -214,49 +216,49 @@
       </div><!-- /.plan-card -->
     </section><!-- /.plan -->
     <section class="blog">
-      <div class="blog-title">
+      <div class="blog-title" data-aos="fade-down">
         <h2>ブログ</h2>
         <p>Blog</p>
       </div><!-- /.blog-title -->
-      <table class="blog-table">
-        <tr>
-          <th>お知らせ</th>
-          <td>2021年4月より、極楽亭の別館が開館します！こちらも予約を随時、受付けております。</td>
-        </tr>
-        <tr>
-          <th>お知らせ</th>
-          <td>2021年5月より、極楽亭に新たに宴会場「風の間」が新設されました。</td>
-        </tr>
-        <tr>
-          <th>採用</th>
-          <td>2021年度の採用募集を開始いたしました。一緒に極楽亭を盛り上げていきませんか？</td>
-        </tr>
-        <tr>
-          <th>お知らせ</th>
-          <td>2021年2月20日、極楽亭の創業50年を迎えました。</td>
-        </tr>
-        <tr>
-          <th>お知らせ</th>
-          <td>極楽亭が京都の『BEST OF 京旅館2020』に選出されました。</td>
-        </tr>
-      </table><!-- /.blog-table -->
-      <a href="" class="more-btn">もっと見る</a><!-- /.more-btn -->
+      <dl class="blog-table">
+        <div class="line" data-aos="fade-down">
+          <dt>お知らせ</dt>
+          <dd>2021年5月より、極楽亭に新たに宴会場「風の間」が新設されました。</dd>
+        </div>
+        <div class="line" data-aos="fade-down">
+          <dt>お知らせ</dt>
+          <dd>2021年5月より、極楽亭の別館が開館します！こちらも予約を随時、受付けております。</dd>
+        </div>
+        <div class="line" data-aos="fade-down">
+          <dt>採用</dt>
+          <dd>2021年度の採用募集を開始いたしました。一緒に極楽亭を盛り上げていきませんか？</dd>
+        </div>
+        <div class="line" data-aos="fade-down">
+          <dt>お知らせ</dt>
+          <dd>2021年2月20日、極楽亭の創業50年を迎えました。</dd>
+        </div>
+        <div class="line" data-aos="fade-down">
+          <dt>イベント</dt>
+          <dd>2020年12月25日までクリスマスフェア開催中です！出来立てのお料理を絶景とともにお愉しみいただけます。</dd>
+        </div>
+      </dl><!-- /.blog-table -->
+      <a href="" class="more-btn" data-aos="fade-down">もっと見る</a><!-- /.more-btn -->
     </section><!-- /.blog -->
     <section class="faq">
-      <div class="faq-title">
+      <div class="faq-title" data-aos="fade-down">
         <h2>よくある質問</h2>
         <p>FAQ</p>
       </div><!-- /.faq -->
       <div class="faq-inner">
-        <dl class="faq-inner-menu" id="acMenu">
+        <dl class="faq-inner-menu" id="acMenu" data-aos="fade-down">
           <dt>Q. チェックイン、チェクアウトの時間は何時ですか？</dt>
-          <dd>A. チェックインの時間は15:00～17:00です。もし17:00を過ぎるようでしたら、ご一報を入れていただくよう<br>お願いしております。チェックアウトの時間は翌朝10:00でございます。</dd>
+          <dd>A. チェックインの時間は15:00～17:00です。もし17:00を過ぎるようでしたら、ご一報を入れていただくようお願いしております。チェックアウトの時間は翌朝10:00でございます。</dd>
           <dt>Q. 露天風呂がついたお部屋はありますか？</dt>
           <dd>A. 露天風呂付のお部屋は全部で24室ございます。</dd>
           <dt>Q. ペットを連れて行きたいのですが可能ですか？</dt>
-          <dd>A. ペット同伴のご宿泊はお断りさせて頂いております。お車で5分ほどの場所に、一時預かりを行っているペット<br>ハウスがございますのでそちらのご利用をお願い致します。</dd>
+          <dd>A. ペット同伴のご宿泊はお断りさせて頂いております。お車で5分ほどの場所に、一時預かりを行っているペットハウスがございますのでそちらのご利用をお願い致します。</dd>
           <dt>Q. キャスター付きのバッグで行っても大丈夫ですか？</dt>
-          <dd>A. 全館畳敷きの為、キャスター付きバッグのご利用をご遠慮頂いております。お荷物は、係りの者がお部屋までお<br>持ち致しますのでご協力をお願い致します。</dd>
+          <dd>A. 全館畳敷きの為、キャスター付きバッグのご利用をご遠慮頂いております。お荷物は、係りの者がお部屋までお持ち致しますのでご協力をお願い致します。</dd>
         </dl><!-- /.faq-inner-menu -->
       </div><!-- /.faq-inner -->
     </section><!-- /.faq -->
@@ -278,6 +280,7 @@
     </footer><!-- /.footer -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script type="text/javascript" src="slick/slick.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="./javascript/script.js"></script>
     <script>
       $('.swiper-wrapper').slick({
@@ -285,6 +288,8 @@
         slidesToScroll: 1,
         centerMode: true,
         centerPadding: '12%',
+        autoplay: true,
+        autoplaySpeed: 5000,
         responsive: [
           {
             breakpoint: 900,

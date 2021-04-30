@@ -297,6 +297,7 @@ body {
   .feature-inner-content-copy {
     padding: 40px 27px 0 28px;
     margin: 0 0 62px 0;
+    height: 389px;
   }
 }
 
@@ -607,7 +608,250 @@ body {
   }
 }
 
+.blog {
+  text-align: center;
+  margin-top: 80px;
+}
+
+.blog-title {
+  text-align: center;
+  color: #FFF;
+}
+
+.blog-title h2 {
+  font-size: 32px;
+}
+
+.blog-title p {
+  font-size: 20px;
+  padding-top: 40px;
+}
+
+.blog-table {
+  max-width: 1366px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 64px 80px 52px 100px;
+}
+
+@media (max-width: 768px) {
+  .blog-table {
+    padding: 64px 15px 52px 27px;
+  }
+}
+
+@media (max-width: 530px) {
+  .blog-table {
+    padding: 64px 15px 20px 27px;
+  }
+}
+
+.blog-table .line {
+  width: 100%;
+  color: #FFF;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.blog-table .line dt {
+  display: inline-block;
+  max-width: 157px;
+  width: 100%;
+  height: 30px;
+  background-color: #4d0000;
+  font-size: 14px;
+  padding: 9px 50px 7px 50px;
+  color: #FFF;
+  margin-right: 22px;
+}
+
+@media (max-width: 768px) {
+  .blog-table .line dt {
+    max-width: 75px;
+    padding: 9px 10px;
+    font-size: 13px;
+  }
+}
+
+.blog-table .line dd {
+  max-width: 930px;
+  width: 100%;
+  font-size: 24px;
+  font-weight: lighter;
+  text-align: left;
+  line-height: 26px;
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .blog-table .line dd {
+    line-height: 32px;
+  }
+}
+
+@media (max-width: 530px) {
+  .blog-table .line dd {
+    font-size: 16px;
+  }
+}
+
+.blog .more-btn {
+  display: inline-block;
+  text-decoration: none;
+  color: #FFF;
+  background-color: #B8860BEA;
+  padding: 11px 42px;
+  border-radius: 8px;
+}
+
+.faq-title {
+  text-align: center;
+  color: #FFF;
+  padding-top: 80px;
+}
+
+.faq-title h2 {
+  font-size: 32px;
+}
+
+.faq-title p {
+  font-size: 20px;
+  padding: 50px 0 60px 0;
+}
+
+.faq-inner {
+  max-width: 907px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 26px;
+}
+
+.faq-inner-menu {
+  width: 100%;
+  margin-bottom: 80px;
+}
+
+.faq-inner-menu dt {
+  background-color: #FFF;
+  border: 1px solid #E5E5E5;
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 26px;
+  padding: 20px 0 22px 0;
+  cursor: pointer;
+}
+
+@media (max-width: 530px) {
+  .faq-inner-menu dt {
+    text-align: left;
+    padding: 14px;
+  }
+}
+
+.faq-inner-menu dd {
+  background-color: #F2F2F2;
+  border: 1px solid #E5E5E5;
+  padding: 25px 65px 26px 50px;
+  line-height: 26px;
+  font-weight: bold;
+  font-size: 16px;
+  display: none;
+}
+
+@media (max-width: 530px) {
+  .faq-inner-menu dd {
+    padding: 15px;
+  }
+}
+
+.footer {
+  width: 100%;
+  background-color: #4d0000;
+}
+
+.footer-inner {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 62px 0 15px 0;
+}
+
+.footer-inner-nav {
+  margin-bottom: 62px;
+}
+
+.footer-inner-nav-list {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (max-width: 768px) {
+  .footer-inner-nav-list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.footer-inner-nav-list-item {
+  margin: 0 18px;
+}
+
+@media (max-width: 768px) {
+  .footer-inner-nav-list-item {
+    margin: 10px 0;
+  }
+}
+
+.footer-inner-nav-list-item a {
+  color: #FFF;
+  text-decoration: none;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.footer-inner-nav-list-item a:hover {
+  opacity: 0.7;
+}
+
+.footer-inner-logo {
+  margin-bottom: 35px;
+}
+
 .footer-inner-logo img {
-  max-width: 150px;
+  max-width: 188px;
+}
+
+.footer-inner-copyright {
+  color: #FFF;
+  font-size: 16px;
+}
+
+@media (max-width: 530px) {
+  .footer-inner-copyright {
+    font-size: 14px;
+  }
 }
 /*# sourceMappingURL=style.css.map */

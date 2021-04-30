@@ -262,6 +262,7 @@ body {
                 @include tab {
                     padding: 40px 27px 0 28px;
                     margin: 0 0 62px 0;
+                    height: 389px;
                 }
                 h3 {
                     color: #ffffdd;
@@ -463,15 +464,170 @@ body {
     }
 }
 .blog {
+    text-align: center;
+    margin-top: 80px;
     &-title {
-        
+        text-align: center;
+        color: #FFF;
+        h2 {
+            font-size: 32px;
+        }
+        p {
+            font-size: 20px;
+            padding-top: 40px;
+        }
+    }
+    &-table {
+        max-width: 1366px;
+        width: 100%;
+        margin: 0 auto;
+        padding: 64px 80px 52px 100px;
+        @include tab {
+            padding: 64px 15px 52px 27px;
+        }
+        @include sp2 {
+            padding: 64px 15px 20px 27px;
+        }
+        .line {
+            width: 100%;
+            color: #FFF;
+            display: flex;
+            margin-bottom: 20px;
+            dt {
+                display: inline-block;
+                max-width: 157px;
+                width: 100%;
+                height: 30px;
+                background-color: #4d0000;
+                font-size: 14px;
+                padding: 9px 50px 7px 50px;
+                color: #FFF;
+                margin-right: 22px;
+                @include tab {
+                    max-width: 75px;
+                    padding: 9px 10px;
+                    font-size: 13px;
+                }
+            }
+            dd {
+                max-width: 930px;
+                width: 100%;
+                font-size: 24px;
+                font-weight: lighter;
+                text-align: left;
+                line-height: 26px;
+                text-decoration: underline;
+                @include tab {
+                    line-height: 32px;
+                }
+                @include sp2 {
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+    .more-btn {
+        display: inline-block;
+        text-decoration: none;
+        color: #FFF;
+        background-color: #B8860BEA;
+        padding: 11px 42px;
+        border-radius: 8px;
+    }
+}
+.faq {
+    &-title {
+        text-align: center;
+        color: #FFF;
+        padding-top: 80px;
+        h2 {
+            font-size: 32px;
+        }
+        p {
+            font-size: 20px;
+            padding: 50px 0 60px 0;
+        }
+    }
+    &-inner {
+        max-width: 907px;
+        width: 100%;
+        margin: 0 auto;
+        padding: 0 26px;
+        &-menu {
+            width: 100%;
+            margin-bottom: 80px;
+            dt {
+                background-color: #FFF;
+                border: 1px solid #E5E5E5;
+                text-align: center;
+                font-size: 16px;
+                font-weight: bold;
+                line-height: 26px;
+                padding: 20px 0 22px 0;
+                cursor: pointer;
+                @include sp2 {
+                    text-align: left;
+                    padding: 14px;
+                }
+            }
+            dd {
+                background-color: #F2F2F2;
+                border: 1px solid #E5E5E5;
+                padding: 25px 65px 26px 50px;
+                line-height: 26px;
+                font-weight: bold;
+                font-size: 16px;
+                display: none;
+                @include sp2 {
+                    padding: 15px;
+                }
+            }
+        }
     }
 }
 .footer {
+    width: 100%;
+    background-color: #4d0000;
     &-inner {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding: 62px 0 15px 0;
+        &-nav {
+            margin-bottom: 62px;
+            &-list {
+                display: flex;
+                align-items: center;
+                @include tab {
+                    flex-direction: column;
+                }
+                &-item {
+                    margin: 0 18px;
+                    @include tab {
+                        margin: 10px 0;
+                    }
+                    a {
+                        color: #FFF;
+                        text-decoration: none;
+                        transition: all 0.4s;
+                        &:hover {
+                            opacity: 0.7;
+                        }
+                    }
+                }
+            }
+        }
         &-logo {
+            margin-bottom: 35px;
             img {
-                max-width: 150px;
+                max-width: 188px;
+            }
+        }
+        &-copyright {
+            color: #FFF;
+            font-size: 16px;
+            @include sp2 {
+                font-size: 14px;
             }
         }
     }
