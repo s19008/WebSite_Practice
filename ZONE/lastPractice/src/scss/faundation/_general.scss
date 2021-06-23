@@ -11,6 +11,7 @@
 }
 
 ._pc {
+    display: none;
     @include overTab {
         display: block;
     }

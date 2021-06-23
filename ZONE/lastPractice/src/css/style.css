@@ -348,6 +348,10 @@ ul {
   }
 }
 
+._pc {
+  display: none;
+}
+
 @media print, screen and (min-width: 768px) {
   ._pc {
     display: block;
@@ -386,7 +390,7 @@ ul {
 .header-inner .header-nav .nav-item a {
   display: inline-block;
   font-size: 20px;
-  color: #FFF;
+  color: #fff;
   position: relative;
   z-index: 1;
 }
@@ -394,7 +398,7 @@ ul {
 .header-inner .header-nav hr {
   height: 3px;
   width: 33%;
-  background-color: #FFF;
+  background-color: #fff;
   margin: 0;
   -webkit-transition: all 0.6s;
   transition: all 0.6s;
@@ -408,28 +412,38 @@ ul {
   margin-left: 67%;
 }
 
+.header-inner ._sp {
+  padding: 16px 40px 0 0;
+}
+
 .main {
-  background-color: #FFF;
-  padding-top: 900px;
+  background-color: #000;
 }
 
 .main-visual {
-  position: fixed;
-  top: 0;
-  left: 0;
   width: 100%;
   height: 900px;
   background-image: url("/src/image/johannes-plenio-DKix6Un55mw-unsplash.jpg");
   background-size: cover;
   background-position: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .main-visual .main-text {
-  text-align: center;
-  line-height: 700px;
-  font-size: 50px;
+  max-width: 1180px;
+  width: 100%;
+  margin: 0 auto;
+  font-size: 60px;
   letter-spacing: 10px;
   color: #FFF;
+  padding-left: 50px;
 }
 
 .footer {
@@ -447,6 +461,58 @@ ul {
   height: 500px;
   margin: 0 auto;
   background-color: #000;
-  z-index: 10;
+}
+
+.btn-trigger {
+  position: relative;
+  width: 50px;
+  height: 44px;
+  cursor: pointer;
+  z-index: 9000;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin-left: auto;
+}
+
+.btn-trigger span {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background-color: #fff;
+  border-radius: 4px;
+  z-index: 9000;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.btn-trigger span:nth-of-type(1) {
+  top: 0;
+}
+
+.btn-trigger span:nth-of-type(2) {
+  top: 20px;
+}
+
+.btn-trigger span:nth-of-type(3) {
+  bottom: 0;
+}
+
+#btn01.active span:nth-of-type(1) {
+  -webkit-transform: translateY(20px) rotate(-45deg);
+  transform: translateY(20px) rotate(-45deg);
+}
+
+#btn01.active span:nth-of-type(2) {
+  opacity: 0;
+}
+
+#btn01.active span:nth-of-type(3) {
+  -webkit-transform: translateY(-20px) rotate(45deg);
+  transform: translateY(-20px) rotate(45deg);
 }
 /*# sourceMappingURL=style.css.map */
