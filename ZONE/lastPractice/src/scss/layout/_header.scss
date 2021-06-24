@@ -3,7 +3,8 @@
     top: 0;
     left: 0;
     width: 100%;
-    height: 60px;
+    height: 100px;
+    padding: 0 50px;
     z-index: 1000;
     &-inner {
         max-width: 1180px;
@@ -11,15 +12,15 @@
         height: 100%;
         margin: 0 auto;
         .header-nav {
-            max-width: 393px;
+            max-width: 500px;
             width: 100%;
-            line-height: 60px;
+            line-height: 100px;
             margin-left: auto;
             .nav-list {
             }
             .nav-item {
                 display: inline-block;
-                width: 32.4%;
+                width: 19%;
                 text-align: center;
                 a {
                     display: inline-block;
@@ -31,26 +32,68 @@
             }
             hr {
                 height: 3px;
-                width: 33%;
+                width: 20%;
                 background-color: #fff;
                 margin: 0;
                 transition: all 0.6s;
             }
+            .service-btn {
+                &:hover ~ hr {
+                    margin-left: 20%;
+                }
+            }
             .works-btn {
                 &:hover ~ hr {
-                    margin-left: 33.5%;
+                    margin-left: 40%;
                 }
             }
             .skills-btn {
                 &:hover ~ hr {
-                    margin-left: 67%;
+                    margin-left: 60%;
+                }
+            }
+            .contact-btn {
+                &:hover ~ hr {
+                    margin-left: 80%;
                 }
             }
         }
         ._sp {
-            padding: 16px 40px 0 0;
-            .sp-nav-list {
-                
+            max-width: 800px;
+            padding-top: 16px;
+            margin: 0;
+            .overlay {
+                background-color: #000;
+                width: 50%;
+                height: 100%;
+                opacity: 0.9;
+                position: fixed;
+                top: 0;
+                right: 0;
+                transform: translateX(100%);
+                transition: transform 0.5s ease-out;
+                z-index: 1000;
+                &.open {
+                    transform: translateX(0);
+                }
+                .sp-nav-list {
+                    display: none;
+                    position: relative;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    max-width: 400px;
+                    margin: 0 auto;
+                    .nav-item {
+                        display: block;
+                        width: 32.3%;
+                        margin: 0 auto;
+                        padding: 50px 0;
+                        a {
+                            font-size: 24px;
+                            letter-spacing: 5px;
+                        }
+                    }
+                }
             }
         }
     }
