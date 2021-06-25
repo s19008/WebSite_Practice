@@ -3,8 +3,8 @@
     top: 0;
     left: 0;
     width: 100%;
-    height: 100px;
-    padding: 0 50px;
+    height: 90px;
+    padding: 0 40px;
     z-index: 1000;
     &-inner {
         max-width: 1180px;
@@ -14,7 +14,7 @@
         .header-nav {
             max-width: 500px;
             width: 100%;
-            line-height: 100px;
+            line-height: 90px;
             margin-left: auto;
             .nav-list {
             }
@@ -85,12 +85,12 @@
                     margin: 0 auto;
                     .nav-item {
                         display: block;
-                        width: 32.3%;
-                        margin: 0 auto;
-                        padding: 50px 0;
+                        width: auto;
+                        padding: 20px 0;
                         a {
                             font-size: 24px;
                             letter-spacing: 5px;
+                            text-align: center;
                         }
                     }
                 }

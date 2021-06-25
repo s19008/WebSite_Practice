@@ -342,6 +342,13 @@ ul {
   list-style: none;
 }
 
+.section-title {
+  text-align: center;
+  font-size: 30px;
+  letter-spacing: 5px;
+  padding-top: 50px;
+}
+
 @media print, screen and (min-width: 768px) {
   ._sp {
     display: none;
@@ -363,8 +370,8 @@ ul {
   top: 0;
   left: 0;
   width: 100%;
-  height: 100px;
-  padding: 0 50px;
+  height: 90px;
+  padding: 0 40px;
   z-index: 1000;
 }
 
@@ -378,7 +385,7 @@ ul {
 .header-inner .header-nav {
   max-width: 500px;
   width: 100%;
-  line-height: 100px;
+  line-height: 90px;
   margin-left: auto;
 }
 
@@ -461,18 +468,18 @@ ul {
 
 .header-inner ._sp .overlay .sp-nav-list .nav-item {
   display: block;
-  width: 32.3%;
-  margin: 0 auto;
-  padding: 50px 0;
+  width: auto;
+  padding: 20px 0;
 }
 
 .header-inner ._sp .overlay .sp-nav-list .nav-item a {
   font-size: 24px;
   letter-spacing: 5px;
+  text-align: center;
 }
 
 .main {
-  background-color: #000;
+  background-color: #111;
 }
 
 .main-visual {
@@ -481,6 +488,7 @@ ul {
   background-image: url("/src/image/johannes-plenio-DKix6Un55mw-unsplash.jpg");
   background-size: cover;
   background-position: center;
+  background-attachment: fixed;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -489,6 +497,7 @@ ul {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
+  z-index: -1;
 }
 
 .main-visual .main-text {
@@ -511,11 +520,16 @@ ul {
 }
 
 .about {
+  width: 100%;
+  height: 700px;
+  background-color: #AAA;
+}
+
+.about-inner {
   max-width: 980px;
   width: 100%;
-  height: 500px;
+  height: 100%;
   margin: 0 auto;
-  background-color: #000;
 }
 
 .btn-trigger {
@@ -528,7 +542,7 @@ ul {
   transition: all 0.5s;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  margin: 0 40px 0 auto;
+  margin-left: auto;
 }
 
 .btn-trigger span {

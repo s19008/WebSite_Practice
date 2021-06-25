@@ -1,13 +1,15 @@
 .main {
-    background-color: #000;
+    background-color: #111;
     &-visual {
         width: 100%;
         height: 900px;
         background-image: url("/src/image/johannes-plenio-DKix6Un55mw-unsplash.jpg");
         background-size: cover;
         background-position: center;
+        background-attachment: fixed;
         display: flex;
         align-items: center;
+        z-index: -1;
         .main-text {
             max-width: 1180px;
             width: 100%;
