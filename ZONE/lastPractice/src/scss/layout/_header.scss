@@ -77,7 +77,6 @@
                     transform: translateX(0);
                 }
                 .sp-nav-list {
-                    display: none;
                     position: relative;
                     top: 50%;
                     transform: translateY(-50%);
@@ -86,11 +85,20 @@
                     .nav-item {
                         display: block;
                         width: auto;
-                        padding: 20px 0;
+                        padding: 25px 0;
                         a {
                             font-size: 24px;
                             letter-spacing: 5px;
                             text-align: center;
+                            &:hover ~.sp-hr{
+                                transform: translateX(0);
+                            }
+                        }
+                        .sp-hr {
+                            width: 35%;
+                            margin:0 auto;
+                            transform: translateX(200%);
+                            transition: transform .8s ease-out;
                         }
                     }
                 }

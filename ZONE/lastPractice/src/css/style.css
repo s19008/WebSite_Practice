@@ -343,10 +343,31 @@ ul {
 }
 
 .section-title {
-  text-align: center;
-  font-size: 30px;
+  display: inline-block;
+  font-size: 35px;
   letter-spacing: 5px;
   padding-top: 50px;
+  position: relative;
+}
+
+.section-title::after {
+  position: absolute;
+  bottom: 2px;
+  left: 0;
+  content: '';
+  width: 100%;
+  height: 3px;
+  background: #EEE;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.section-title:hover::after {
+  bottom: -3px;
+  opacity: 1;
+  visibility: visible;
 }
 
 @media print, screen and (min-width: 768px) {
@@ -457,7 +478,6 @@ ul {
 }
 
 .header-inner ._sp .overlay .sp-nav-list {
-  display: none;
   position: relative;
   top: 50%;
   -webkit-transform: translateY(-50%);
@@ -469,13 +489,29 @@ ul {
 .header-inner ._sp .overlay .sp-nav-list .nav-item {
   display: block;
   width: auto;
-  padding: 20px 0;
+  padding: 25px 0;
 }
 
 .header-inner ._sp .overlay .sp-nav-list .nav-item a {
   font-size: 24px;
   letter-spacing: 5px;
   text-align: center;
+}
+
+.header-inner ._sp .overlay .sp-nav-list .nav-item a:hover ~ .sp-hr {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+
+.header-inner ._sp .overlay .sp-nav-list .nav-item .sp-hr {
+  width: 35%;
+  margin: 0 auto;
+  -webkit-transform: translateX(200%);
+          transform: translateX(200%);
+  -webkit-transition: -webkit-transform .8s ease-out;
+  transition: -webkit-transform .8s ease-out;
+  transition: transform .8s ease-out;
+  transition: transform .8s ease-out, -webkit-transform .8s ease-out;
 }
 
 .main {
@@ -530,6 +566,7 @@ ul {
   width: 100%;
   height: 100%;
   margin: 0 auto;
+  text-align: center;
 }
 
 .about-inner .about-content {
@@ -542,7 +579,68 @@ ul {
 
 .about-inner .about-content .about-text {
   font-size: 18px;
+  text-align: left;
   color: #111;
+}
+
+.skills {
+  width: 100%;
+  height: 700px;
+  text-align: center;
+  background-image: url("/src/image/johannes-plenio-a72o8w9HC2w-unsplash.jpg");
+  background-size: cover;
+}
+
+.skills-wrapper {
+  max-width: 1180px;
+  width: 100%;
+  margin: 100px auto 0 auto;
+  padding: 100px 40px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: #EEE;
+}
+
+.skills-wrapper .skills-content {
+  max-width: 250px;
+  width: 100%;
+  height: 250px;
+  background-color: #DDD;
+  text-align: center;
+  border-radius: 10px;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.skills-wrapper .skills-content-visual {
+  max-width: 150px;
+  padding: 20px 0;
+}
+
+.skills-wrapper .skills-content-text {
+  font-size: 20px;
+  color: #222;
+}
+
+.skills-wrapper .skills-content:hover {
+  -webkit-transform: translateY(-4%);
+          transform: translateY(-4%);
+}
+
+.service {
+  width: 100%;
+  height: 700px;
+  text-align: center;
 }
 
 .btn-trigger {
