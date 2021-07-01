@@ -3,9 +3,14 @@
     top: 0;
     left: 0;
     width: 100%;
-    height: 90px;
+    height: 85px;
     padding: 0 40px;
     z-index: 1000;
+    transform: translateY(0);
+    transition: transform 0.3s;
+    &.close {
+        transform: translateY(-150%);
+    }
     &-inner {
         max-width: 1180px;
         width: 100%;
@@ -14,48 +19,48 @@
         .header-nav {
             max-width: 500px;
             width: 100%;
-            line-height: 90px;
+            line-height: 85px;
             margin-left: auto;
             .nav-list {
-            }
-            .nav-item {
-                display: inline-block;
-                width: 19%;
-                text-align: center;
-                .nav-a {
+                .nav-item {
                     display: inline-block;
-                    font-size: 20px;
-                    color: #fff;
-                    position: relative;
-                    z-index: 1;
-                    transition: all .6s;
+                    width: 19%;
+                    text-align: center;
+                    .nav-a {
+                        display: inline-block;
+                        font-size: 20px;
+                        color: #fff;
+                        position: relative;
+                        z-index: 1;
+                        transition: all 0.6s;
+                    }
                 }
-            }
-            hr {
-                height: 3px;
-                width: 20%;
-                background-color: #fff;
-                margin: 0;
-                transition: all .6s;
-            }
-            .service-btn {
-                &:hover ~ hr {
-                    margin-left: 20%;
+                hr {
+                    height: 3px;
+                    width: 20%;
+                    background-color: #fff;
+                    margin: 0;
+                    transition: all 0.6s;
                 }
-            }
-            .works-btn {
-                &:hover ~ hr {
-                    margin-left: 40%;
+                .service-btn {
+                    &:hover ~ hr {
+                        margin-left: 20%;
+                    }
                 }
-            }
-            .skills-btn {
-                &:hover ~ hr {
-                    margin-left: 60%;
+                .works-btn {
+                    &:hover ~ hr {
+                        margin-left: 40%;
+                    }
                 }
-            }
-            .contact-btn {
-                &:hover ~ hr {
-                    margin-left: 80%;
+                .skills-btn {
+                    &:hover ~ hr {
+                        margin-left: 60%;
+                    }
+                }
+                .contact-btn {
+                    &:hover ~ hr {
+                        margin-left: 80%;
+                    }
                 }
             }
         }
@@ -66,7 +71,7 @@
             .overlay {
                 background-color: #000;
                 width: 50%;
-                height: 100%;
+                height: 100vh;
                 opacity: 0.9;
                 position: fixed;
                 top: 0;
@@ -84,26 +89,82 @@
                     max-width: 400px;
                     margin: 0 auto;
                     .nav-item {
-                        display: block;
-                        width: auto;
                         padding: 25px 0;
-                        a {
+                        display: inline-block;
+                        width: 19%;
+                        text-align: center;
+                        nav-a {
                             font-size: 24px;
                             letter-spacing: 5px;
                             text-align: center;
-                            &:hover ~.sp-hr{
+                            &:hover ~ .sp-hr {
                                 transform: translateX(0);
                             }
                         }
                         .sp-hr {
                             width: 35%;
-                            margin:0 auto;
+                            margin: 0 auto;
                             transform: translateX(200%);
-                            transition: transform .8s ease-out;
+                            transition: transform 0.8s ease-out;
                         }
                     }
                 }
             }
         }
+    }
+}
+.fix-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 85px;
+    padding: 0 40px;
+    z-index: 2000;
+    background-color: #ddd;
+    transform: translateY(-150%);
+    transition: all 0.5s;
+    .header-inner {
+        max-width: 1180px;
+        width: 100%;
+        height: 100%;
+        margin: 0 auto;
+        .header-nav {
+            max-width: 500px;
+            width: 100%;
+            line-height: 85px;
+            margin-left: auto;
+            .nav-item {
+                .nav-a {
+                    color: #000;
+                }
+            }
+            hr {
+                background-color: #000;
+            }
+        }
+        ._sp {
+            max-width: 800px;
+            padding-top: 16px;
+            margin: 0;
+            .fix-overlay {
+                background-color: #000;
+                width: 50%;
+                height: 100%;
+                opacity: 0.9;
+                position: fixed;
+                top: 0;
+                right: 0;
+                transform: translateX(100%);
+                transition: transform 0.5s ease-out;
+                z-index: 1000;
+                &.open {
+                    transform: translateX(0);
+                }
+            }
+        }
+    }
+    &.open {
+        transform: translateY(0);
     }
 }

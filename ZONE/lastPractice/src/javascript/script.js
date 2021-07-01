@@ -1,27 +1,35 @@
-$(function() {
-    let btnTrigger = $(".btn-trigger");
-    let overlay = $(".overlay");
-    let nav_a = $('.nav-a');
-    let hr = $('hr');
-    btnTrigger.on("click", function() {
-        btnTrigger.toggleClass("active");
-        overlay.toggleClass("open");
-        return false;
-    });
+$(function () {
+  let btnTrigger = $(".btn-trigger");
+  let fixTrigger = $(".fix-btn-trigger");
+  let overlay = $(".overlay");
+  let fix_overlay = $(".fix-overlay");
+  let fix_header = $(".fix-header");
+  let header = $(".header");
 
-    window.onload = function() {
-        const spinner = document.getElementById('load');
-        spinner.classList.add('loaded');
+  btnTrigger.on("click", function () {
+    btnTrigger.toggleClass("active");
+    overlay.toggleClass("open");
+    return false;
+  });
+
+  fixTrigger.on("click", function () {
+    fixTrigger.toggleClass("active");
+    fix_overlay.toggleClass("open");
+    return false;
+  });
+
+  $(window).scroll(function () {
+    let scroll = $(this).scrollTop();
+    if (scroll > 500) {
+      fix_header.addClass("open");
+      header.addClass("close");
+      btnTrigger.removeClass("active");
+      overlay.removeClass("open");
+    } else {
+      fix_header.removeClass("open");
+      header.removeClass("close");
+      fixTrigger.removeClass("active");
+      fix_overlay.removeClass("open");
     };
-    
-    $(window).scroll(function() {
-        let scroll = $(this).scrollTop();
-        if(scroll > 1660) {
-            nav_a.css('color', '#000');
-            hr.css('background-color', '#000');
-        } else {
-            nav_a.css('color', '#FFF');
-            hr.css('background-color', '#FFF');
-        };
-    });
-}); 
+  });
+});
