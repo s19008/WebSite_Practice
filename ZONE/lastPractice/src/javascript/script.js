@@ -18,6 +18,7 @@ $(function () {
     return false;
   });
 
+  
   $(window).scroll(function () {
     let scroll = $(this).scrollTop();
     if (scroll > 500) {

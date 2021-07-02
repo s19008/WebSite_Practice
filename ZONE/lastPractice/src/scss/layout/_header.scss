@@ -89,11 +89,11 @@
                     max-width: 400px;
                     margin: 0 auto;
                     .nav-item {
-                        padding: 25px 0;
-                        display: inline-block;
-                        width: 19%;
+                        padding: 10px 0;
+                        margin: 0 auto;
                         text-align: center;
-                        nav-a {
+                        .nav-a {
+                            color: #fff;
                             font-size: 24px;
                             letter-spacing: 5px;
                             text-align: center;
@@ -103,6 +103,7 @@
                         }
                         .sp-hr {
                             width: 35%;
+                            color: #fff;
                             margin: 0 auto;
                             transform: translateX(200%);
                             transition: transform 0.8s ease-out;
@@ -124,23 +125,57 @@
     background-color: #ddd;
     transform: translateY(-150%);
     transition: all 0.5s;
-    .header-inner {
+    &-inner {
         max-width: 1180px;
         width: 100%;
         height: 100%;
         margin: 0 auto;
-        .header-nav {
+        .fix-header-nav {
             max-width: 500px;
             width: 100%;
-            line-height: 85px;
+            line-height: 80px;
             margin-left: auto;
-            .nav-item {
-                .nav-a {
-                    color: #000;
+            .nav-list {
+                .nav-item {
+                    display: inline-block;
+                    width: 19%;
+                    text-align: center;
+                    .nav-a {
+                        color: #000;
+                        display: inline-block;
+                        font-size: 20px;
+                        position: relative;
+                        z-index: 1;
+                        transition: all 0.6s;
+                    }
                 }
-            }
-            hr {
-                background-color: #000;
+                hr {
+                    background-color: #000;
+                    height: 3px;
+                    width: 20%;
+                    margin: 0;
+                    transition: all 0.6s;
+                }
+                .service-btn {
+                    &:hover ~ hr {
+                        margin-left: 20%;
+                    }
+                }
+                .works-btn {
+                    &:hover ~ hr {
+                        margin-left: 40%;
+                    }
+                }
+                .skills-btn {
+                    &:hover ~ hr {
+                        margin-left: 60%;
+                    }
+                }
+                .contact-btn {
+                    &:hover ~ hr {
+                        margin-left: 80%;
+                    }
+                }
             }
         }
         ._sp {
@@ -148,9 +183,9 @@
             padding-top: 16px;
             margin: 0;
             .fix-overlay {
-                background-color: #000;
+                background-color: #eee;
                 width: 50%;
-                height: 100%;
+                height: 100vh;
                 opacity: 0.9;
                 position: fixed;
                 top: 0;
@@ -160,6 +195,35 @@
                 z-index: 1000;
                 &.open {
                     transform: translateX(0);
+                }
+                .sp-nav-list {
+                    position: relative;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    max-width: 400px;
+                    margin: 0 auto;
+                    .nav-item {
+                        padding: 10px 0;
+                        margin: 0 auto;
+                        text-align: center;
+                        .nav-a {
+                            color: #111;
+                            font-size: 24px;
+                            letter-spacing: 5px;
+                            text-align: center;
+                            &:hover ~ .fix-sp-hr {
+                                transform: translateX(0);
+                            }
+                        }
+                        .fix-sp-hr {
+                            height: 3px;
+                            width: 35%;
+                            background-color: #111;
+                            margin: 0 auto;
+                            transform: translateX(200%);
+                            transition: transform 0.8s ease-out;
+                        }
+                    }
                 }
             }
         }
