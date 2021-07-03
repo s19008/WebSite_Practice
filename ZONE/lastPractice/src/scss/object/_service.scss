@@ -12,9 +12,21 @@
         display: flex;
         justify-content: space-between;
         .service-content {
-            max-width: 250px;
+            max-width: 300px;
             width: 100%;
+            border: 3px solid #ddd;
+            border-radius: 20px;
+            padding: 20px;
 
+            .service-visual {
+
+            }
+            .service-title {
+
+            }
+            .service-text {
+                text-align: left;
+            }
         }
     }
 }

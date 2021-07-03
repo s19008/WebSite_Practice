@@ -518,8 +518,9 @@ ul {
 }
 
 .header-inner ._sp .overlay .sp-nav-list .nav-item .sp-hr {
+  height: 3px;
   width: 35%;
-  color: #fff;
+  background-color: #fff;
   margin: 0 auto;
   -webkit-transform: translateX(200%);
           transform: translateX(200%);
@@ -819,8 +820,15 @@ ul {
 }
 
 .service-wrapper .service-content {
-  max-width: 250px;
+  max-width: 300px;
   width: 100%;
+  border: 3px solid #ddd;
+  border-radius: 20px;
+  padding: 20px;
+}
+
+.service-wrapper .service-content .service-text {
+  text-align: left;
 }
 
 .btn-trigger {
