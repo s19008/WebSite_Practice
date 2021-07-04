@@ -742,6 +742,15 @@ ul {
   color: #111;
 }
 
+.works {
+  width: 100%;
+  height: 700px;
+  text-align: center;
+  background-image: url("/src/image/ian-dooley-DJ7bWa-Gwks-unsplash.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
 .skills {
   width: 100%;
   height: 700px;
@@ -801,7 +810,7 @@ ul {
   height: 700px;
   text-align: center;
   color: #111;
-  background-color: #FFF;
+  background-color: #fff;
 }
 
 .service-wrapper {
@@ -809,6 +818,7 @@ ul {
   width: 100%;
   height: 500px;
   margin: 0 auto;
+  padding-top: 50px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -820,15 +830,69 @@ ul {
 }
 
 .service-wrapper .service-content {
-  max-width: 300px;
+  max-width: 350px;
   width: 100%;
   border: 3px solid #ddd;
   border-radius: 20px;
-  padding: 20px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 25px;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.service-wrapper .service-content .service-visual {
+  max-width: 170px;
+  width: 100%;
+  background-color: #fff;
+}
+
+.service-wrapper .service-content .service-title {
+  font-size: 23px;
+  margin: 20px 0;
+  position: relative;
+  z-index: 1;
+}
+
+.service-wrapper .service-content .service-title::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 0%;
+  height: 2px;
+  background: #111;
+  z-index: -1;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
 }
 
 .service-wrapper .service-content .service-text {
   text-align: left;
+  font-size: 18px;
+}
+
+.service-wrapper .service-content:hover .service-title::after {
+  width: 100%;
+}
+
+.service-notice {
+  margin-top: 40px;
+}
+
+.service-notice .notice-text {
+  font-size: 17px;
 }
 
 .btn-trigger {

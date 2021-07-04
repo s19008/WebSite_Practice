@@ -3,30 +3,64 @@
     height: 700px;
     text-align: center;
     color: #111;
-    background-color: #FFF;
+    background-color: #fff;
     &-wrapper {
         max-width: 1180px;
         width: 100%;
         height: 500px;
         margin: 0 auto;
+        padding-top: 50px;
         display: flex;
         justify-content: space-between;
         .service-content {
-            max-width: 300px;
+            max-width: 350px;
             width: 100%;
             border: 3px solid #ddd;
             border-radius: 20px;
-            padding: 20px;
-
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 25px;
+            transition: all 0.4s;
             .service-visual {
-
+                max-width: 170px;
+                width: 100%;
+                background-color: #fff;
             }
             .service-title {
-
+                font-size: 23px;
+                margin: 20px 0;
+                position: relative;
+                z-index: 1;
+                &::after {
+                    content: "";
+                    position: absolute;
+                    left: 0;
+                    bottom: -5px;
+                    width: 0%;
+                    height: 2px;
+                    background: #111;
+                    z-index: -1;
+                    transition: all 0.4s;
+                }
             }
             .service-text {
                 text-align: left;
+                font-size: 18px;
             }
+            &:hover {
+                .service-title {
+                    &::after {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+    &-notice {
+        margin-top: 40px;
+        .notice-text {
+            font-size: 17px;
         }
     }
 }

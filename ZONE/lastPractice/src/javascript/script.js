@@ -5,7 +5,7 @@ $(function () {
   let fix_overlay = $(".fix-overlay");
   let fix_header = $(".fix-header");
   let header = $(".header");
-
+  let nav = $('a[href^="#"]');
   btnTrigger.on("click", function () {
     btnTrigger.toggleClass("active");
     overlay.toggleClass("open");
@@ -33,4 +33,15 @@ $(function () {
       fix_overlay.removeClass("open");
     };
   });
+
+  nav.click(function() {
+    let adjust = -80;
+    let speed = 800;
+    let href = $(this).attr("href");
+    let target = $(href == "#" || href == "" ? 'html' : href);
+    let position = target.offset().top + adjust;
+    $('body,html').animate({scrollTop:position}, speed, 'swing');
+    return false;
+  });
+
 });
