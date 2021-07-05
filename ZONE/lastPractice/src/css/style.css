@@ -744,11 +744,85 @@ ul {
 
 .works {
   width: 100%;
-  height: 700px;
+  height: auto;
   text-align: center;
   background-image: url("/src/image/ian-dooley-DJ7bWa-Gwks-unsplash.jpg");
   background-size: cover;
   background-position: center;
+}
+
+.works-wrapper {
+  max-width: 1180px;
+  width: 100%;
+  margin: 0 auto;
+  padding-top: 50px;
+}
+
+.works-wrapper .works-content {
+  max-width: 500px;
+  width: 100%;
+  height: 400px;
+  overflow-y: hidden;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  position: relative;
+}
+
+.works-wrapper .works-content .works-visual {
+  max-width: 500px;
+  width: 100%;
+}
+
+.works-wrapper .works-content.odd {
+  margin: 0 0 0 auto;
+}
+
+.works-wrapper .works-content.even {
+  margin: 0 auto 0 0;
+}
+
+.works-wrapper .works-content .content-mask {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  color: #eee;
+  z-index: 1000;
+  opacity: 0;
+  -webkit-transition: opacity 0.5s;
+  transition: opacity 0.5s;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.works-wrapper .works-content .content-mask .works-title {
+  font-size: 24px;
+  line-height: 3;
+}
+
+.works-wrapper .works-content .content-mask .works-text {
+  font-size: 18px;
+}
+
+.works-wrapper .works-content:hover .content-mask {
+  opacity: 0.7;
 }
 
 .skills {
