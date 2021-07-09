@@ -814,7 +814,8 @@ ul {
 
 .works-wrapper .works-content .content-mask .works-title {
   font-size: 24px;
-  line-height: 3;
+  line-height: 1.5;
+  margin-bottom: 50px;
 }
 
 .works-wrapper .works-content .content-mask .works-text {
@@ -967,6 +968,17 @@ ul {
 
 .service-notice .notice-text {
   font-size: 17px;
+}
+
+.contact {
+  width: 100%;
+  height: 500px;
+  text-align: center;
+  background-color: #fff;
+}
+
+.contact .section-title {
+  color: #111;
 }
 
 .btn-trigger {
