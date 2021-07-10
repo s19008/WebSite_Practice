@@ -446,15 +446,15 @@ ul {
   transition: all 0.6s;
 }
 
-.header-inner .header-nav .nav-list .service-btn:hover ~ hr {
+.header-inner .header-nav .nav-list .skills-btn:hover ~ hr {
   margin-left: 20%;
 }
 
-.header-inner .header-nav .nav-list .works-btn:hover ~ hr {
+.header-inner .header-nav .nav-list .service-btn:hover ~ hr {
   margin-left: 40%;
 }
 
-.header-inner .header-nav .nav-list .skills-btn:hover ~ hr {
+.header-inner .header-nav .nav-list .works-btn:hover ~ hr {
   margin-left: 60%;
 }
 
@@ -584,15 +584,15 @@ ul {
   transition: all 0.6s;
 }
 
-.fix-header-inner .fix-header-nav .nav-list .service-btn:hover ~ hr {
+.fix-header-inner .fix-header-nav .nav-list .skills-btn:hover ~ hr {
   margin-left: 20%;
 }
 
-.fix-header-inner .fix-header-nav .nav-list .works-btn:hover ~ hr {
+.fix-header-inner .fix-header-nav .nav-list .service-btn:hover ~ hr {
   margin-left: 40%;
 }
 
-.fix-header-inner .fix-header-nav .nav-list .skills-btn:hover ~ hr {
+.fix-header-inner .fix-header-nav .nav-list .works-btn:hover ~ hr {
   margin-left: 60%;
 }
 
@@ -706,12 +706,14 @@ ul {
 }
 
 .footer {
-  padding: 20px;
+  width: 100%;
+  height: 100px;
+  background-color: #000;
 }
 
-.footer h2 {
-  font-size: 20px;
-  color: #FFF;
+.footer .copy-right {
+  text-align: center;
+  line-height: 100px;
 }
 
 .about {
@@ -755,7 +757,7 @@ ul {
   max-width: 1180px;
   width: 100%;
   margin: 0 auto;
-  padding-top: 50px;
+  padding: 50px 0 70px 0;
 }
 
 .works-wrapper .works-content {
@@ -774,11 +776,11 @@ ul {
 }
 
 .works-wrapper .works-content.odd {
-  margin: 0 0 0 auto;
+  margin: 0 0 30px auto;
 }
 
 .works-wrapper .works-content.even {
-  margin: 0 auto 0 0;
+  margin: 0 auto 30px 0;
 }
 
 .works-wrapper .works-content .content-mask {
@@ -972,13 +974,51 @@ ul {
 
 .contact {
   width: 100%;
-  height: 500px;
+  height: 400px;
   text-align: center;
   background-color: #fff;
 }
 
 .contact .section-title {
   color: #111;
+}
+
+.contact-title {
+  font-size: 24px;
+  font-weight: normal;
+  color: #111;
+  padding-top: 50px;
+}
+
+.contact-form {
+  display: inline-block;
+  font-size: 20px;
+  padding: 20px 50px;
+  background-color: #FFDB00;
+  margin-top: 50px;
+  letter-spacing: 5px;
+  border-radius: 50px;
+  position: relative;
+}
+
+.contact-form::after {
+  position: absolute;
+  bottom: 15px;
+  left: 45px;
+  content: '';
+  width: 70%;
+  height: 2px;
+  background: #111;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.contact-form:hover::after {
+  bottom: 20px;
+  opacity: 1;
+  visibility: visible;
 }
 
 .btn-trigger {

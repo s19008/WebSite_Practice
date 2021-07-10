@@ -1,9 +1,42 @@
 .contact {
     width: 100%;
-    height: 500px;
+    height: 400px;
     text-align: center;
     background-color: #fff;
     .section-title {
         color: #111;
+    }
+    &-title {
+        font-size: 24px;
+        font-weight: normal;
+        color: #111;
+        padding-top: 50px;
+    }
+    &-form {
+        display: inline-block;
+        font-size: 20px;
+        padding: 20px 50px;
+        background-color:#FFDB00;
+        margin-top: 50px;
+        letter-spacing: 5px;
+        border-radius: 50px;
+        position: relative;
+        &::after {
+            position: absolute;
+            bottom: 15px;
+            left: 45px;
+            content: '';
+            width: 70%;
+            height: 2px;
+            background: #111;
+            opacity: 0;
+            visibility: hidden;
+            transition: .4s;
+        }
+        &:hover::after{
+            bottom: 20px;
+            opacity: 1;
+            visibility: visible;
+        }
     }
 }
