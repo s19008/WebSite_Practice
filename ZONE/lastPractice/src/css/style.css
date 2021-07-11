@@ -322,9 +322,25 @@ progress {
   cursor: default;
 }
 
+@media print, screen and (min-width: 768px) {
+  ._sp {
+    display: none;
+  }
+}
+
+._pc {
+  display: none;
+}
+
+@media print, screen and (min-width: 768px) {
+  ._pc {
+    display: block;
+  }
+}
+
 body {
   color: #FFF;
-  font-family: "游明朝", "游明朝体";
+  font-family: "游明朝", "游明朝体", sans-serif;
   font-weight: 500;
 }
 
@@ -368,6 +384,12 @@ ul {
   bottom: -3px;
   opacity: 1;
   visibility: visible;
+}
+
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 40px;
+  }
 }
 
 @media print, screen and (min-width: 768px) {
@@ -695,6 +717,12 @@ ul {
   z-index: -1;
 }
 
+@media (max-width: 768px) {
+  .main-visual {
+    height: 900px;
+  }
+}
+
 .main-visual .main-text {
   max-width: 1180px;
   width: 100%;
@@ -719,7 +747,17 @@ ul {
 .about {
   width: 100%;
   height: 700px;
-  background-color: #aaa;
+  background-image: url("/src/image/jonas-stolle-6rhdGmD6wfw-unsplash.jpg");
+  background-size: cover;
+  background-position: center;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+@media (max-width: 768px) {
+  .about {
+    background-position: right;
+  }
 }
 
 .about-inner {
@@ -731,17 +769,41 @@ ul {
 }
 
 .about-inner .about-content {
-  max-width: 500px;
+  max-width: 650px;
   width: 100%;
-  height: 400px;
+  height: 300px;
   background-color: #ddd;
   margin-top: 100px;
+  padding: 20px;
+  -webkit-transition: .5s;
+  transition: .5s;
 }
 
 .about-inner .about-content .about-text {
-  font-size: 18px;
+  font-size: 20px;
+  font-family: "游ゴシック", "游ゴシック体";
   text-align: left;
+  line-height: 2;
   color: #111;
+}
+
+@media (max-width: 768px) {
+  .about-inner .about-content .about-text {
+    font-size: 22px;
+    color: #eee;
+  }
+}
+
+@media (max-width: 530px) {
+  .about-inner .about-content .about-text {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-inner .about-content {
+    background: none;
+  }
 }
 
 .works {
@@ -832,8 +894,15 @@ ul {
   width: 100%;
   height: 700px;
   text-align: center;
-  background-image: url("/src/image/johannes-plenio-a72o8w9HC2w-unsplash.jpg");
+  background-image: url("/src/image/branko-stancevic-GI1hwOGqGtE-unsplash.jpg");
   background-size: cover;
+  background-position: center;
+}
+
+@media (max-width: 1140px) {
+  .skills {
+    height: auto;
+  }
 }
 
 .skills-wrapper {
@@ -856,6 +925,31 @@ ul {
   background-color: #EEE;
 }
 
+@media (max-width: 1140px) {
+  .skills-wrapper {
+    max-width: 950px;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    background: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .skills-wrapper {
+    -webkit-flex-wrap: nowrap;
+        -ms-flex-wrap: nowrap;
+            flex-wrap: nowrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 20px auto 0 auto;
+    padding: 30px 20px;
+  }
+}
+
 .skills-wrapper .skills-content {
   max-width: 250px;
   width: 100%;
@@ -865,6 +959,19 @@ ul {
   border-radius: 10px;
   -webkit-transition: .5s;
   transition: .5s;
+}
+
+@media (max-width: 1140px) {
+  .skills-wrapper .skills-content {
+    max-width: 300px;
+    margin: 0 10px 100px 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .skills-wrapper .skills-content {
+    margin: 0 0 50px 0;
+  }
 }
 
 .skills-wrapper .skills-content-visual {
@@ -880,6 +987,13 @@ ul {
 .skills-wrapper .skills-content:hover {
   -webkit-transform: translateY(-4%);
           transform: translateY(-4%);
+}
+
+@media (max-width: 768px) {
+  .skills-wrapper .skills-content:hover {
+    -webkit-transform: translateY(-10%);
+            transform: translateY(-10%);
+  }
 }
 
 .service {

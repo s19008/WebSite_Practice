@@ -1,7 +1,13 @@
 .about {
     width: 100%;
     height: 700px;
-    background-color: #aaa;
+    background-image: url("/src/image/jonas-stolle-6rhdGmD6wfw-unsplash.jpg");
+    background-size: cover;
+    background-position: center;
+    transition: .5s;
+    @include tab {
+        background-position: right;
+    }
     &-inner {
         max-width: 980px;
         width: 100%;
@@ -9,15 +15,29 @@
         margin: 0 auto;
         text-align: center;
         .about-content {
-            max-width: 500px;
+            max-width: 650px;
             width: 100%;
-            height: 400px;
+            height: 300px;
             background-color: #ddd;
             margin-top: 100px;
+            padding: 20px;
+            transition: .5s;
             .about-text {
-                font-size: 18px;
+                font-size: 20px;
+                font-family: "游ゴシック", "游ゴシック体";
                 text-align: left;
+                line-height: 2;
                 color: #111;
+                @include tab {
+                    font-size: 22px;
+                    color: #eee;
+                }
+                @include sp {
+                    font-size: 20px;
+                }
+            }
+            @include tab {
+                background: none;
             }
         }
     }

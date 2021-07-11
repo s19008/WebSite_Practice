@@ -2,8 +2,12 @@
     width: 100%;
     height: 700px;
     text-align: center;
-    background-image: url("/src/image/johannes-plenio-a72o8w9HC2w-unsplash.jpg");
+    background-image: url("/src/image/branko-stancevic-GI1hwOGqGtE-unsplash.jpg");
     background-size: cover;
+    background-position: center;
+    @include pc {
+        height: auto;
+    }
     &-wrapper {
         max-width: 1180px;
         width: 100%;
@@ -13,6 +17,17 @@
         align-items: center;
         justify-content: space-between;
         background-color: #EEE;
+        @include pc {
+            max-width: 950px;
+            flex-wrap: wrap;
+            background: none;
+        }
+        @include tab {
+            flex-wrap: nowrap;
+            flex-direction: column;
+            margin: 20px auto 0 auto;
+            padding: 30px 20px;
+        }
         .skills-content {
             max-width: 250px;
             width: 100%;
@@ -21,6 +36,13 @@
             text-align: center;
             border-radius: 10px;
             transition: .5s;
+            @include pc {
+                max-width: 300px;
+                margin: 0 10px 100px 10px;
+            }
+            @include tab {
+                margin: 0 0 50px 0;
+            }
             &-visual {
                 max-width: 150px;
                 padding: 20px 0;
@@ -31,6 +53,9 @@
             }
             &:hover {
                 transform: translateY(-4%);
+                @include tab {
+                    transform: translateY(-10%);
+                }
             }
         }
     }

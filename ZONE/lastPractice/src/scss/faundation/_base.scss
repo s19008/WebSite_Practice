@@ -1,6 +1,7 @@
+@import "./general";
 body {
     color: #FFF;
-    font-family: "游明朝", "游明朝体";
+    font-family: "游明朝", "游明朝体", sans-serif;
     font-weight: 500;
 }
 
@@ -40,5 +41,8 @@ ul {
         bottom: -3px;
         opacity: 1;
         visibility: visible;
+    }
+    @include tab {
+        font-size: 40px;
     }
 }
