@@ -21,6 +21,10 @@
             letter-spacing: 10px;
             color: #FFF;
             padding-left: 50px;
+            @include tab {
+                font-size: 45px;
+                padding-left: 20px;
+            }
         }
     }
 }
