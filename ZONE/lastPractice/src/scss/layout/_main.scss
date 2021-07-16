@@ -21,6 +21,7 @@
             letter-spacing: 10px;
             color: #FFF;
             padding-left: 50px;
+            transition: all 0.3s;
             @include tab {
                 font-size: 45px;
                 padding-left: 20px;

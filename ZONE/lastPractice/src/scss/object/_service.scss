@@ -38,6 +38,9 @@
                 padding: 20px;
                 margin-bottom: 50px;
             }
+            @include sp {
+                padding: 20px 10px;
+            }
             .service-visual {
                 max-width: 170px;
                 width: 100%;
@@ -53,6 +56,9 @@
                 }
                 @include tab {
                     font-size: 23px;
+                }
+                @include sp {
+                    font-size: 20px;
                 }
                 &::after {
                     content: "";

@@ -7,7 +7,7 @@
     padding: 0 40px;
     z-index: 1000;
     transform: translateY(0);
-    transition: transform 0.3s;
+    transition: all 0.3s;
     &.close {
         transform: translateY(-150%);
     }
