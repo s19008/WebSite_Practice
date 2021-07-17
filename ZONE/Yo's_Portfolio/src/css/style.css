@@ -700,7 +700,7 @@ ul {
 .main-visual {
   width: 100%;
   height: 795px;
-  background-image: url("/src/image/johannes-plenio-DKix6Un55mw-unsplash.jpg");
+  background-image: url("../image/johannes-plenio-DKix6Un55mw-unsplash.jpg");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -754,7 +754,7 @@ ul {
 .about {
   width: 100%;
   height: 700px;
-  background-image: url("/src/image/jonas-stolle-6rhdGmD6wfw-unsplash.jpg");
+  background-image: url("../image/jonas-stolle-6rhdGmD6wfw-unsplash.jpg");
   background-size: cover;
   background-position: center;
   -webkit-transition: .5s;
@@ -817,7 +817,7 @@ ul {
   width: 100%;
   height: auto;
   text-align: center;
-  background-image: url("/src/image/ian-dooley-DJ7bWa-Gwks-unsplash.jpg");
+  background-image: url("../image/ian-dooley-DJ7bWa-Gwks-unsplash.jpg");
   background-size: cover;
   background-position: center;
 }
@@ -958,7 +958,7 @@ ul {
   width: 100%;
   height: 700px;
   text-align: center;
-  background-image: url("/src/image/branko-stancevic-GI1hwOGqGtE-unsplash.jpg");
+  background-image: url("../image/branko-stancevic-GI1hwOGqGtE-unsplash.jpg");
   background-size: cover;
   background-position: center;
 }
