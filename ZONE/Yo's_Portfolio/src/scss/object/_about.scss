@@ -21,6 +21,7 @@
             background-color: #ddd;
             margin-top: 100px;
             padding: 20px;
+            border-radius: 10px;
             transition: .5s;
             .about-text {
                 font-size: 20px;
@@ -33,7 +34,7 @@
                     color: #eee;
                 }
                 @include sp {
-                    font-size: 20px;
+                    font-size: 18px;
                 }
             }
             @include tab {

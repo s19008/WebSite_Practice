@@ -340,7 +340,7 @@ progress {
 
 body {
   color: #FFF;
-  font-family: "游明朝", "游明朝体", sans-serif;
+  font-family: "游明朝", "游明朝体", "ヒラギノ明朝 ProN",sans-serif;
   font-weight: 500;
 }
 
@@ -782,6 +782,7 @@ ul {
   background-color: #ddd;
   margin-top: 100px;
   padding: 20px;
+  border-radius: 10px;
   -webkit-transition: .5s;
   transition: .5s;
 }
@@ -803,7 +804,7 @@ ul {
 
 @media (max-width: 530px) {
   .about-inner .about-content .about-text {
-    font-size: 20px;
+    font-size: 18px;
   }
 }
 
