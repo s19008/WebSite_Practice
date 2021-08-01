@@ -45,4 +45,7 @@ ul {
     @include tab {
         font-size: 40px;
     }
+    @include sp {
+        font-size: 30px;
+    }
 }
