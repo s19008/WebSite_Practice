@@ -449,7 +449,7 @@ ul {
 
 .header-inner .header-nav .nav-list .nav-item {
   display: inline-block;
-  width: 19%;
+  width: 24%;
   text-align: center;
 }
 
@@ -465,27 +465,23 @@ ul {
 
 .header-inner .header-nav .nav-list hr {
   height: 3px;
-  width: 20%;
+  width: 25%;
   background-color: #fff;
   margin: 0;
   -webkit-transition: all 0.6s;
   transition: all 0.6s;
 }
 
-.header-inner .header-nav .nav-list .skills-btn:hover ~ hr {
-  margin-left: 20%;
-}
-
 .header-inner .header-nav .nav-list .service-btn:hover ~ hr {
-  margin-left: 40%;
+  margin-left: 25%;
 }
 
 .header-inner .header-nav .nav-list .works-btn:hover ~ hr {
-  margin-left: 60%;
+  margin-left: 50%;
 }
 
 .header-inner .header-nav .nav-list .contact-btn:hover ~ hr {
-  margin-left: 80%;
+  margin-left: 75%;
 }
 
 .header-inner ._sp {
@@ -587,7 +583,7 @@ ul {
 
 .fix-header-inner .fix-header-nav .nav-list .nav-item {
   display: inline-block;
-  width: 19%;
+  width: 24%;
   text-align: center;
 }
 
@@ -604,26 +600,22 @@ ul {
 .fix-header-inner .fix-header-nav .nav-list hr {
   background-color: #000;
   height: 3px;
-  width: 20%;
+  width: 25%;
   margin: 0;
   -webkit-transition: all 0.6s;
   transition: all 0.6s;
 }
 
-.fix-header-inner .fix-header-nav .nav-list .skills-btn:hover ~ hr {
-  margin-left: 20%;
-}
-
 .fix-header-inner .fix-header-nav .nav-list .service-btn:hover ~ hr {
-  margin-left: 40%;
+  margin-left: 25%;
 }
 
 .fix-header-inner .fix-header-nav .nav-list .works-btn:hover ~ hr {
-  margin-left: 60%;
+  margin-left: 50%;
 }
 
 .fix-header-inner .fix-header-nav .nav-list .contact-btn:hover ~ hr {
-  margin-left: 80%;
+  margin-left: 75%;
 }
 
 .fix-header-inner ._sp {
@@ -763,7 +755,6 @@ ul {
 
 .about {
   width: 100%;
-  height: 700px;
   background-image: url("../image/jonas-stolle-6rhdGmD6wfw-unsplash.jpg");
   background-size: cover;
   background-position: center;
@@ -782,13 +773,13 @@ ul {
   width: 100%;
   height: 100%;
   margin: 0 auto;
+  padding-bottom: 100px;
   text-align: center;
 }
 
 .about-inner .about-content {
   max-width: 650px;
   width: 100%;
-  height: 300px;
   background-color: #ddd;
   margin-top: 100px;
   padding: 20px;
@@ -1260,37 +1251,6 @@ ul {
   font-weight: normal;
   color: #111;
   padding-top: 50px;
-}
-
-.contact-form {
-  display: inline-block;
-  font-size: 20px;
-  padding: 20px 50px;
-  background-color: #FFDB00;
-  margin-top: 50px;
-  letter-spacing: 5px;
-  border-radius: 50px;
-  position: relative;
-}
-
-.contact-form::after {
-  position: absolute;
-  bottom: 15px;
-  left: 45px;
-  content: '';
-  width: 70%;
-  height: 2px;
-  background: #111;
-  opacity: 0;
-  visibility: hidden;
-  -webkit-transition: .4s;
-  transition: .4s;
-}
-
-.contact-form:hover::after {
-  bottom: 20px;
-  opacity: 1;
-  visibility: visible;
 }
 
 .btn-trigger {
