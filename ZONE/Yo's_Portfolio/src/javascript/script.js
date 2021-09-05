@@ -6,6 +6,7 @@ $(function () {
   let fix_header = $(".fix-header");
   let header = $(".header");
   let nav = $('a[href^="#"]');
+
   btnTrigger.on("click", function () {
     btnTrigger.toggleClass("active");
     overlay.toggleClass("open");
@@ -21,7 +22,7 @@ $(function () {
   
   $(window).scroll(function () {
     let scroll = $(this).scrollTop();
-    if (scroll > 500) {
+    if (scroll > 1000) {
       fix_header.addClass("open");
       header.addClass("close");
       btnTrigger.removeClass("active");
