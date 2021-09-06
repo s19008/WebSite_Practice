@@ -49,22 +49,20 @@ if (isset($_POST['submitted'])) {
     $mailTo = mb_encode_mimeheader(MAIL_TO_NAME) . "<" . MAIL_TO . ">";
 
     //Return-Pathに指定するメールアドレス
-    $returnMail = MAIL_RETURN_PATH; //
+    $returnMail = "-f" . $email; //
     //mbstringの日本語設定
     mb_language('ja');
     mb_internal_encoding('UTF-8');
 
     // 送信者情報（From ヘッダー）の設定
     $header = "From: " . mb_encode_mimeheader($name) . "<" . $email . ">\n";
-    $header .= "Cc: " . mb_encode_mimeheader(MAIL_CC_NAME) . "<" . MAIL_CC . ">\n";
-    $header .= "Bcc: <" . MAIL_BCC . ">";
 
     //メールの送信結果を変数に代入 （サンプルなのでコメントアウト）
     if (ini_get('safe_mode')) {
       //セーフモードがOnの場合は第5引数が使えない
       $result = mb_send_mail($mailTo, $subject, $mail_body, $header);
     } else {
-      $result = mb_send_mail($mailTo, $subject, $mail_body, $header, '-f' . $returnMail);
+      $result = mb_send_mail($mailTo, $subject, $mail_body, $header, $returnMail);
     }
 
     //メールが送信された場合の処理
@@ -75,7 +73,7 @@ if (isset($_POST['submitted'])) {
       $params = '?';
       $params .= 'name=' . h($name);
       $params .= '&email=' . h($email);
-      $params .= '&body=' . h($body);
+      $params .= '&body=' . replace(h($body));
 
 
       //変数の値も初期化
@@ -100,7 +98,7 @@ if (isset($_POST['submitted'])) {
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="title" content="Yo's Portfolio — よーの作品集">
-  <meta name="description" content="Web制作のお仕事をしております。よーのポートフォリオサイトです。">
+  <meta name="description" content="Webプログラミングの勉強をしております。よーのポートフォリオサイトです。">
   <link rel="icon" href="src/image/favicon.ico" id="favicon">
   <link rel="apple-touch-icon" sizes="180x180" href="src/image/apple-touch-icon-180x180.png">
   <link rel="stylesheet" href="src/css/style.css" />
@@ -333,7 +331,7 @@ if (isset($_POST['submitted'])) {
         <label for="email">メールアドレス</label>
         <input type="email" name="email" required value="<?php echo h($email); ?>">
         <label for="body">ご質問・ご相談</label>
-        <textarea name="body" id="body" cols="" rows="" placeholder="お問い合わせ内容をお書きください"><?php echo h($body); ?></textarea><!-- /# -->
+        <textarea name="body" id="body" rows="3" placeholder="お問い合わせ内容をお書きください"><?php echo h($body); ?></textarea><!-- /# -->
         <input type="submit" name="submitted" value="送信する" class="contact-form-button">
       </form><!-- /.form -->
     </section>

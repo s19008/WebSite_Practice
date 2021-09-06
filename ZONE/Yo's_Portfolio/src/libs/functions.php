@@ -29,3 +29,8 @@ function checkInput($var){
     return $var;
   }
 }
+
+function replace($a) {
+  $a = str_replace(PHP_EOL, '', $a);
+  return $a;
+}
