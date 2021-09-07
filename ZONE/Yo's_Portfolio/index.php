@@ -1,6 +1,6 @@
 <?php
 
-require './src/libs/functions.php';
+require 'src/libs/functions.php';
 
 //POSTされたデータがあれば変数に格納、なければ NULL（変数の初期化）
 $name = isset($_POST['name']) ? $_POST['name'] : NULL;
@@ -35,7 +35,7 @@ if (isset($_POST['submitted'])) {
   if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     //メールアドレス等を記述したファイルの読み込み
-    require './src/libs/mailvars.php';
+    require 'src/libs/mailvars.php';
 
     //メール本文の組み立て。値は h() でエスケープ処理
     $mail_body = 'コンタクトページからのお問い合わせ' . "\n\n";
@@ -49,7 +49,7 @@ if (isset($_POST['submitted'])) {
     $mailTo = mb_encode_mimeheader(MAIL_TO_NAME) . "<" . MAIL_TO . ">";
 
     //Return-Pathに指定するメールアドレス
-    $returnMail = "-f" . $email; //
+    $returnMail = "-f" . h($email); //
     //mbstringの日本語設定
     mb_language('ja');
     mb_internal_encoding('UTF-8');
