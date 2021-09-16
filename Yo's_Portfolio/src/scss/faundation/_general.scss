@@ -1,0 +1,37 @@
+$tab: 768px;
+$sp: 530px;
+$pc: 1140px;
+
+@mixin overTab {
+    @media print,screen and (min-width: ($tab)) {
+        @content;
+    }
+}
+@mixin pc {
+    @media (max-width: ($pc)) {
+        @content;
+    }
+}
+@mixin tab {
+    @media (max-width: ($tab)) {
+        @content;
+    }
+}
+@mixin sp {
+    @media (max-width: ($sp)) {
+        @content;
+    }
+}
+
+._sp {
+    @include overTab {
+        display: none;
+    }
+}
+
+._pc {
+    display: none;
+    @include overTab {
+        display: block;
+    }
+}
