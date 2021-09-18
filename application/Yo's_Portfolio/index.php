@@ -241,10 +241,12 @@ if (isset($_POST['submitted'])) {
         <!-- /.section-title -->
         <div class="about-content">
           <p class="about-text">
-            初めまして。<br>
+            初めまして。新里　陽と申します。<br>
             この度は、ポートフォリオサイトをご覧いただきありがとうございます。
-            2000年生まれ、沖縄県出身です。<br>
-            現在IT系の専門学校に通学しております。<br>
+            2000年、6月20日生まれ、沖縄県出身です。<br>
+            <br>
+            現在、専門学校ITカレッジ沖縄に通学しており、3年生です。<br>
+            趣味は、ロックを聴くことと、サッカーです！<br>
             去年から独学でもプログラミングの勉強を開始しており、<br>
             現在は、フロントエンドの勉強をしております。
           </p>
@@ -264,28 +266,28 @@ if (isset($_POST['submitted'])) {
           <h3 class="service-title">HTML/CSSコーディング</h3>
           <!-- /.service-title -->
           <p class="service-text">
-            デザインデータから正確なコーディングができます。<br>レスポンシブ対応も可能です。
+            HTMLとCSS(Sass)を使ったコーディングができます。<br>
           </p>
           <!-- /.service-text -->
         </div>
         <!-- /.service-content -->
         <div class="service-content">
           <img src="src/image/js-logo.png" alt="Webサイト更新イメージ画像" class="service-visual" />
-          <h3 class="service-title">JavaScript（jQuery）</h3>
+          <h3 class="service-title">JavaScript</h3>
           <!-- /.service-title -->
           <p class="service-text">
             JavaScriptを使用して簡単なアニメーションの実装ができます。<br>
-            jQueryを使用してスライダーなどの実装もできます。
+            現在、フレームワークであるVue.jsを勉強中です。
           </p>
           <!-- /.service-text -->
         </div>
         <!-- /.service-content -->
         <div class="service-content">
-          <img src="src/image/WordPress-logotype-wmark.png" alt="Wordpressイメージ画像" class="service-visual" />
-          <h3 class="service-title">WordPressの導入</h3>
+          <img src="src/image/smartphone.svg" alt="レスポンシブ画像" class="service-visual" />
+          <h3 class="service-title">レスポンシブコーディング</h3>
           <!-- /.service-title -->
           <p class="service-text">
-            既存のWebサイトをWordPress化することができます。
+            画面の幅に合わせて、文字サイズやボタンの配置などを変えることができます。
           </p>
           <!-- /.service-text -->
         </div>
