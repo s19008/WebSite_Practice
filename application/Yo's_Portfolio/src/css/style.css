@@ -993,7 +993,7 @@ ul {
   -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  background-color: #EEE;
+  background-color: #eee;
 }
 
 @media (max-width: 1140px) {
@@ -1025,11 +1025,11 @@ ul {
   max-width: 250px;
   width: 100%;
   height: 250px;
-  background-color: #DDD;
+  background-color: #ddd;
   text-align: center;
   border-radius: 10px;
-  -webkit-transition: .5s;
-  transition: .5s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 @media (max-width: 1140px) {
@@ -1046,7 +1046,7 @@ ul {
 }
 
 .skills-wrapper .skills-content-visual {
-  max-width: 150px;
+  max-width: 120px;
   padding: 20px 0;
 }
 
@@ -1156,7 +1156,7 @@ ul {
 }
 
 .service-wrapper .service-content .service-visual {
-  max-width: 170px;
+  max-width: 140px;
   width: 100%;
   background-color: #fff;
 }
