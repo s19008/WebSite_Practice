@@ -718,6 +718,7 @@ ul {
   z-index: -1;
   background-image: url("../image/johannes-plenio-DKix6Un55mw-unsplash.jpg");
   background-size: cover;
+  max-width: 1800px;
   width: 100%;
   height: 100vh;
 }
@@ -734,7 +735,7 @@ ul {
   margin: 0 auto;
   font-size: 60px;
   letter-spacing: 10px;
-  color: #FFF;
+  color: #fff;
   padding-left: 50px;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
@@ -744,6 +745,12 @@ ul {
   .main-visual .main-text {
     font-size: 45px;
     padding-left: 20px;
+  }
+}
+
+@media (max-width: 530px) {
+  .main-visual .main-text {
+    letter-spacing: 5px;
   }
 }
 
@@ -1146,12 +1153,6 @@ ul {
   .service-wrapper .service-content {
     padding: 20px;
     margin-bottom: 50px;
-  }
-}
-
-@media (max-width: 530px) {
-  .service-wrapper .service-content {
-    padding: 20px 10px;
   }
 }
 

@@ -246,7 +246,7 @@ if (isset($_POST['submitted'])) {
             2000年、6月20日生まれ、沖縄県出身です。<br>
             <br>
             現在、専門学校ITカレッジ沖縄に通学しており、3年生です。<br>
-            趣味は、ロックを聴くことと、サッカーです！<br>
+            趣味は、音楽を聴くことと、サッカーです！<br>
             去年から独学でもプログラミングの勉強を開始しており、<br>
             現在は、フロントエンドの勉強をしております。
           </p>
@@ -321,7 +321,13 @@ if (isset($_POST['submitted'])) {
             <p class="works-text">ユーザー名: user1<br>パスワード: yodesu3<br>提供元：しょーごログ様</p><!-- /.works-text -->
           </a>
         </div><!-- /.works-content -->
-
+        <div class="works-content even">
+          <img src="src/image/screencapture-localhost-project-2021-09-16-15_18_06.png" alt="webアプリ画像" class="works-visual">
+          <div class="content-mask">
+            <h3 class="works-title">ひまッチ(マッチングアプリ)</h3><!-- /.works-title -->
+            <p class="works-text">現在卒業研究として制作中です</p><!-- /.works-text -->
+          </div><!-- /.content-mask -->
+        </div><!-- /.works-content -->
       </div><!-- /.works-inner -->
     </section>
     <!-- /.works -->
